@@ -1,0 +1,58 @@
+# Curated GitHub export policy
+#
+# This repository contains many local working files and large scientific
+# datasets. Ignore everything by default, then explicitly track the curated
+# GitHub-ready export tree.
+
+*
+
+!.gitignore
+!README.md
+!github_export/
+!github_export/**
+
+# Never track caches or local runtime clutter.
+**/__pycache__/
+**/*.py[cod]
+**/.ipynb_checkpoints/
+**/.DS_Store
+**/._*
+**/.spyder-py3/
+
+# Never track heavy/raw/binary scientific products in normal Git.
+**/*.fits
+**/*.fit
+**/*.fz
+**/*.h5
+**/*.hdf5
+**/*.nc
+**/*.npy
+**/*.npz
+**/*.pkl
+**/*.pickle
+**/*.tar
+**/*.tar.gz
+**/*.zip
+**/*.7z
+**/*.dmg
+
+# Keep generated documents and media out of normal Git unless force-added
+# intentionally. Prefer Markdown summaries and CSV manifests.
+**/*.docx
+**/*.doc
+**/*.rtf
+**/*.pdf
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.tif
+**/*.tiff
+**/*.log
+
+# Keep local run folders out unless curated summaries are copied to
+# github_export/results/.
+plamb_runs/
+hht_env*/
+cov_sweeps/
+jwst_out/
+

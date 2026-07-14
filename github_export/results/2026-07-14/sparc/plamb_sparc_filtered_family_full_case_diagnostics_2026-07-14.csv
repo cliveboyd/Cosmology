@@ -1,0 +1,3 @@
+split,model,n_chains,n_saved_per_chain,n_global_params,n_galaxies,mean_accept_global,mean_accept_galaxy,max_global_rhat,median_global_rhat,complete
+all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,3,1500,4,157,0.0742638888888889,0.680082443019943,1.0542426484446787,1.033003788963713,True
+all_Q2,RAR,3,1500,3,157,0.13341666666666666,0.6809358974358974,1.2996373480725387,1.289021412622248,True

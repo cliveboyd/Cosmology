@@ -1,0 +1,11 @@
+{
+  "quaia_csv": "C:\\Users\\clive\\Documents\\Cosmology\\quaia_G20p0_basic_gal.csv",
+  "randoms_fits": "C:\\Users\\clive\\Documents\\Cosmology\\quaia_G20p0_randoms_simple.fits",
+  "scan_csv": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\su2_quaia_scan\\su2_quaia_scan.csv",
+  "out": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\su2_quaia_global_lookelsewhere_20260714",
+  "n_mocks": 300,
+  "min_count": 50,
+  "seed": 280714,
+  "progress_every": 10,
+  "cache_randoms": true
+}

@@ -1,0 +1,8 @@
+dataset,local_path,git_policy,approx_size,source_or_provenance,notes
+Quaia catalog,C:\Users\clive\Documents\Cosmology\quaia_G20.0.fits,manifest_only,~100 MB,local Quaia FITS,Used for SU2/Quaia angular diagnostics and template regression
+Quaia compact Galactic CSV,C:\Users\clive\Documents\Cosmology\quaia_G20p0_basic_gal.csv,manifest_only,~70 MB,derived local compact table,Used for object-level redshift-window mocks
+Quaia random sky catalog,C:\Users\clive\Documents\Cosmology\quaia_G20p0_randoms_simple.fits,manifest_only,~32 MB,local random catalog,Used for object-level mock sky positions
+Planck SMICA map,C:\Users\clive\Documents\Cosmology\COM_CMB_IQU-smica_2048_R3.00_full.fits,manifest_only,~2.0 GB,Planck public product,Too large for normal Git
+Pantheon+SH0ES covariance,C:\Users\clive\Documents\Cosmology\Pantheon+SH0ES_STAT+SYS.cov,manifest_only,~33 MB,local Pantheon+SH0ES covariance,Use manifest or Git LFS if versioning is required
+SPARC filtered posterior run,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\sparc_hierarchical_posterior,manifest_only,large local generated output,Posterior chains and diagnostics should not be committed directly
+

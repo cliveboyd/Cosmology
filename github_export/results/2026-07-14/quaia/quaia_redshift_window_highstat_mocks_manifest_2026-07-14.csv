@@ -1,0 +1,4 @@
+window_index,bcut_deg,tag,z_lo,z_hi,N_observed,random_pool_N,n_mocks,mock_catalog_format,saved_catalog_count,saved_catalog_paths
+1,15.0,z1p00_1p50,1.0,1.5,185739,1374246,5000,"npz with RA, DEC, L_GAL, B_GAL, Z for saved first catalogs",1,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\quaia_redshift_window_highstat_mocks_20260714\mock_catalogs\mock_window001_z1p00_1p50_bcut15_mock000.npz
+2,10.0,z1p00_1p50,1.0,1.5,194552,1557447,5000,"npz with RA, DEC, L_GAL, B_GAL, Z for saved first catalogs",1,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\quaia_redshift_window_highstat_mocks_20260714\mock_catalogs\mock_window002_z1p00_1p50_bcut10_mock000.npz
+3,10.0,z1p70_1p80,1.7000000000000004,1.8000000000000005,34300,1557447,5000,"npz with RA, DEC, L_GAL, B_GAL, Z for saved first catalogs",1,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\quaia_redshift_window_highstat_mocks_20260714\mock_catalogs\mock_window003_z1p70_1p80_bcut10_mock000.npz
