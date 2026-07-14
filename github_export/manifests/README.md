@@ -11,3 +11,5 @@ Use these files to record:
 - report sections that cite each artifact.
 
 SkyMap-specific manifests use the `skymap_*_manifest_2026-07-14.csv` pattern and cover copied code, extracted report text/media, small results, sample data, and representative figures.
+
+Paper PDF manifests use the `research_paper_pdf_manifest_YYYY-MM-DD.csv` pattern and record deliberate binary-PDF exceptions, local editable sources, checksums, render validation, and claim-boundary notes.
