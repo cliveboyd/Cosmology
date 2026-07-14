@@ -1,0 +1,18 @@
+{
+  "quaia_csv": "C:\\Users\\clive\\Documents\\Cosmology\\quaia_G20p0_basic_gal.csv",
+  "randoms_fits": "C:\\Users\\clive\\Documents\\Cosmology\\quaia_G20p0_randoms_simple.fits",
+  "out": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\su2_quaia_targeted_stability_mocks_20260714",
+  "n_mocks": 1500,
+  "bcuts": [
+    10,
+    15,
+    20,
+    25,
+    30,
+    35
+  ],
+  "min_count": 1000,
+  "seed": 290714,
+  "progress_every": 50,
+  "cache_randoms": true
+}
