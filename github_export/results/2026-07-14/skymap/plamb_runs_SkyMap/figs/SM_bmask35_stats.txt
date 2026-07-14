@@ -1,0 +1,13 @@
+SM_SkyMap_FR_KdS stats
+out: /Users/boyde/.spyder-py3/plamb_runs/SkyMap/figs/SM_bmask35.png
+nside: 64, z∈[0.1,1.2], fwhm: 8.0 deg
+R0: 2.224396841581202
+A_eff: 0.2155083478518907  (frac: 0.09688394796438284)
+axis (l,b): (48.60284945074652, 47.664012006670085)
+R2: 0.41022227748368867
+rho: 0.6404859697789559
+perm_p: 0.0
+Δ_FR (axis-min): 79.5141144332139
+Δ_KdS (axis-min): 79.42373239365858
+
+Tomography (per bin):

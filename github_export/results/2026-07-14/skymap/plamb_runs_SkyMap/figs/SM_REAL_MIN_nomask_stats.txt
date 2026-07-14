@@ -1,0 +1,9 @@
+SM_SkyMap_FR_KdS stats
+out: /Users/boyde/.spyder-py3/plamb_runs/SkyMap/figs/SM_REAL_MIN_nomask.png
+nside: 64, z∈[0.1,2.5], fwhm: 8.0 deg
+R0: 0.23973333333331454
+A_eff: 4.211531922364456e-14  (frac: 1.7567569197850886e-13)
+axis (l,b): (218.32703504663124, -2.4030497263894732)
+R2: 0.03603840955748261
+rho: 0.18982856381046487
+perm_p: 0.001996007984031936

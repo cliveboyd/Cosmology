@@ -1,0 +1,2 @@
+# N_valid  N_mean  amp_counts  l_deg  b_deg  sep_deg  a0
+16661  119.915  4.545912e+00  156.111  64.763  54.227  -2.728124e-01

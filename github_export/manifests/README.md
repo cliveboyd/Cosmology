@@ -10,3 +10,4 @@ Use these files to record:
 - checksums and provenance;
 - report sections that cite each artifact.
 
+SkyMap-specific manifests use the `skymap_*_manifest_2026-07-14.csv` pattern and cover copied code, extracted report text/media, small results, sample data, and representative figures.

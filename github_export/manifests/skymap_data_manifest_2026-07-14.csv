@@ -1,0 +1,5 @@
+source_path,source_relative,size_bytes,modified_time,export_path,note
+C:\Users\clive\Documents\Cosmology\skymap_unified_catalog_sample.csv,skymap_unified_catalog_sample.csv,3518986,2025-10-29T10:13:40,github_export/data/skymap/skymap_unified_catalog_sample.csv,sample catalog
+C:\Users\clive\Documents\Cosmology\skymap_unified_catalog_sample (1).csv,skymap_unified_catalog_sample (1).csv,3518986,2025-10-29T10:18:40,,referenced only; omitted to avoid duplicate or large raw-data Git payload
+C:\Users\clive\Documents\Cosmology\quaia_G20p0_basic.csv,quaia_G20p0_basic.csv,41785020,2025-11-16T22:29:08,,referenced only; omitted to avoid duplicate or large raw-data Git payload
+C:\Users\clive\Documents\Cosmology\quaia_G20p0_basic_gal.csv,quaia_G20p0_basic_gal.csv,69774861,2025-11-16T22:30:52,,referenced only; omitted to avoid duplicate or large raw-data Git payload

@@ -1,0 +1,14 @@
+SM_SkyMap_FR_KdS stats
+out: /Users/boyde/.spyder-py3/plamb_runs/SkyMap/figs/quickgrid/SM_ns64_s6_mask20_bins2_fr_inj.png
+nside: 64, z∈[0.1,1.2], fwhm: 6.0 deg
+R0: 0.23904959786194716
+A_eff: 0.0024062568411504824  (frac: 0.010065931349276367)
+axis (l,b): (134.58720115440195, 47.04853946000506)
+R2: 0.0687351809465172
+rho: 0.2621739516933692
+perm_p: 0.000999000999000999
+Δ_FR (axis-min): 75.25848500961928
+
+Tomography (per bin):
+z∈[0.10,0.70], l=236.16, b=-24.28, R0=0.243151, A_eff=0.00092466, frac=0.00380283
+z∈[0.70,1.20], l=119.03, b=47.13, R0=0.237443, A_eff=0.0036133, frac=0.0152176
