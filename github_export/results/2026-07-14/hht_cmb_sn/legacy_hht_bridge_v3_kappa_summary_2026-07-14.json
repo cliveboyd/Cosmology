@@ -1,0 +1,17 @@
+{
+  "n": 205715,
+  "kappa_ols": -0.31650311108702406,
+  "ci68_boot_ols": [
+    -0.3176575363203907,
+    -0.31528864471414875
+  ],
+  "ci95_boot_ols": [
+    -0.31890896683114195,
+    -0.31410812565876844
+  ],
+  "theil_sen": {
+    "kappa_ts": -0.2999529559988017,
+    "pairs_used": 599961,
+    "note": "Median of pairwise slopes; subsampled if n large."
+  }
+}

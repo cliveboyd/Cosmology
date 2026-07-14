@@ -1,0 +1,4 @@
+series,component,component_index,energy,energy_fraction,median_amplitude,max_amplitude,median_positive_frequency,amplitude_weighted_frequency,zero_crossings,is_imf_like
+SU2_Quaia_frac_par_cmb,IMF1,1,2.9142814542371527,0.45332142556627764,0.454458027869207,0.8138813694059681,4.280788825809583,3.5249562201729256,16,True
+SU2_Quaia_frac_par_cmb,IMF2,2,0.6162174775051655,0.0958536743097859,0.22055155905357368,0.3243358324052635,1.6564986108886872,1.7130699675304324,10,True
+SU2_Quaia_frac_par_cmb,residue,3,1.7971343636340769,0.2795472998918002,nan,nan,nan,nan,2,False

@@ -1,0 +1,2 @@
+series,component,component_index,energy,energy_fraction,median_amplitude,max_amplitude,median_positive_frequency,amplitude_weighted_frequency,zero_crossings,is_imf_like
+SU2_minus_LCDM_residual,residue,1,0.36908753861918675,1.0,nan,nan,nan,nan,1,False

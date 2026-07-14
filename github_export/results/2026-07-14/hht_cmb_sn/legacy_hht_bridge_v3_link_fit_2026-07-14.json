@@ -1,0 +1,11 @@
+{
+  "alpha": 0.05470293123659546,
+  "kappa": -0.31650311108702406,
+  "mu_L": 9.412191405324225e-17,
+  "sigma_L": 0.1846114374835937,
+  "suggested_args": {
+    "link_form": "eps_minus_kgamma",
+    "kappa_em_gc": -0.31650311108702406,
+    "link_sigma_start": 0.185
+  }
+}

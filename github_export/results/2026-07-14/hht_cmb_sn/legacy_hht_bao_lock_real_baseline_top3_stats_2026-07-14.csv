@@ -1,0 +1,6 @@
+metric,value,topK
+pearson_k,0.11213904476754559,3
+spearman_k,0.10464485342719744,3
+pearson_1_over_k,-0.11173284380766808,3
+spearman_1_over_k,-0.10464485342719744,3
+perm_pval_vs_1_over_k,0.9995002498750625,3

@@ -1,0 +1,22 @@
+{
+  "method": "ceemdan",
+  "n_imfs": 6,
+  "imf_focus": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "surrogates": 10000,
+  "stat_obs": 49.39638942108343,
+  "p_value": 9.999000099990002e-05,
+  "lock_scores": {
+    "IMF1": -0.05649924230956685,
+    "IMF2": -0.1049717061174393,
+    "IMF3": -0.1556870718452785,
+    "IMF4": -0.36274580604037904
+  },
+  "script_path": "/Users/boyde/.spyder-py3/imf23_probe.py",
+  "script_sha256": "5dd39def16a7a6dd864eeb971c8f236e60b734cb1e20316c55bdefc077f7f097",
+  "script_mtime": 1761021112.1273358
+}
