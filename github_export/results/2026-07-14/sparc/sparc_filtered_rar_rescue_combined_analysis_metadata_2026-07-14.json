@@ -1,0 +1,22 @@
+{
+  "args": {
+    "run_dir": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\sparc_hierarchical_posterior\\posterior_minus_persistent_negative_rar_rescue_with_existing_plamb_20260714",
+    "map_dir": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\sparc_hierarchical_map\\optical_depth_minus_persistent_negative_20260714",
+    "sample": "C:\\Users\\clive\\Documents\\Codex\\2026-07-14\\ok-continu\\work\\sparc_filtered_persistent_negative\\sparc_galaxy_sample_without_persistent_negative_high_leverage.csv",
+    "points": "C:\\Users\\clive\\Documents\\Codex\\2026-07-14\\ok-continu\\work\\sparc_filtered_persistent_negative\\sparc_rotation_points_without_persistent_negative_high_leverage.csv",
+    "output_label": "analysis_rescued_rar_existing_plamb_nd16_20260714",
+    "max_global_draws": 1000,
+    "nuisance_draws": 16,
+    "skip_predictive": false,
+    "include_stress": true,
+    "err_floor_kms": 3.0,
+    "sigma_ln_ml": 0.25,
+    "distance_floor_frac": 0.03,
+    "hubble_prior_mode": "model_h0_rescale",
+    "gas_fraction_min": 0.5,
+    "bulge_fraction_max": 0.2,
+    "high_inc_min": 60.0,
+    "seed": 260714
+  },
+  "n_cases": 2
+}

@@ -86,3 +86,23 @@ Pass for any later full-sample promotion:
 Fail:
 
 - RAR max Rhat remains high, or any of the negative all-Q2 / low-acceleration / inclination stress deltas remain negative.
+
+## Completed Run Readout
+
+Completed: July 14, 2026 at 21:57 local time.
+
+Convergence rescue passed:
+
+- RAR max Rhat improved from 1.300 to 1.031.
+- RAR global acceptance improved to about 0.228.
+- RAR galaxy acceptance remained stable at about 0.681.
+
+Promotion gate remains closed:
+
+- all-Q2 aggregate delta is now positive: +28.941, but the galaxy split remains unfavorable at 65 better / 92 worse.
+- low-acceleration outer-point aggregate delta is now positive: +48.508.
+- high-inclination stress remains strongly negative: -358.865.
+- gas-dominated stress is negative: -28.175.
+- low-inclination aggregate delta is positive, +21.586, but the galaxy split remains unfavorable at 33 better / 41 worse.
+
+Updated claim boundary: RAR convergence has been rescued, and PLAMB now has aggregate all-Q2 and low-acceleration support in this filtered-family comparison, but the high-inclination and gas-dominated failures keep SPARC in the subset-win category rather than a full-sample PLAMB win.

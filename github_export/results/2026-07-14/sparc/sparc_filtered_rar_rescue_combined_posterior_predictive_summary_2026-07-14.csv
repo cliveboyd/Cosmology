@@ -1,0 +1,15 @@
+score_case,model,N_galaxies,N_points,total_log_predictive,delta_log_predictive_vs_RAR,median_galaxy_delta_vs_RAR,galaxies_better_than_RAR,galaxies_worse_than_RAR
+posterior_baseline_all_Q2,RAR,157,3001,-13348.893788677502,0.0,0.0,0,0
+posterior_baseline_all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,157,3001,-13319.952730825447,28.941057852054655,-0.2793493323648164,65,92
+posterior_stress_bulge_removed_all_Q2,RAR,138,2279,-9567.024197033628,0.0,0.0,0,0
+posterior_stress_bulge_removed_all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,138,2279,-9560.565189827765,6.4590072058636,-0.1583918600611085,63,75
+posterior_stress_gas_dominated_all_Q2,RAR,31,449,-1615.9538321328241,0.0,0.0,0,0
+posterior_stress_gas_dominated_all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,31,449,-1644.128535197425,-28.174703064600862,0.08371179487591007,17,14
+posterior_stress_high_inclination_all_Q2,RAR,83,1739,-7691.333273322646,0.0,0.0,0,0
+posterior_stress_high_inclination_all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,83,1739,-8050.197860219142,-358.8645868964959,0.20790842419429012,49,34
+posterior_stress_high_quality_Q1_all,RAR,95,1982,-10141.507594982875,0.0,0.0,0,0
+posterior_stress_high_quality_Q1_all,PLAMB_OPTICAL_DEPTH_KAPPA_P,95,1982,-9762.044840268887,379.46275471398803,0.026011637421518685,48,47
+posterior_stress_low_accel_outer_points_all_Q2,RAR,155,1401,-5364.712842087598,0.0,0.0,0,0
+posterior_stress_low_accel_outer_points_all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,155,1401,-5316.204957466426,48.5078846211718,0.0415085907076147,80,75
+posterior_stress_low_inclination_all_Q2,RAR,74,1262,-5244.897984440588,0.0,0.0,0,0
+posterior_stress_low_inclination_all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,74,1262,-5223.312409292529,21.585575148058524,-0.12231131856299005,33,41

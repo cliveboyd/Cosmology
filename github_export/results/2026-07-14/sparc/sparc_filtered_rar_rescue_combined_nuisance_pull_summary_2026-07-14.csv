@@ -1,0 +1,3 @@
+split,model,n_galaxies,max_abs_distance_pull,median_abs_distance_pull,distance_pull_gt2,distance_pull_gt3,max_abs_stellar_ml_pull,median_abs_stellar_ml_pull,stellar_ml_pull_gt2,stellar_ml_pull_gt3
+all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,157,3.960996484071625,0.9742680709611914,33,13,3.8673976810764286,1.0229776186504616,32,14
+all_Q2,RAR,157,3.962816164976844,0.9598744232863499,34,13,3.851096237058603,1.0197409709236829,32,14
