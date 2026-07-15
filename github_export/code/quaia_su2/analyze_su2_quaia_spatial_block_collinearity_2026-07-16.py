@@ -235,7 +235,7 @@ def run_spatial_null(
     while cursor < n_mocks:
         batch = min(batch_size, n_mocks - cursor)
         signs = rng.choice(np.array([-1.0, 1.0]), size=(n_cells, batch), replace=True)
-        cut_snrs = np.row_stack([fit_cluster_batches(item, signs) for item in prepared])
+        cut_snrs = np.vstack([fit_cluster_batches(item, signs) for item in prepared])
         maxima[cursor : cursor + batch] = np.max(cut_snrs, axis=0)
         cursor += batch
 
