@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-16",
+  "written_before_sampling_utc": "2026-07-15T20:33:53.860371+00:00",
+  "analysis": "filtered_all_Q2_noncentred_nuts_geometry_pilot",
+  "scientific_use": "sampler geometry only; no model promotion or held-out evidence",
+  "models": [
+    "RAR",
+    "PLAMB_OPTICAL_DEPTH_KAPPA_P"
+  ],
+  "sample": "C:\\Users\\clive\\Documents\\Codex\\2026-07-14\\ok-continu\\work\\sparc_filtered_persistent_negative\\sparc_galaxy_sample_without_persistent_negative_high_leverage.csv",
+  "points": "C:\\Users\\clive\\Documents\\Codex\\2026-07-14\\ok-continu\\work\\sparc_filtered_persistent_negative\\sparc_rotation_points_without_persistent_negative_high_leverage.csv",
+  "map_dir": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\sparc_hierarchical_map\\optical_depth_minus_persistent_negative_20260714",
+  "input_sha256": {
+    "sample": "0c924fecd5cf71e4322538080bca40faaed0e9f1c33f9d88815287644710f4c3",
+    "points": "067d33e6b4a83dcd4ffb91472f4c09341e77bff8f9d56ef50df6beeba7dc420e",
+    "map_summary": "9430905e71bd8fdef1ebc28523be2f3def519f32f9e240f722e2a7e5e63f5d79",
+    "programme": "1a22adceb08032e9820f9c0fd028a1d0f298d839bfe621e0872af150fe35e588"
+  },
+  "full_filtered_galaxies": 157,
+  "full_filtered_points": 3001,
+  "selected_galaxies": [
+    "DDO154",
+    "DDO161",
+    "ESO444-G084",
+    "ESO563-G021",
+    "F568-1",
+    "F568-V1",
+    "F571-8",
+    "KK98-251",
+    "NGC0300",
+    "NGC2998",
+    "NGC3949",
+    "NGC4013",
+    "NGC4157",
+    "NGC4183",
+    "NGC4217",
+    "NGC5055",
+    "NGC7331",
+    "UGC00731",
+    "UGC02023",
+    "UGC05750",
+    "UGC05764",
+    "UGC05999",
+    "UGC07608",
+    "UGC08837"
+  ],
+  "pilot_points": 398,
+  "selection_seed": 160726,
+  "selection_rule": "SHA-256 rank within distance-method x inclination(<60/>=60 deg) strata; proportional allocation; no fit residuals",
+  "fixed_h0": 65.0,
+  "priors": {
+    "log_ydisk": "Normal(log(0.5), 0.55), truncated to log(0.05)..log(1.50)",
+    "log_ybul": "Normal(log(0.7), 0.55), truncated to log(0.05)..log(1.80)",
+    "distance_nuisance": "Normal(mu_logd(H0), sigma_logd), truncated at +/-4 sigma",
+    "stellar_ml_nuisance": "Normal(0, 0.25), truncated at +/-4 sigma",
+    "RAR_log10_gdagger": "Uniform(-11.6, -9.2)",
+    "PLAMB_log10_kappa": "Uniform(-0.50, 0.50)",
+    "PLAMB_bridge_exponent": "Uniform(0.15, 1.20)"
+  },
+  "sampling": {
+    "sampler": "nutpie NUTS compiled from PyMC model",
+    "chains": 4,
+    "cores": 4,
+    "tune_per_chain": 1000,
+    "draws_per_chain": 1000,
+    "target_accept": 0.9,
+    "max_tree_depth": 12,
+    "seed": 16072601
+  },
+  "gates": {
+    "prediction_abs_tolerance_kms": 1e-08,
+    "rhat_target": 1.01,
+    "rhat_absolute_ceiling": 1.05,
+    "minimum_bulk_and_tail_ess": 400.0,
+    "maximum_divergences": 0,
+    "minimum_bfmi": 0.3
+  },
+  "environment": {
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "pymc": "5.28.5",
+    "pytensor": "2.38.3",
+    "nutpie": "0.16.11",
+    "arviz": "0.23.4"
+  }
+}

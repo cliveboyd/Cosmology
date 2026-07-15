@@ -15,5 +15,5 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
 ## July 16 Audit
 
 - `2026-07-16/su2_quaia/` contains the spatial-block null, template-collinearity, and over-absorption/injection-calibration readouts.
-- `2026-07-16/sparc/` contains robust split convergence and paired-posterior nuisance diagnostics.
+- `2026-07-16/sparc/` contains robust split convergence, paired-posterior nuisance diagnostics, and the preregistered 24-galaxy non-centred NUTS pilot under `nuts_pilot/`.
 - `2026-07-16/audit/` contains the cross-stream model-upgrade reproducibility audit and research-standing priorities.
