@@ -1,0 +1,99 @@
+{
+  "date": "2026-07-15",
+  "analysis": "su2_quaia_colour_template_mechanism",
+  "z_min": 0.95,
+  "z_max": 1.45,
+  "b_cuts": [
+    15.0,
+    20.0,
+    25.0,
+    30.0,
+    35.0
+  ],
+  "primary_b_cut": 15.0,
+  "responses": [
+    "gaia_bp_rp_colour",
+    "wise_w1_w2_colour",
+    "gaia_wise_colour_cross"
+  ],
+  "template_groups": {
+    "sfd_dust": [
+      "ebv_sfd",
+      "sfd_log1p",
+      "sfd_sq"
+    ],
+    "quaia_selection_depth": [
+      "selection_T",
+      "random_density_log1p"
+    ],
+    "gaia_scanlaw": [
+      "gaia_scan_count_log1p_dr3",
+      "gaia_scan_angle_cos2_mean_dr3",
+      "gaia_scan_angle_sin2_mean_dr3",
+      "gaia_scan_angle_resultant_dr3"
+    ],
+    "wise_depth": [
+      "wise_w1_medcov_log1p",
+      "wise_w2_medcov_log1p",
+      "wise_w1_mincov",
+      "wise_w2_mincov",
+      "wise_w1_lowcov_log1p",
+      "wise_w2_lowcov_log1p",
+      "wise_w1_w2_medcov_diff",
+      "wise_w1_w2_medcov_ratio"
+    ],
+    "stellar_density": [
+      "gaia_dr3_density_hpx4_log1p"
+    ],
+    "dust_selection_scanlaw": [
+      "ebv_sfd",
+      "sfd_log1p",
+      "sfd_sq",
+      "selection_T",
+      "random_density_log1p",
+      "gaia_scan_count_log1p_dr3",
+      "gaia_scan_angle_cos2_mean_dr3",
+      "gaia_scan_angle_sin2_mean_dr3",
+      "gaia_scan_angle_resultant_dr3"
+    ],
+    "wise_depth_stellar_density": [
+      "wise_w1_medcov_log1p",
+      "wise_w2_medcov_log1p",
+      "wise_w1_mincov",
+      "wise_w2_mincov",
+      "wise_w1_lowcov_log1p",
+      "wise_w2_lowcov_log1p",
+      "wise_w1_w2_medcov_diff",
+      "wise_w1_w2_medcov_ratio",
+      "gaia_dr3_density_hpx4_log1p"
+    ],
+    "all_external_templates": [
+      "ebv_sfd",
+      "sfd_log1p",
+      "sfd_sq",
+      "selection_T",
+      "random_density_log1p",
+      "gaia_scan_count_log1p_dr3",
+      "gaia_scan_angle_cos2_mean_dr3",
+      "gaia_scan_angle_sin2_mean_dr3",
+      "gaia_scan_angle_resultant_dr3",
+      "wise_w1_medcov_log1p",
+      "wise_w2_medcov_log1p",
+      "wise_w1_mincov",
+      "wise_w2_mincov",
+      "wise_w1_lowcov_log1p",
+      "wise_w2_lowcov_log1p",
+      "wise_w1_w2_medcov_diff",
+      "wise_w1_w2_medcov_ratio",
+      "gaia_dr3_density_hpx4_log1p"
+    ]
+  },
+  "mechanism_score": "0.45*dipole_absorption + 0.35*hemisphere-SMD absorption + 0.20*template R2, each clipped to [0,1] where applicable.",
+  "external_inputs": {
+    "wise_inventory": "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\allwise_atlas_inventory\\allwise_p3am_cdd_w1w2_coverage.csv",
+    "gaia_density": "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\gaia_dr3_density\\gaia_dr3_source_density_hpx4_glt20p5.csv",
+    "gaia_density_source": "CDS Gaia EDR3 density HiPS Norder2",
+    "gaia_density_present": true,
+    "gaiascanlaw_data_dir": "C:\\Users\\clive\\anaconda3x\\Lib\\site-packages\\gaiascanlaw\\data"
+  }
+}
