@@ -1,0 +1,3 @@
+model,max_abs_prediction_difference_kms,max_relative_prediction_difference,graph_chi2_data,legacy_chi2_data,chi2_data_absolute_difference,legacy_chi2_prior,legacy_total_objective,pass
+RAR,8.526512829121202e-14,5.374841305058025e-16,71387.81638378254,71387.81638378254,0.0,0.0,71387.81638378254,True
+PLAMB_OPTICAL_DEPTH_KAPPA_P,1.4210854715202004e-13,9.778003602225928e-16,83392.76023231761,83392.76023231761,0.0,0.0,83392.76023231761,True
