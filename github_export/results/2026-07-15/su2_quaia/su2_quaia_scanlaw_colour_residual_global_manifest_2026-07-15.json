@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-15",
+  "analysis": "su2_quaia_scanlaw_colour_residual_global",
+  "claim_boundary": "Promotion gate only; surviving residual modes are follow-up candidates, not discoveries.",
+  "config": {
+    "date": "2026-07-15",
+    "analysis": "scanlaw_colour_residual_global_lookelsewhere",
+    "quaia": "C:\\Users\\clive\\Documents\\Cosmology\\quaia_G20.0.fits",
+    "scan_csv": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\su2_quaia_scan\\su2_quaia_scan.csv",
+    "out_dir": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\su2_quaia_scanlaw_colour_residual_global_20260715",
+    "n_mocks": 1000,
+    "n_strata": 10,
+    "min_count": 50,
+    "seed": 190715,
+    "max_windows": null,
+    "checkpoint_every": 50,
+    "controls": [
+      "gaia_scan_count_log1p_dr3",
+      "gaia_scan_angle_cos2_mean_dr3",
+      "gaia_scan_angle_sin2_mean_dr3",
+      "gaia_scan_angle_resultant_dr3",
+      "bp_rp_z",
+      "w1_w2_z",
+      "bp_rp_x_w1_w2_z"
+    ],
+    "null": "Residuals from z~scanlaw+colour are shuffled within quantiles of the fitted scanlaw+colour redshift for each window/cut.",
+    "data_meta": {
+      "quaia": "C:\\Users\\clive\\Documents\\Cosmology\\quaia_G20.0.fits",
+      "gaiascanlaw_data_dir": "C:\\Users\\clive\\anaconda3x\\Lib\\site-packages\\gaiascanlaw\\data",
+      "n_rows": 755850,
+      "base_standardization_mask_N": 668558,
+      "scanlaw_templates_present": true,
+      "global_colour_standardization": {
+        "bp_rp_z": {
+          "center": 0.6347951889038086,
+          "scale": 0.2081427118679992
+        },
+        "w1_w2_z": {
+          "center": 1.1301270000000017,
+          "scale": 0.19094638241744757
+        },
+        "bp_rp_x_w1_w2_z": {
+          "center": -0.0015995121993714828,
+          "scale": 1.1860389403924174
+        }
+      }
+    }
+  },
+  "counts": {
+    "observed_windows": 168,
+    "mocks": 1000,
+    "threshold_rows": 10
+  },
+  "primary_files": [
+    "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\su2_quaia_scanlaw_colour_residual_global_20260715\\su2_quaia_scanlaw_colour_residual_global_observed_windows.csv",
+    "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\su2_quaia_scanlaw_colour_residual_global_20260715\\su2_quaia_scanlaw_colour_residual_global_mock_maxima.csv",
+    "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\su2_quaia_scanlaw_colour_residual_global_20260715\\su2_quaia_scanlaw_colour_residual_global_thresholds.csv",
+    "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\su2_quaia_scanlaw_colour_residual_global_20260715\\su2_quaia_scanlaw_colour_residual_global_report.md",
+    "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\su2_quaia_scanlaw_colour_residual_global_20260715\\su2_quaia_scanlaw_colour_residual_global_readout.md"
+  ]
+}
