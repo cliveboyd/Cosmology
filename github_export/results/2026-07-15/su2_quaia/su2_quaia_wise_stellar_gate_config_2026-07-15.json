@@ -1,0 +1,19 @@
+{
+  "date": "2026-07-15",
+  "z_min": 0.95,
+  "z_max": 1.45,
+  "b_cuts": [
+    15.0,
+    20.0,
+    25.0,
+    30.0,
+    35.0
+  ],
+  "wise_inventory": "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\allwise_atlas_inventory\\allwise_p3am_cdd_w1w2_coverage.csv",
+  "gaia_density": "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\gaia_dr3_density\\gaia_dr3_source_density_hpx4_glt20p5.csv",
+  "gaia_density_present": true,
+  "gaia_density_source": "CDS Gaia EDR3 density HiPS Norder2",
+  "gaia_density_hips_base_url": "https://alasky.cds.unistra.fr/ancillary/GaiaEDR3/density-map",
+  "gaia_density_hips_order": 2,
+  "method": "AllWISE Atlas W1/W2 tile coverage matched by nearest tile center; Gaia DR3 density sampled from TAP HEALPix level 4 when available, otherwise from CDS Gaia EDR3 density HiPS tiles."
+}

@@ -1,0 +1,25 @@
+﻿{
+    "date":  "2026-07-15",
+    "allwise_inventory":  {
+                              "source":  "IRSA IBE AllWISE Atlas Image Inventory Table",
+                              "url":  "https://irsa.ipac.caltech.edu/ibe/search/wise/allwise/p3am_cdd",
+                              "local_csv":  "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\allwise_atlas_inventory\\allwise_p3am_cdd_w1w2_coverage.csv",
+                              "bytes":  8290910,
+                              "columns":  "coadd_id,band,crval1,crval2,elon,elat,glon,glat,medcov,mincov,maxcov,lowcovpc1,lowcovpc2,nomcovpc,mincovpc",
+                              "where":  "band in (1,2)"
+                          },
+    "gaia_edr3_density_hips":  {
+                                   "source":  "CDS Gaia EDR3 density map HiPS",
+                                   "base_url":  "https://alasky.cds.unistra.fr/ancillary/GaiaEDR3/density-map",
+                                   "properties_url":  "https://alasky.cds.unistra.fr/ancillary/GaiaEDR3/density-map/properties",
+                                   "sampled_order":  2,
+                                   "cached_fits_tiles":  194,
+                                   "cache_dir":  "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\gaia_edr3_density_hips",
+                                   "units":  "sr^-1"
+                               },
+    "tap_attempts":  {
+                         "esa_tap":  "https://gea.esac.esa.int/tap-server/tap",
+                         "ari_tap":  "https://gaia.ari.uni-heidelberg.de/tap",
+                         "note":  "TAP aggregate query was valid but long-running/unstable in this session; CDS HiPS density was used for the completed gate."
+                     }
+}
