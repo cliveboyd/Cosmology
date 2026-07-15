@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-15",
+  "target": "broad_primary_0p95_1p45",
+  "z_min": 0.95,
+  "z_max": 1.45,
+  "bcuts": [
+    10.0,
+    15.0,
+    20.0,
+    25.0,
+    30.0,
+    35.0
+  ],
+  "quality_groups": [
+    {
+      "group": "zerr_only",
+      "variables": [
+        "zerr"
+      ]
+    },
+    {
+      "group": "gaia_g_only",
+      "variables": [
+        "g"
+      ]
+    },
+    {
+      "group": "gaia_bp_rp_only",
+      "variables": [
+        "bp_rp"
+      ]
+    },
+    {
+      "group": "gaia_g_plus_bp_rp",
+      "variables": [
+        "g",
+        "bp_rp"
+      ]
+    },
+    {
+      "group": "wise_w1_only",
+      "variables": [
+        "w1"
+      ]
+    },
+    {
+      "group": "wise_w2_only",
+      "variables": [
+        "w2"
+      ]
+    },
+    {
+      "group": "wise_w1_w2_only",
+      "variables": [
+        "w1_w2"
+      ]
+    },
+    {
+      "group": "wise_w1_plus_w2",
+      "variables": [
+        "w1",
+        "w2"
+      ]
+    },
+    {
+      "group": "wise_w1_w2_plus_mags",
+      "variables": [
+        "w1",
+        "w2",
+        "w1_w2"
+      ]
+    },
+    {
+      "group": "gaia_wise_colour_cross",
+      "variables": [
+        "bp_rp",
+        "w1_w2"
+      ]
+    },
+    {
+      "group": "zerr_x_gaia_colour",
+      "variables": [
+        "zerr",
+        "bp_rp"
+      ]
+    },
+    {
+      "group": "zerr_x_wise_colour",
+      "variables": [
+        "zerr",
+        "w1_w2"
+      ]
+    },
+    {
+      "group": "zerr_x_gaia_wise_colour",
+      "variables": [
+        "zerr",
+        "bp_rp",
+        "w1_w2"
+      ]
+    },
+    {
+      "group": "colour_redshift_estimator_compact",
+      "variables": [
+        "zerr",
+        "g",
+        "bp_rp",
+        "w1",
+        "w2",
+        "w1_w2"
+      ]
+    },
+    {
+      "group": "pm_error_quality",
+      "variables": [
+        "pmra_error",
+        "pmdec_error"
+      ]
+    },
+    {
+      "group": "all_catalogue_quality",
+      "variables": [
+        "zerr",
+        "g",
+        "bp_rp",
+        "w1",
+        "w2",
+        "w1_w2",
+        "pmra_error",
+        "pmdec_error"
+      ]
+    }
+  ],
+  "method": "propensity-overlap weights balancing quality variables between hemispheres defined by each bcut baseline dipole axis",
+  "equation_style": [
+    "z_i      = c0 + d . n_i + epsilon_i",
+    "A_dipole = ||d||",
+    "SNR_d    = sqrt(d^T Cov(d)^(-1) d)"
+  ],
+  "n_mocks": 300,
+  "n_strata": 10,
+  "seed": 170716,
+  "pass_amp_ratio": 0.8,
+  "pass_direction_deg": 30.0,
+  "pass_smd": 0.1,
+  "pass_ks": 0.1,
+  "analysis": "su2_quaia_colour_decomposition_gate",
+  "purpose": "Decompose the matched catalogue-quality suppression into Gaia colour, WISE colour, redshift-uncertainty, and interaction blocks.",
+  "group_notes": {
+    "zerr_only": "Quaia redshift-uncertainty control.",
+    "gaia_g_only": "Gaia optical magnitude only.",
+    "gaia_bp_rp_only": "Gaia optical colour only.",
+    "gaia_g_plus_bp_rp": "Gaia optical magnitude plus colour.",
+    "wise_w1_only": "WISE W1 infrared magnitude only.",
+    "wise_w2_only": "WISE W2 infrared magnitude only.",
+    "wise_w1_w2_only": "WISE infrared colour only.",
+    "wise_w1_plus_w2": "WISE infrared magnitudes without explicit colour column.",
+    "wise_w1_w2_plus_mags": "WISE infrared magnitude-colour block.",
+    "gaia_wise_colour_cross": "Gaia and WISE colour cross-block; polynomial features include their interaction.",
+    "zerr_x_gaia_colour": "Redshift-uncertainty by Gaia-colour interaction block.",
+    "zerr_x_wise_colour": "Redshift-uncertainty by WISE-colour interaction block.",
+    "zerr_x_gaia_wise_colour": "Compact redshift-estimator plus optical/infrared colour interaction block.",
+    "colour_redshift_estimator_compact": "All optical/infrared colour-magnitude variables plus redshift uncertainty, excluding proper-motion errors.",
+    "pm_error_quality": "Proper-motion error control.",
+    "all_catalogue_quality": "Full catalogue-quality block used as the current promotion gate."
+  }
+}
