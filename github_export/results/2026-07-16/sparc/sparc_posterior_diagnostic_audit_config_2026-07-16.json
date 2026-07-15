@@ -1,0 +1,9 @@
+{
+  "date": "2026-07-16",
+  "run_dir": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\sparc_hierarchical_posterior\\posterior_minus_persistent_negative_rar_rescue_with_existing_plamb_20260714",
+  "map_dir": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\sparc_hierarchical_map\\optical_depth_hierarchical_20260714",
+  "max_paired_draws": 4500,
+  "seed": 270716,
+  "convergence": "rank-normalised split Rhat plus approximate rank-normalised bulk ESS",
+  "fit_score": "log mean likelihood over paired stored global/nuisance posterior draws; in-sample diagnostic only"
+}

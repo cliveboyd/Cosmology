@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-16",
+  "analysis": "su2_quaia_spatial_block_collinearity",
+  "z_min": 1.0,
+  "z_max": 1.5,
+  "b_cuts": [
+    10.0,
+    15.0,
+    20.0,
+    25.0,
+    30.0,
+    35.0
+  ],
+  "cell_degrees": [
+    8.0,
+    12.0,
+    16.0
+  ],
+  "n_mocks_per_cell_scale": 50000,
+  "batch_size": 1000,
+  "seed": 200716,
+  "controls": [
+    "gaia_scan_count_log1p_dr3",
+    "gaia_scan_angle_cos2_mean_dr3",
+    "gaia_scan_angle_sin2_mean_dr3",
+    "gaia_scan_angle_resultant_dr3",
+    "bp_rp_z",
+    "w1_w2_z",
+    "bp_rp_x_w1_w2_z"
+  ],
+  "null": "Shared Rademacher wild bootstrap on equal-area Galactic longitude x sin(latitude) cells; common signs across nested latitude cuts.",
+  "load_meta": {
+    "gaiascanlaw_data_dir": "C:\\Users\\clive\\anaconda3x\\Lib\\site-packages\\gaiascanlaw\\data",
+    "scanlaw_templates_present": true
+  }
+}

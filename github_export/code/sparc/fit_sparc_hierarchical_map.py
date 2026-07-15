@@ -58,7 +58,7 @@ from diagnose_plamb_sparc_h0_nuisance import acceleration_cH0_over_2pi
 from diagnose_plamb_sparc_rotation import DEFAULT_POINTS, DEFAULT_SAMPLE, KPC_M, Dataset, load_dataset
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[3]
 OUTDIR = ROOT / "plamb_runs" / "diagnostics" / "sparc_hierarchical_map"
 SPARC_H0_REF = 73.0
 

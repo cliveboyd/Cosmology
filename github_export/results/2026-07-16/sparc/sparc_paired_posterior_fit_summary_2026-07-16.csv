@@ -1,0 +1,13 @@
+score_case,model,N_galaxies,N_points,posterior_fit_log_density,delta_vs_RAR,median_galaxy_delta_vs_RAR,galaxies_better_than_RAR,galaxies_worse_than_RAR
+paired_posterior_fit_baseline_all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,157,3001,-11170.889398753547,13.601791486042202,-0.002025025993745544,78,79
+paired_posterior_fit_baseline_all_Q2,RAR,157,3001,-11184.491190239589,0.0,0.0,0,0
+paired_posterior_fit_bulge_removed_all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,138,2279,-7928.271366177331,25.081765634879048,0.00018984752387929404,69,69
+paired_posterior_fit_bulge_removed_all_Q2,RAR,138,2279,-7953.35313181221,0.0,0.0,0,0
+paired_posterior_fit_gas_dominated_all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,31,449,-1317.558024840057,4.82808918031742,0.011485547072989988,20,11
+paired_posterior_fit_gas_dominated_all_Q2,RAR,31,449,-1322.3861140203744,0.0,0.0,0,0
+paired_posterior_fit_high_inclination_all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,83,1739,-6638.091560458684,11.927184467091138,0.013620555476137497,43,40
+paired_posterior_fit_high_inclination_all_Q2,RAR,83,1739,-6650.0187449257755,0.0,0.0,0,0
+paired_posterior_fit_low_accel_outer_points_all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,155,1401,-4518.983833520968,0.8899802814048599,0.0034860149785487238,79,76
+paired_posterior_fit_low_accel_outer_points_all_Q2,RAR,155,1401,-4519.873813802373,0.0,0.0,0,0
+paired_posterior_fit_low_inclination_all_Q2,PLAMB_OPTICAL_DEPTH_KAPPA_P,74,1262,-4532.797838294861,1.643592811605231,-0.006926403216384713,36,38
+paired_posterior_fit_low_inclination_all_Q2,RAR,74,1262,-4534.441431106467,0.0,0.0,0,0

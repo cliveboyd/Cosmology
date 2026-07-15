@@ -68,7 +68,7 @@ def parse_line_table_style(line: str):
 
 
 _log_pattern = re.compile(
-                          "\[mc\]\s+\|b\|>(?P<bcut>[\d.]+),"
+                          r"\[mc\]\s+\|b\|>(?P<bcut>[\d.]+),"
                           r"\s*(?P<z_lo>[\d.]+).*?z\s*<\s*(?P<z_hi>[\d.]+),"
                           r".*?A_obs=(?P<A_obs>[-+eE\d.]+),"
                           r"\s*A_par_obs=(?P<A_par_obs>[-+eE\d.]+),"

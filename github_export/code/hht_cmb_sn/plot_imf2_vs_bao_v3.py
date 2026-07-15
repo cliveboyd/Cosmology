@@ -188,7 +188,7 @@ def main():
                 plt.figure(figsize=(7.5, 4.5), dpi=300)
                 plt.plot(x, y1, label="IMF2 instantaneous frequency (normalized)")
                 plt.plot(x, y2, label="BAO 1/k_eff proxy (normalized)")
-                plt.xlabel("log(1 + z)\"); plt.ylabel("Normalized units")
+                plt.xlabel("log(1 + z)"); plt.ylabel("Normalized units")
                 plt.title("IMF2 Instantaneous Frequency vs BAO 1/k_eff (proxy)")
                 plt.legend(); plt.tight_layout()
                 f2_png = os.path.join(OUTDIR, "imf2_freq_vs_bao.png")
@@ -226,7 +226,7 @@ def main():
                 plt.axvline(x=xv, linestyle="--", linewidth=0.8)
             plt.text(0.01, 0.95, "BAO z positions shown as dashed lines", transform=plt.gca().transAxes)
 
-        plt.xlabel("log(1 + z)\"); plt.ylabel("Normalized energy")
+        plt.xlabel("log(1 + z)"); plt.ylabel("Normalized energy")
         plt.title("IMF2 Energy vs log(1+z)")
         plt.legend(); plt.tight_layout()
         f3_png = os.path.join(OUTDIR, "imf2_energy_vs_log1pz.png")

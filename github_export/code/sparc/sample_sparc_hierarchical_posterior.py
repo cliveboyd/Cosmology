@@ -51,7 +51,7 @@ from fit_sparc_hierarchical_map import OUTDIR as MAP_BASE_OUTDIR
 from fit_sparc_hierarchical_map import prepare, split_configs
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[3]
 OUTDIR = ROOT / "plamb_runs" / "diagnostics" / "sparc_hierarchical_posterior"
 DEFAULT_MAP_DIR = MAP_BASE_OUTDIR / "optical_depth_hierarchical_20260714"
 
