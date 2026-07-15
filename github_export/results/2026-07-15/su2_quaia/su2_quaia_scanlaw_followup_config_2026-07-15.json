@@ -1,0 +1,16 @@
+{
+  "date": "2026-07-15",
+  "z_min": 0.95,
+  "z_max": 1.45,
+  "b_cuts": [
+    15.0,
+    20.0,
+    25.0,
+    30.0,
+    35.0
+  ],
+  "n_mocks": 2000,
+  "seed": 150715,
+  "scanlaw_data_dir": "C:\\Users\\clive\\anaconda3x\\Lib\\site-packages\\gaiascanlaw\\data",
+  "scan_bins": "quartiles of Gaia scan count log1p, quartiles of scan-angle resultant, and four scan-angle phase quadrants"
+}
