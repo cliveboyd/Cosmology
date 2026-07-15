@@ -1,0 +1,23 @@
+{
+  "quaia": "C:\\Users\\clive\\Documents\\Cosmology\\.spyder-py3\\quaia_G20.0.fits",
+  "randoms": "C:\\Users\\clive\\Documents\\Cosmology\\.spyder-py3\\random_G20.0_10x.fits",
+  "selection": "C:\\Users\\clive\\Documents\\Cosmology\\.spyder-py3\\selection_function_NSIDE64_G20.0.fits",
+  "sfd_dir": "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\sfd",
+  "gaiascanlaw_data_dir": "C:\\Users\\clive\\anaconda3x\\Lib\\site-packages\\gaiascanlaw\\data",
+  "out_dir": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\su2_quaia_external_dust_gate_20260715",
+  "z_min": 0.95,
+  "z_max": 1.45,
+  "b_cuts": [
+    15.0,
+    20.0,
+    25.0,
+    30.0,
+    35.0
+  ],
+  "source_notes": {
+    "sfd": "Schlegel, Finkbeiner & Davis 1998 full-sky E(B-V), Harvard Dataverse DOI 10.7910/DVN/EWCNL5.",
+    "selection": "Local Quaia G<20.0 selection_function_NSIDE64 map.",
+    "random_density": "Local Quaia G<20.0 10x random catalog binned to the selection HEALPix grid.",
+    "gaia_scanlaw": "Nominal Gaia scanning-law FITS bundle from the gaiascanlaw package, counted to the DR3 end date."
+  }
+}

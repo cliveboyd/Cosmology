@@ -1,0 +1,20 @@
+{
+  "doi": "10.7910/DVN/EWCNL5",
+  "dataverse_dataset": "https://doi.org/10.7910/DVN/EWCNL5",
+  "files": [
+    {
+      "filename": "SFD_dust_4096_ngp.fits",
+      "dataverse_file_id": 2902687,
+      "md5": "6f3a89528bba7d1b7bd55838da86b639",
+      "local_path": "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\sfd\\SFD_dust_4096_ngp.fits",
+      "bytes": 67115520
+    },
+    {
+      "filename": "SFD_dust_4096_sgp.fits",
+      "dataverse_file_id": 2902695,
+      "md5": "60f7c43d51bccaff82961de3e9f9e789",
+      "local_path": "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\sfd\\SFD_dust_4096_sgp.fits",
+      "bytes": 67115520
+    }
+  ]
+}
