@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-15",
+  "analysis": "scanlaw_forward_template_likelihood",
+  "z_min": 0.95,
+  "z_max": 1.45,
+  "b_cuts": [
+    15.0,
+    20.0,
+    25.0,
+    30.0,
+    35.0
+  ],
+  "external_inputs": {
+    "gaiascanlaw_data_dir": "C:\\Users\\clive\\anaconda3x\\Lib\\site-packages\\gaiascanlaw\\data",
+    "scanlaw_templates_present": true
+  },
+  "models": {
+    "dipole_only": "z = alpha + d.n + epsilon",
+    "scanlaw_colour": "z = alpha + Gaia_scanlaw beta_s + colour beta_c + epsilon",
+    "scanlaw_colour_plus_dipole": "z = alpha + d.n + Gaia_scanlaw beta_s + colour beta_c + epsilon"
+  },
+  "gate": "The dipole term should add material BIC-supported explanatory power after scan-law and colour controls before the angular mode can be promoted."
+}

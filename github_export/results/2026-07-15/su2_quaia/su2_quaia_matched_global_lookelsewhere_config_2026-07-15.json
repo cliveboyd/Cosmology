@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-15",
+  "analysis": "matched_quality_global_lookelsewhere",
+  "quaia_fits": "C:\\Users\\clive\\Documents\\Cosmology\\quaia_G20.0.fits",
+  "scan_csv": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\su2_quaia_scan\\su2_quaia_scan.csv",
+  "n_mocks": 200,
+  "n_strata": 10,
+  "min_count": 50,
+  "seed": 180715,
+  "quality_variables": [
+    "zerr",
+    "g",
+    "bp_rp",
+    "w1",
+    "w2",
+    "w1_w2",
+    "pmra_error",
+    "pmdec_error"
+  ],
+  "method": "For each scanned redshift-window/latitude-cut row, fit the baseline dipole, construct all-catalogue-quality overlap weights across the baseline hemispheres, refit the weighted dipole, and compare scan maxima to propensity-stratified redshift shuffles."
+}
