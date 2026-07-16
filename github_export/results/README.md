@@ -17,4 +17,5 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
 - `2026-07-16/su2_quaia/` contains the spatial-block null, template-collinearity, and over-absorption/injection-calibration readouts.
 - `2026-07-16/sparc/` contains robust split convergence, paired-posterior nuisance diagnostics, the preregistered 24-galaxy non-centred NUTS pilot under `nuts_pilot/`, and the separately preregistered 157-galaxy run under `nuts_full/`.
 - `2026-07-16/rawmu/` contains the FR `c(z)=c0(1+z)` no-loss dimming sequence for raw supernova MU, the alpha=0 calibration-budget ladder and direct LCDM comparison, and the follow-up catalogue-combination, redshift-band, and calibration-pull gates under the July 14 calibration/redshift-frame controls.
+- `2026-07-16/bbn_lithium/` contains the first BBN Lithium anomaly scoping gate for FR/no-expansion ideas, including eta, early-clock, Li-production, and stellar-depletion stress tests.
 - `2026-07-16/audit/` contains the cross-stream model-upgrade reproducibility audit and research-standing priorities.

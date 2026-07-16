@@ -5,6 +5,7 @@ Curated analysis scripts copied from the local working tree.
 Subfolders:
 
 - `rawmu/` - hierarchical raw-MU and redshift-frame diagnostics.
+- `bbn_lithium/` - Big Bang nucleosynthesis/Lithium anomaly scoping gates.
 - `sparc/` - SPARC hierarchical MAP/posterior and stress-control diagnostics.
 - `quaia_su2/` - SU2/Quaia angular scans, mocks, template controls, and look-elsewhere audits.
 - `skymap/` - legacy SkyMap, R_BAO anisotropy, Quaia redshift-dipole maps, and related HHT bridge scripts.

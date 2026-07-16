@@ -1,0 +1,37 @@
+{
+  "argv": [
+    "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\bbn_lithium\\analyze_bbn_lithium_fr_scoping_2026-07-16.py",
+    "--force",
+    "--outdir",
+    "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\bbn_lithium_fr_scoping_20260716"
+  ],
+  "generated": "2026-07-16T21:00:27",
+  "observed_abundances": {
+    "Yp": 0.245,
+    "Yp_sigma_obs": 0.003,
+    "eta10_cmb": 6.12,
+    "eta10_cmb_sigma": 0.04,
+    "omega_b_h2_cmb": 0.02237,
+    "omega_b_h2_cmb_sigma": 0.00015,
+    "yD": 2.508,
+    "yD_sigma_obs": 0.029,
+    "yLi": 1.45,
+    "yLi_sigma_obs": 0.25
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "repo_root": "C:\\Users\\clive\\Documents\\Cosmology",
+  "script": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\bbn_lithium\\analyze_bbn_lithium_fr_scoping_2026-07-16.py",
+  "smoke": false,
+  "sources": {
+    "arxiv_recent_lithium_review": "https://arxiv.org/abs/2304.08032",
+    "fields_lithium_review": "https://ned.ipac.caltech.edu/level5/Sept15/Fields/Fields2.html",
+    "pdg_2025_bbn": "https://ccwww.kek.jp/pdg/2025/reviews/rpp2025-rev-bbang-nucleosynthesis.pdf",
+    "steigman_fit_context": "https://ned.ipac.caltech.edu/level5/Sept07/Steigman/Steigman2.html"
+  },
+  "theory_floors": {
+    "Yp_abs": 0.0005,
+    "yD_frac": 0.03,
+    "yLi_frac": 0.15
+  }
+}

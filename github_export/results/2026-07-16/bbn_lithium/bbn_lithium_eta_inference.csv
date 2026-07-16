@@ -1,0 +1,4 @@
+probe,eta10_inferred,eta10_sigma_obs_only,note
+D/H,6.04,0.04365031897926635,D/H baryometer; matches PDG BBN concordance eta by construction.
+Li/H,3.392067016447022,0.29241957038336397,Lithium as direct measurement; lower-bound interpretation weakens this tension.
+CMB,6.12,0.04,"Planck TT,TE,EE+lowE+lensing PDG value."
