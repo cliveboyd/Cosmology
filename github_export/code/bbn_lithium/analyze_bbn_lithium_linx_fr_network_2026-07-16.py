@@ -1,4 +1,4 @@
-r"""Full-network LINX BBN scan for FR/no-expansion Lithium gates.
+r"""Selected-network LINX BBN scan for FR/no-expansion Lithium gates.
 
 This script wraps the upstream LINX BBN code cloned under
 ``plamb_runs/deps/LINX``.  It is intended as the full-network successor to the
@@ -564,7 +564,7 @@ def write_config(outdir: Path, cli: argparse.Namespace, points: list[ScanPoint],
         "reaction_names_available": runner.reaction_names,
         "sources": SOURCE_NOTES,
         "claim_boundary": (
-            "Full-network LINX rate/clock/tau proxy scan; not a complete "
+            "Selected-network LINX rate/clock/tau proxy scan; not a complete "
             "fundamental-constant variation scan for np mass difference or deuteron binding energy."
         ),
     }
