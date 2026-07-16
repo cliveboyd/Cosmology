@@ -1,0 +1,19 @@
+{
+  "allow_precision_submatrix": false,
+  "alphas": "0,0.5,1",
+  "claim_boundary": "diagnostic only; not a FR/PLAMB promotion by itself",
+  "datasets": "pantheon,des_raw,union31",
+  "frames": "HD,HEL,CMB_PANTHEON_ONLY",
+  "h0": 67.5,
+  "keep_calibrators": false,
+  "max_z": null,
+  "min_n": 10,
+  "min_survey_n": 20,
+  "model": "DL=(c/H0)*z*(1+z/2)*(1+z)^alpha",
+  "offset_modes": "none,dataset+idsurvey",
+  "outdir": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\fr_c1pz_noloss_dimming_sequence_20260716",
+  "prior_configs": "budget_025mmag_ds050:0.05:0.025",
+  "repo_root": "C:\\Users\\clive\\Documents\\Cosmology",
+  "script": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\rawmu\\analyze_fr_c1pz_noloss_dimming_sequence_2026-07-16.py",
+  "z_min": 0.01
+}
