@@ -1,0 +1,12 @@
+gate,case_label,datasets,frames,z_min,max_z,min_n,run_dir,status
+dataset_combo,pantheon_only,pantheon,"HD,HEL,CMB_PANTHEON_ONLY",0.01,,10,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\fr_c1pz_noloss_followup_gates_20260716\runs\dataset_combo_pantheon_only,ran
+dataset_combo,des_only,des_raw,"HD,HEL",0.01,,10,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\fr_c1pz_noloss_followup_gates_20260716\runs\dataset_combo_des_only,ran
+dataset_combo,union31_only,union31,HD,0.01,,10,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\fr_c1pz_noloss_followup_gates_20260716\runs\dataset_combo_union31_only,ran
+dataset_combo,pantheon_des,"pantheon,des_raw","HD,HEL,CMB_PANTHEON_ONLY",0.01,,10,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\fr_c1pz_noloss_followup_gates_20260716\runs\dataset_combo_pantheon_des,ran
+dataset_combo,pantheon_union31,"pantheon,union31","HD,HEL,CMB_PANTHEON_ONLY",0.01,,10,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\fr_c1pz_noloss_followup_gates_20260716\runs\dataset_combo_pantheon_union31,ran
+dataset_combo,des_union31,"des_raw,union31","HD,HEL",0.01,,10,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\fr_c1pz_noloss_followup_gates_20260716\runs\dataset_combo_des_union31,ran
+dataset_combo,all_three,"pantheon,des_raw,union31","HD,HEL,CMB_PANTHEON_ONLY",0.01,,10,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\fr_c1pz_noloss_followup_gates_20260716\runs\dataset_combo_all_three,ran
+redshift_band,all_z,"pantheon,des_raw,union31","HD,HEL,CMB_PANTHEON_ONLY",0.01,,10,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\fr_c1pz_noloss_followup_gates_20260716\runs\redshift_band_all_z,ran
+redshift_band,low_z_0p01_0p10,"pantheon,des_raw,union31","HD,HEL,CMB_PANTHEON_ONLY",0.01,0.1,1,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\fr_c1pz_noloss_followup_gates_20260716\runs\redshift_band_low_z_0p01_0p10,ran
+redshift_band,mid_z_0p10_0p50,"pantheon,des_raw,union31","HD,HEL,CMB_PANTHEON_ONLY",0.1,0.5,1,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\fr_c1pz_noloss_followup_gates_20260716\runs\redshift_band_mid_z_0p10_0p50,ran
+redshift_band,high_z_0p50_plus,"pantheon,des_raw,union31","HD,HEL,CMB_PANTHEON_ONLY",0.5,,1,C:\Users\clive\Documents\Cosmology\plamb_runs\diagnostics\fr_c1pz_noloss_followup_gates_20260716\runs\redshift_band_high_z_0p50_plus,ran

@@ -1,0 +1,8 @@
+{
+  "claim_boundary": "promotion-gate diagnostic only",
+  "ladder_script": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\rawmu\\analyze_fr_c1pz_noloss_lcdm_calibration_ladder_2026-07-16.py",
+  "n_cases": 11,
+  "outdir": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\fr_c1pz_noloss_followup_gates_20260716",
+  "prior_configs": "budget_010mmag_ds020:0.020:0.010,budget_016mmag_ds032:0.032:0.016,budget_025mmag_ds050:0.050:0.025,budget_050mmag_ds100_stress:0.100:0.050",
+  "script": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\rawmu\\analyze_fr_c1pz_noloss_followup_gates_2026-07-16.py"
+}
