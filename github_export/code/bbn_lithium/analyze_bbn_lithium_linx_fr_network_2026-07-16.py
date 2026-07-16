@@ -352,7 +352,7 @@ def write_interim_summary(outdir: Path, rows: list[dict[str, str]], observed: Ob
         )
 
     lines = [
-        "# LINX Full-Network BBN Lithium FR Scan",
+        "# LINX BBN Lithium FR Scan",
         "",
         f"Generated: {datetime.now().isoformat(timespec='seconds')}",
         f"Progress: {completed} / {total} requested points completed.",
@@ -378,7 +378,7 @@ def write_interim_summary(outdir: Path, rows: list[dict[str, str]], observed: Ob
             "",
             "## Claim Boundary",
             "",
-            "This is a full-network LINX scan of eta, early-clock/Delta-Neff, neutron-lifetime, and selected Li/Be rate-pull proxies. It is not a self-consistent fundamental-constant variation scan.",
+            "This is a selected-network LINX scan of eta, early-clock/Delta-Neff, neutron-lifetime, and selected Li/Be rate-pull proxies. It is not a self-consistent fundamental-constant variation scan.",
             "",
             f"Observed anchors: D/H x1e5={observed.yD}, Yp={observed.Yp}, Li/H x1e10={observed.yLi}.",
         ]
