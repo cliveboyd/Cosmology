@@ -1,0 +1,20 @@
+{
+  "claim_boundary": "promotion-gate diagnostic only",
+  "datasets": "pantheon,des_raw,union31",
+  "frames": "HD,HEL,CMB_PANTHEON_ONLY",
+  "h0": 67.5,
+  "max_z": null,
+  "min_n": 10,
+  "min_survey_n": 20,
+  "models": [
+    "FR_C1PZ_ALPHA0_H0fixed675",
+    "LCDM_Om03_H0fixed675",
+    "LCDM_Omfree_H0fixed675"
+  ],
+  "offset_modes": "none,dataset+idsurvey",
+  "outdir": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\fr_c1pz_noloss_lcdm_calibration_ladder_20260716",
+  "prior_configs": "budget_010mmag_ds020:0.020:0.010,budget_016mmag_ds032:0.032:0.016,budget_025mmag_ds050:0.050:0.025,budget_050mmag_ds100_stress:0.100:0.050",
+  "repo_root": "C:\\Users\\clive\\Documents\\Cosmology",
+  "script": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\rawmu\\analyze_fr_c1pz_noloss_lcdm_calibration_ladder_2026-07-16.py",
+  "z_min": 0.01
+}
