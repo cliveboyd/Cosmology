@@ -1,0 +1,107 @@
+{
+  "catalogue": {
+    "family_counts_expected": {
+      "baseline": 1,
+      "eta_clock_tau_grid": 297,
+      "fr_li_joint_ladder": 135,
+      "individual_li_be_rate_pull": 25,
+      "li_be_combo_ladder": 45,
+      "random_targeted_li_be": 30000
+    },
+    "identical_rows_removed_by_network_normalisation": 39,
+    "n_expected": 30503,
+    "n_expected_missing": 0,
+    "n_raw_rows": 30700,
+    "n_unexpected_ok": 0,
+    "n_unique_ok": 30503,
+    "n_unresolved": 0,
+    "normalised_duplicate_id_groups": 1,
+    "points_after_initial_id_dedup": 30542,
+    "points_after_network_normalisation": 30503,
+    "random_rounding_collision_groups": 0,
+    "raw_points_before_id_dedup": 30542,
+    "semantic_point_id_collision_groups": 0
+  },
+  "family_counts_observed": {
+    "baseline": 1,
+    "eta_clock_tau_grid": 297,
+    "fr_li_joint_ladder": 135,
+    "individual_li_be_rate_pull": 25,
+    "li_be_combo_ladder": 45,
+    "random_targeted_li_be": 30000
+  },
+  "generated_utc": "2026-07-17T04:40:04Z",
+  "inputs": {
+    "atol": 1e-09,
+    "config_json": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\bbn_lithium_linx_key_fr_network_overnight_20260716\\bbn_lithium_linx_fr_network_config.json",
+    "config_json_sha256_at_audit": "321ca71ef1bb7253c996c78b669880bf4f2df69abaa9e58350e2bd12cfa506a1",
+    "linx_git_revision": "ec2e9d2ca455e8204137e884da29f5dd13a638fa",
+    "linx_path": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\deps\\LINX",
+    "linx_python_environment": {
+      "executable": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\envs\\linx_py311\\python.exe",
+      "packages": {
+        "diffrax": "0.6.0",
+        "equinox": "0.11.10",
+        "interpax": "0.3.1",
+        "jax": "0.4.28",
+        "jaxlib": "0.4.28",
+        "lineax": "0.0.7",
+        "numpy": "2.4.6",
+        "optimistix": "0.0.10"
+      },
+      "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:12:53) [MSC v.1942 64 bit (AMD64)]"
+    },
+    "network": "key",
+    "points_csv": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\bbn_lithium_linx_key_fr_network_overnight_20260716\\bbn_lithium_linx_fr_network_points.csv",
+    "points_csv_sha256_at_audit": "7a8d09d9f1c97f517e9a9bbbe8ceb5b61e014698c7a993b235e0b8f8df589ee7",
+    "rtol": 1e-05,
+    "sampling_key": 150,
+    "scan_program": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\bbn_lithium\\analyze_bbn_lithium_linx_fr_network_2026-07-16.py",
+    "scan_program_sha256": "d553fab1dd69c56ff17781cabf1a80b4a0719bc4098fef184ba1ae3f2dcde772"
+  },
+  "proposal": {
+    "clock_factor_max": 1.0699871468211617,
+    "clock_factor_min": 0.9300012922274992,
+    "eta_fac_max": 1.0799973209717098,
+    "eta_fac_min": 0.9000035812381624,
+    "fraction_random_all_available_q_exact_zero": 0.003033333333333333,
+    "n_random_all_available_q_exact_zero": 91,
+    "n_random_q0_inside_registered_su2_base": 5,
+    "n_random_rows": 30000,
+    "proposal_q_sigma_before_threshold": 1.35,
+    "q_zeroing_threshold_abs": 0.25,
+    "reaction_metrics": {
+      "Be7nLi7p": {
+        "fraction_exact_zero": 0.14033333333333334,
+        "n_at_clip_abs_4": 97,
+        "sample_sd_including_zero": 1.3449457986563043,
+        "sample_sd_nonzero": 1.4505750384608136
+      },
+      "He3aBe7g": {
+        "fraction_exact_zero": 0.14813333333333334,
+        "n_at_clip_abs_4": 110,
+        "sample_sd_including_zero": 1.346752001224474,
+        "sample_sd_nonzero": 1.4591603563999904
+      },
+      "Li7paa": {
+        "fraction_exact_zero": 0.1446,
+        "n_at_clip_abs_4": 95,
+        "sample_sd_including_zero": 1.3381798354211043,
+        "sample_sd_nonzero": 1.4468744564752432
+      }
+    },
+    "target_q_prior_sigma_used_in_score": 1.0,
+    "tau_n_fac_max": 1.0020468501250852,
+    "tau_n_fac_min": 0.9979531498749148
+  },
+  "score_integrity": {
+    "max_abs_chi2_D_error": 7.958078640513122e-13,
+    "max_abs_chi2_He4_error": 9.281464485866309e-14,
+    "max_abs_chi2_Li_measurement_error": 2.2737367544323206e-13,
+    "max_abs_chi2_eta_error": 8.810729923425242e-13,
+    "max_abs_chi2_tau_error": 1.9308998844280723e-12,
+    "max_abs_q_pull_chi2_error": 1.0658141036401503e-14,
+    "max_abs_total_lower_bound_error": 2.1600499167107046e-12,
+    "max_abs_total_measurement_error": 2.2168933355715126e-12
+  }
+}

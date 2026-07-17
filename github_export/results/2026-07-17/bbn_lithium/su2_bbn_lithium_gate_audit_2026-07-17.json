@@ -1,0 +1,14 @@
+{
+  "generated": "2026-07-17T14:28:55",
+  "status": "complete",
+  "successful_unique_points": 30503,
+  "unresolved_points": 0,
+  "attempted_unique_points": 30503,
+  "requested_points": 30503,
+  "input_points_file": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\bbn_lithium_linx_key_fr_network_overnight_20260716\\bbn_lithium_linx_fr_network_points.csv",
+  "input_points_sha256": "7a8d09d9f1c97f517e9a9bbbe8ceb5b61e014698c7a993b235e0b8f8df589ee7",
+  "source_config": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\bbn_lithium_linx_key_fr_network_overnight_20260716\\bbn_lithium_linx_fr_network_config.json",
+  "source_config_sha256": "321ca71ef1bb7253c996c78b669880bf4f2df69abaa9e58350e2bd12cfa506a1",
+  "programme": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\bbn_lithium\\analyze_su2_bbn_lithium_gate_2026-07-17.py",
+  "programme_sha256": "d82b38fac5c3da154f796e886e1bd54b32ce547ec4015dca9dca656338d88e8b"
+}

@@ -1,0 +1,13 @@
+{
+  "generated": "2026-07-17T14:29:03",
+  "status": "complete",
+  "successful_unique_points": 30503,
+  "unresolved_points": 0,
+  "attempted_unique_points": 30503,
+  "requested_points": 30503,
+  "input_points_file": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\bbn_lithium_linx_key_fr_network_overnight_20260716\\bbn_lithium_linx_fr_network_points.csv",
+  "input_points_sha256": "7a8d09d9f1c97f517e9a9bbbe8ceb5b61e014698c7a993b235e0b8f8df589ee7",
+  "programme": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\bbn_lithium\\analyze_su2_bbn_lithium_frontier_2026-07-17.py",
+  "programme_sha256": "e948071837195e7312c1910415bb2e15462e3d888bfb9cc6f26e627b838a468e",
+  "analysis_role": "exploratory downstream diagnostic; registered gate unchanged"
+}

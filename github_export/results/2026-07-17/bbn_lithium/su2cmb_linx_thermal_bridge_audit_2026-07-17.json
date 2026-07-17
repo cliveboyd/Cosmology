@@ -1,0 +1,33 @@
+{
+  "generated": "2026-07-17T14:35:19",
+  "programme": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\bbn_lithium\\run_su2cmb_linx_thermal_bridge_2026-07-17.py",
+  "programme_sha256": "2c0af9bf2adf750921bf594c64fd8b273088ee1ba04c6ec5674e6219cb1e1674",
+  "cosmology_repo_commit": "518debfcc2ba8af6451b3bfe6e18aa7cccc14dcb",
+  "linx_repo_commit": "ec2e9d2ca455e8204137e884da29f5dd13a638fa",
+  "files": {
+    "su2cmb_linx_background_trajectory.csv": {
+      "bytes": 64338,
+      "sha256": "b14370cc2647147feedd5a0387002bc1d209174319309e075e68d46de374352d"
+    },
+    "su2cmb_linx_eta_scan.csv": {
+      "bytes": 20779,
+      "sha256": "783694d5481d50fb6431f48e446ff426ad50ccf7ff014706911d826a2ef3ed98"
+    },
+    "su2cmb_linx_summary.csv": {
+      "bytes": 2339,
+      "sha256": "1478dd4b81867ea575b7bee07777f432a57f57f6eebb5fe54c709c8bf92cb647"
+    },
+    "su2cmb_linx_thermal_bridge.png": {
+      "bytes": 189068,
+      "sha256": "da41308145f636c1ae26737eb58f9b89b1ea84aecc3d5e80e44b2ecc4529d24d"
+    },
+    "su2cmb_linx_thermal_bridge_report.md": {
+      "bytes": 3834,
+      "sha256": "17a88bc94b9da4c0ba5f8a0e834b3f022d01b476f8127e497f8593e961dd78f7"
+    },
+    "su2cmb_linx_thermal_bridge_config.json": {
+      "bytes": 2678,
+      "sha256": "7fd52d4b1db1d10cf59cffabb557939d1273935b3501638d7c87a7a48e2b281e"
+    }
+  }
+}
