@@ -3,7 +3,9 @@ param(
     [string]$TaskOutputs = "C:\Users\clive\Documents\Codex\2026-07-14\ok-continu\outputs"
 )
 
-$ErrorActionPreference = "Stop"
+# XLA writes long-compilation notices to stderr with a zero process exit code.
+# Keep those notices in the stderr log and decide failure from LASTEXITCODE.
+$ErrorActionPreference = "Continue"
 $Python = Join-Path $RepoRoot "plamb_runs\envs\linx_py311\python.exe"
 $Program = Join-Path $RepoRoot "github_export\code\bbn_lithium\validate_bbn_lithium_linx_matrix_2026-07-17.py"
 $OutDir = Join-Path $RepoRoot "plamb_runs\diagnostics\bbn_lithium_linx_validation_matrix_20260717"
