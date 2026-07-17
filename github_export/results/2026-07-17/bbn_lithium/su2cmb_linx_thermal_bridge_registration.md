@@ -36,7 +36,7 @@ The cited SU(2)-CMB thermodynamic model does not supply predicted shifts to elec
 
 ## Baryon-Normalisation Scan
 
-The present baryon normalisation is scanned from `eta_fac=0.08` to `1.22` using 58 equally spaced values, supplemented by exact values at `0.25`, `1.0`, and the boundaries implied by the published SU(2)-CMB prior `0.014 <= omega_b h^2 <= 0.027` relative to the LINX reference `omega_b h^2=0.02242`.
+The present baryon normalisation is scanned from `eta_fac=0.08` to `1.22` using 58 equally spaced values, supplemented by exact values at `0.25`, `1.0`, and the boundaries implied by the published SU(2)-CMB prior `0.014 <= omega_b h^2 <= 0.027` relative to the LINX reference `omega_b h^2=0.02242`. The factor `eta_fac/nu_CMB^3 = 4 eta_fac` describes the post-electron-positron-annihilation baryon density at fixed photon temperature. During weak freeze-out, the programme integrates the electron entropy explicitly rather than imposing this simple factor.
 
 The primary physically anchored arm is the published `omega_b h^2` prior band. The unrestricted eta scan and the entropy-compensated `eta_fac=0.25` row are controls. They cannot establish support for SU(2)-CMB if the published-prior arm fails.
 
@@ -58,7 +58,7 @@ A candidate row must place D/H, He-4 and Li-7/H each within two observational st
 
 | File | SHA-256 |
 |---|---|
-| `run_su2cmb_linx_thermal_bridge_2026-07-17.py` | `c8be30a89b0b34b61830b2420a89e0c6c4a72135874424593ee3a1e65158a684` |
+| `run_su2cmb_linx_thermal_bridge_2026-07-17.py` | `2c0af9bf2adf750921bf594c64fd8b273088ee1ba04c6ec5674e6219cb1e1674` |
 | `queue_su2cmb_linx_bridge_after_fr_2026-07-17.ps1` | `75a342cd83c52d8056b08c6f8fa19d234a4b577aee2792a5619d9cca7b8b00b8` |
 
 ## Sources

@@ -569,7 +569,7 @@ def write_report(path: Path, trajectory: pd.DataFrame, summary: pd.DataFrame, sc
         "",
         "## Abundance Readout",
         "",
-        "| Case | eta_fac | effective baryon factor at fixed T | D/H x 1e5 | Yp | Li-7/H x 1e10 | chi2 D+He | chi2 all | depletion |",
+        "| Case | eta_fac | post-e-annihilation baryon factor | D/H x 1e5 | Yp | Li-7/H x 1e10 | chi2 D+He | chi2 all | depletion |",
         "|---|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
     labels = {
@@ -582,7 +582,7 @@ def write_report(path: Path, trajectory: pd.DataFrame, summary: pd.DataFrame, sc
     }
     for case, row in by_case.iterrows():
         lines.append(
-            f"| {labels[case]} | {fmt(row['eta_fac'])} | {fmt(row['baryon_density_factor_at_fixed_T'])} | "
+            f"| {labels[case]} | {fmt(row['eta_fac'])} | {fmt(row['post_eann_baryon_density_factor'])} | "
             f"{fmt(row['D_H_1e5'])} | {fmt(row['Yp_mass'])} | {fmt(row['Li7_H_1e10'])} | "
             f"{fmt(row['chi2_D_He'])} | {fmt(row['chi2_abundances_measurement'])} | "
             f"{fmt(row['stellar_depletion_to_plateau'])} |"
@@ -650,7 +650,7 @@ def main() -> int:
         "model": "SBBN",
         "eta_fac": 1.0,
         "omega_b_h2": LINX_OMEGAB_H2_REFERENCE,
-        "baryon_density_factor_at_fixed_T": 1.0,
+        "post_eann_baryon_density_factor": 1.0,
     }
     standard_row.update(
         run_abundance(
@@ -682,7 +682,7 @@ def main() -> int:
             "model": "SU2CMB_asymptotic",
             "eta_fac": float(eta_fac),
             "omega_b_h2": float(eta_fac * LINX_OMEGAB_H2_REFERENCE),
-            "baryon_density_factor_at_fixed_T": float(eta_fac / NU_CMB**3),
+            "post_eann_baryon_density_factor": float(eta_fac / NU_CMB**3),
         }
         row.update(
             run_abundance(
