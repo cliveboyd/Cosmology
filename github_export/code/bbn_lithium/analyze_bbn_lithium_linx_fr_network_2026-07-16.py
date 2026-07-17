@@ -311,8 +311,24 @@ def as_float(row: dict[str, str], key: str, default: float = math.nan) -> float:
         return default
 
 
+def unique_status_counts(rows: list[dict[str, str]]) -> tuple[int, int, int]:
+    ok_ids = {
+        row["point_id"]
+        for row in rows
+        if row.get("status") == "ok" and row.get("point_id")
+    }
+    attempted_ids = {row["point_id"] for row in rows if row.get("point_id")}
+    unresolved_ids = {
+        row["point_id"]
+        for row in rows
+        if row.get("status") == "failed" and row.get("point_id") not in ok_ids
+    }
+    return len(ok_ids), len(unresolved_ids), len(attempted_ids)
+
+
 def write_interim_summary(outdir: Path, rows: list[dict[str, str]], observed: ObservedAbundances, completed: int, total: int) -> None:
     ok = [row for row in rows if row.get("status") == "ok"]
+    n_ok, n_unresolved, n_attempted = unique_status_counts(rows)
     summary_path = outdir / "bbn_lithium_linx_fr_network_interim_summary.csv"
     report_path = outdir / "bbn_lithium_linx_fr_network_interim_report.md"
     if not ok:
@@ -355,7 +371,8 @@ def write_interim_summary(outdir: Path, rows: list[dict[str, str]], observed: Ob
         "# LINX BBN Lithium FR Scan",
         "",
         f"Generated: {datetime.now().isoformat(timespec='seconds')}",
-        f"Progress: {completed} / {total} requested points completed.",
+        f"Successful unique points: {n_ok} / {total} requested points.",
+        f"Attempted unique points: {n_attempted}; unresolved failed points: {n_unresolved}.",
         "",
         "## Current Best Rows, Li As Measurement",
         "",
@@ -677,9 +694,11 @@ def main() -> None:
     rows = read_rows(rows_path)
     write_interim_summary(cli.outdir, rows, observed, completed, len(points))
     write_manifest(cli.outdir)
+    n_ok, n_unresolved, n_attempted = unique_status_counts(rows)
     print(
-        f"[{datetime.now().isoformat(timespec='seconds')}] Complete: {completed}/{len(points)} "
-        f"points in {(time.time() - start_all) / 3600:.3f} h. Output: {cli.outdir}",
+        f"[{datetime.now().isoformat(timespec='seconds')}] Pass finished: "
+        f"ok={n_ok}/{len(points)}, attempted={n_attempted}, unresolved={n_unresolved} "
+        f"in {(time.time() - start_all) / 3600:.3f} h. Output: {cli.outdir}",
         flush=True,
     )
 
