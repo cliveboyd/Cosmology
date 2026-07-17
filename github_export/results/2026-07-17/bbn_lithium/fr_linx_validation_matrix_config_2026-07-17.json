@@ -1,0 +1,20 @@
+{
+  "generated_utc": "2026-07-17T05:54:10Z",
+  "status": "registered_before_validation_evaluation",
+  "programme": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\bbn_lithium\\validate_bbn_lithium_linx_matrix_2026-07-17.py",
+  "programme_sha256": "f3c7a678a5c5d480bf86246c57370fc1a185f0cb5fb0a9a38687f21688781ed8",
+  "source_catalogue": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\bbn_lithium_linx_key_fr_network_overnight_20260716\\bbn_lithium_linx_fr_network_points.csv",
+  "source_catalogue_sha256": "7a8d09d9f1c97f517e9a9bbbe8ceb5b61e014698c7a993b235e0b8f8df589ee7",
+  "matrix_sha256": "31c6a3bdeaac55c03bcff17eb1f0086af5ab50f36b9c3c2f6a33e5c62aa55885",
+  "linx_path": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\deps\\LINX",
+  "networks": [
+    "key",
+    "small",
+    "full"
+  ],
+  "strict_rtol": 1e-07,
+  "strict_atol": 1e-11,
+  "primary_sampling": 300,
+  "check_sampling": 600,
+  "n_evaluations": 92
+}
