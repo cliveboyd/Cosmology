@@ -18,9 +18,17 @@ function Write-RunLog([string]$Message) {
 }
 
 try {
-    Write-RunLog "Preparing preregistered validation matrix"
-    & $Python $Program --mode prepare --outdir $OutDir 2>> $Err | Tee-Object -FilePath $Log -Append
-    if ($LASTEXITCODE -ne 0) { throw "Preparation failed with exit code $LASTEXITCODE" }
+    $matrixPath = Join-Path $OutDir "validation_matrix.csv"
+    $configPath = Join-Path $OutDir "validation_matrix_config.json"
+    $registrationPath = Join-Path $OutDir "validation_matrix_registration.md"
+    if ((Test-Path -LiteralPath $matrixPath) -and (Test-Path -LiteralPath $configPath) -and (Test-Path -LiteralPath $registrationPath)) {
+        Write-RunLog "Using the existing frozen preregistered validation matrix"
+    }
+    else {
+        Write-RunLog "Preparing preregistered validation matrix"
+        & $Python $Program --mode prepare --outdir $OutDir 2>> $Err | Tee-Object -FilePath $Log -Append
+        if ($LASTEXITCODE -ne 0) { throw "Preparation failed with exit code $LASTEXITCODE" }
+    }
 
     foreach ($network in @("key", "small", "full")) {
         Write-RunLog "Starting $network network"
