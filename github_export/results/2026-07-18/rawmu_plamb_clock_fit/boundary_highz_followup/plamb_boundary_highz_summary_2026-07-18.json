@@ -1,0 +1,292 @@
+{
+  "analysis_date": "2026-07-18",
+  "claim_status": "post_hoc_diagnostic_cannot_promote",
+  "gamma_grid_points": 77,
+  "gates": {
+    "cap8_PATH_high_z_delta_chi2_not_positive": false,
+    "cap8_best_two_optimisers_agree_within_1e_4": true,
+    "cap8_full_optimum_at_least_5_percent_from_boundary": true,
+    "covariance_sensitivity_signs_match": true,
+    "no_release_redshift_bin_loss_above_10": false,
+    "no_single_innovation_above_25_percent_of_positive_excess": false,
+    "no_survey_above_50_percent_of_positive_excess": true,
+    "profile_rise_at_gamma8_at_least_3p84": true
+  },
+  "lcdm_full": {
+    "BIC": 3080.214439003744,
+    "N": 3422,
+    "N_parameters": 4,
+    "N_release_intercepts": 3,
+    "N_shape_parameters": 1,
+    "chi2": 3047.662517185935,
+    "label": "Flat Lambda-CDM",
+    "model": "LCDM",
+    "offsets": {
+      "DES_Dovekie_raw": -0.07022422495287793,
+      "PantheonPlusSH0ES": -0.17768386167100098,
+      "Union3p1_UNITY1p8": -0.055388787883083615
+    },
+    "optimisation_method": "bounded_scalar",
+    "optimisation_objectives": [
+      3047.662517185935
+    ],
+    "optimisation_success": true,
+    "parameters": {
+      "Omega_m": 0.33067962104536625
+    }
+  },
+  "lcdm_low_z": {
+    "BIC": 2137.3988719032236,
+    "N": 2337,
+    "N_parameters": 4,
+    "N_release_intercepts": 3,
+    "N_shape_parameters": 1,
+    "chi2": 2106.372378565068,
+    "label": "Flat Lambda-CDM",
+    "model": "LCDM",
+    "offsets": {
+      "DES_Dovekie_raw": -0.06861445543483075,
+      "PantheonPlusSH0ES": -0.1725408285042333,
+      "Union3p1_UNITY1p8": -0.052099272410944135
+    },
+    "optimisation_method": "bounded_scalar",
+    "optimisation_objectives": [
+      2106.372378565068
+    ],
+    "optimisation_success": true,
+    "parameters": {
+      "Omega_m": 0.34551389438231134
+    }
+  },
+  "metrics": {
+    "best_transfer_delta_chi2_vs_LCDM": -5.4905407539606585,
+    "best_transfer_gamma": 2.3,
+    "best_transfer_low_z_penalty": 4.597673426589608,
+    "cap8_best_two_chi2_disagreement_max": 3.092281986027956e-11,
+    "cap8_path_full_delta_BIC_vs_LCDM": 8.111201146973144,
+    "cap8_path_high_z_delta_chi2_vs_LCDM": 321.92823442263875,
+    "conditional_decomposition_relative_error": 1.7876770268521625e-16,
+    "maximum_release_redshift_bin_loss": 253.81624991138463,
+    "maximum_single_innovation_positive_excess_fraction": 0.7650167878708403,
+    "maximum_survey_positive_excess_fraction": 0.09626100445093394,
+    "profile_rise_at_gamma8": 2197.651774224302,
+    "transfer_win_gamma_max": 2.4,
+    "transfer_win_gamma_min": 2.3
+  },
+  "overall_diagnostic_pass": false,
+  "path_cap8_full": {
+    "BIC": 3088.325640150717,
+    "N": 3422,
+    "all_objectives": [
+      3047.6357378784564,
+      3047.6357378784637,
+      3047.635737878495,
+      3047.6357378785046,
+      3047.635737878532,
+      3047.6357378788225
+    ],
+    "best_two_chi2_disagreement": 7.275957614183426e-12,
+    "boundary_fraction_within_cap": 0.284564678981339,
+    "chi2": 3047.6357378784564,
+    "gamma_cap": 8.0,
+    "model": "PATH_FREE",
+    "offsets": {
+      "DES_Dovekie_raw": -0.06499430860699705,
+      "PantheonPlusSH0ES": -0.17430121783905791,
+      "Union3p1_UNITY1p8": -0.0592114364687639
+    },
+    "optimisation_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "optimisation_success": true,
+    "parameters": {
+      "alpha": 0.0,
+      "gamma_c": 2.276517431850712,
+      "p": 0.7846337626098775
+    },
+    "shape_k": 2
+  },
+  "path_cap8_low_z": {
+    "BIC": 2140.174995453202,
+    "N": 2337,
+    "all_objectives": [
+      2101.391878780508,
+      2101.3918787805387,
+      2101.3918787805424,
+      2101.391878780547,
+      2101.3918787805605,
+      2101.391878781089
+    ],
+    "best_two_chi2_disagreement": 3.092281986027956e-11,
+    "boundary_fraction_within_cap": 0.1906244338498111,
+    "chi2": 2101.391878780508,
+    "gamma_cap": 8.0,
+    "model": "PATH_FREE",
+    "offsets": {
+      "DES_Dovekie_raw": -0.055645187226587574,
+      "PantheonPlusSH0ES": -0.15933976513486764,
+      "Union3p1_UNITY1p8": -0.03632408914250584
+    },
+    "optimisation_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "optimisation_success": true,
+    "parameters": {
+      "alpha": 0.0,
+      "gamma_c": 1.5249954707984887,
+      "p": 0.24677545339512924
+    },
+    "shape_k": 2
+  },
+  "release_exclusion_sensitivities": [
+    {
+      "LCDM_Omega_m": 0.34551389438231134,
+      "LCDM_high_z_chi2": 949.9663641425384,
+      "N_test": 1085,
+      "N_train": 2337,
+      "PATH_gamma_c": 1.5249954708090496,
+      "PATH_high_z_chi2": 1271.8945987935153,
+      "PATH_p": 0.2467754533317634,
+      "delta_chi2_PATH_minus_LCDM": 321.92823465097695,
+      "excluded_release": "NONE",
+      "included_releases": "PantheonPlusSH0ES+DES_Dovekie_raw+Union3p1_UNITY1p8",
+      "status": "post_hoc_influence_sensitivity"
+    },
+    {
+      "LCDM_Omega_m": 0.35857006259954943,
+      "LCDM_high_z_chi2": 821.0118920729367,
+      "N_test": 875,
+      "N_train": 967,
+      "PATH_gamma_c": 0.8098599658897233,
+      "PATH_high_z_chi2": 1499.8806781785456,
+      "PATH_p": -0.32383201932735867,
+      "delta_chi2_PATH_minus_LCDM": 678.8687861056089,
+      "excluded_release": "PantheonPlusSH0ES",
+      "included_releases": "DES_Dovekie_raw+Union3p1_UNITY1p8",
+      "status": "post_hoc_influence_sensitivity"
+    },
+    {
+      "LCDM_Omega_m": 0.33884417360995206,
+      "LCDM_high_z_chi2": 152.07020305677125,
+      "N_test": 223,
+      "N_train": 1379,
+      "PATH_gamma_c": 1.6361723602766043,
+      "PATH_high_z_chi2": 403.0361034044438,
+      "PATH_p": 0.3208168399515188,
+      "delta_chi2_PATH_minus_LCDM": 250.96590034767254,
+      "excluded_release": "DES_Dovekie_raw",
+      "included_releases": "PantheonPlusSH0ES+Union3p1_UNITY1p8",
+      "status": "post_hoc_influence_sensitivity"
+    },
+    {
+      "LCDM_Omega_m": 0.3417759978369944,
+      "LCDM_high_z_chi2": 934.3400877685971,
+      "N_test": 1072,
+      "N_train": 2328,
+      "PATH_gamma_c": 1.7290554383273973,
+      "PATH_high_z_chi2": 972.9465198859888,
+      "PATH_p": 0.3926359450019856,
+      "delta_chi2_PATH_minus_LCDM": 38.606432117391705,
+      "excluded_release": "Union3p1_UNITY1p8",
+      "included_releases": "PantheonPlusSH0ES+DES_Dovekie_raw",
+      "status": "post_hoc_influence_sensitivity"
+    }
+  ],
+  "sample_metadata": {
+    "N": {
+      "DES_Dovekie_raw": 1820,
+      "PantheonPlusSH0ES": 1580,
+      "Union3p1_UNITY1p8": 22
+    },
+    "hierarchies": {
+      "des_allsys_statonly_grouped": {
+        "base": "STATONLY",
+        "component": "ALL_SYSTEMATICS",
+        "dataset": "DES_Dovekie_raw",
+        "metrics": {
+          "N_groups": 5,
+          "captured_frobenius_power_fraction": 0.001682395466355846,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "dataset_variance_mag2": 0.0,
+          "dataset_variance_raw_mag2": -1.6358679361255892e-05,
+          "diagonal_rmse_mag2": 0.012914567138476985,
+          "relative_frobenius_error": 0.9991584481620741,
+          "residual_frobenius_norm_mag2": 5.60370439056719,
+          "target_frobenius_norm_mag2": 5.608424170235519
+        },
+        "survey_priors_mag": {
+          "10": 0.011766741997148049,
+          "150": 0.019676396618983773,
+          "64": 0.012457391087084598,
+          "65": 0.023063874479079774,
+          "OTHER": 0.023172941964601863
+        }
+      },
+      "pantheon_calib_csp_recal_hstcalspec_statonly_grouped": {
+        "base": "STATONLY",
+        "component": "CALIB+CSP_RECAL+HSTCALSPEC",
+        "dataset": "PantheonPlusSH0ES",
+        "metrics": {
+          "N_groups": 14,
+          "captured_frobenius_power_fraction": 0.04212035572505601,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "dataset_variance_mag2": 0.0,
+          "dataset_variance_raw_mag2": -2.1775167495908403e-05,
+          "diagonal_rmse_mag2": 0.000805480276036463,
+          "relative_frobenius_error": 0.9787132594764127,
+          "residual_frobenius_norm_mag2": 0.6956629489184941,
+          "target_frobenius_norm_mag2": 0.7107934241032522
+        },
+        "survey_priors_mag": {
+          "1": 0.00819168417355587,
+          "10": 0.007856563639721847,
+          "15": 0.006900267193768169,
+          "150": 0.01506658119003963,
+          "4": 0.02573536062168403,
+          "5": 0.02360628293970409,
+          "50": 0.027120367272359242,
+          "51": 0.009624749520070627,
+          "56": 0.044623976714760705,
+          "57": 0.004082184265035377,
+          "63": 0.005753601356665979,
+          "64": 0.003584777554811392,
+          "65": 0.007727909662716178,
+          "OTHER": 0.01666817286093545
+        }
+      },
+      "pantheon_calib_statonly_grouped": {
+        "base": "STATONLY",
+        "component": "CALIB",
+        "dataset": "PantheonPlusSH0ES",
+        "metrics": {
+          "N_groups": 14,
+          "captured_frobenius_power_fraction": 0.11626723345317302,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "dataset_variance_mag2": 0.0,
+          "dataset_variance_raw_mag2": -1.5614935453861935e-05,
+          "diagonal_rmse_mag2": 0.0006179950937768223,
+          "relative_frobenius_error": 0.9400706178510352,
+          "residual_frobenius_norm_mag2": 0.30365307105882816,
+          "target_frobenius_norm_mag2": 0.32301091566181195
+        },
+        "survey_priors_mag": {
+          "1": 0.008075982502836906,
+          "10": 0.006936932607242753,
+          "15": 0.006371219705925663,
+          "150": 0.015025722885243507,
+          "4": 0.018936388261509243,
+          "5": 0.019312110579827364,
+          "50": 0.02708800827015334,
+          "51": 0.009605405550494663,
+          "56": 0.04456361497142021,
+          "57": 0.0038350553877342657,
+          "63": 0.005608021996594319,
+          "64": 0.0032152294240378886,
+          "65": 0.005972385432563947,
+          "OTHER": 0.015794418335565347
+        }
+      }
+    },
+    "primary_frame": {
+      "DES_Dovekie_raw": "zHD",
+      "PantheonPlusSH0ES": "zHD",
+      "Union3p1_UNITY1p8": "z"
+    }
+  }
+}

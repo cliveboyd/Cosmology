@@ -93,4 +93,16 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
   The fully general curve has an extreme `p-alpha` correlation of `0.997363` and
   is not a physical identification of clock-rate or flux evolution. Seven of the
   eight promotion gates fail; the result is explicitly **do not promote**.
+- The post hoc `boundary_highz_followup/` subfolder resolves the original
+  `gamma_c=2` numerical boundary: the full-sample PATH minimum is interior at
+  `gamma_c=2.276517`, `p=0.784634`. Its raw chi-squared is nearly identical to
+  Lambda-CDM, but it still loses by `Delta BIC=+8.111201`. Independently fitting
+  `z<0.5` selects `gamma_c=1.524995`, `p=0.246775` and then loses the exact
+  conditional `z>=0.5` prediction by `Delta chi-squared=+321.928234`.
+- Union3.1's final compressed node at `z=2.262260` contributes `+246.280504` of
+  that excess, but an explicitly post hoc exclusion/refit still leaves
+  Pantheon+ plus DES at `Delta chi-squared=+38.606432`. All covariance
+  sensitivities retain the negative transfer direction. The boundary checks
+  pass, while the primary transfer, redshift-band and concentrated-innovation
+  gates fail; the diagnostic remains **fail and cannot promote**.
 - `2026-07-18/priority_followup_outcomes_2026-07-18.md` is the integrated claim-boundary readout for these three branches.

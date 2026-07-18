@@ -1,0 +1,71 @@
+{
+  "protocol_date": "2026-07-18",
+  "status_at_registration": "no_gamma_c_above_2_outcome_run_or_inspected",
+  "claim_status": "post_hoc_diagnostic_cannot_promote",
+  "known_motivation": {
+    "PATH_FREE_delta_BIC_vs_LCDM": 13.345051866408,
+    "PATH_FREE_gamma_c_at_bound": 2.0,
+    "PATH_FREE_p": 0.628191776159,
+    "high_z_conditional_delta_chi2_vs_LCDM": 321.926336661779,
+    "GENERAL_FREE_p_alpha_correlation": 0.997362819276
+  },
+  "sample": {
+    "expected_N": 3422,
+    "training_rule": "z_below_0p5",
+    "test_rule": "z_at_least_0p5",
+    "covariance": "released_total",
+    "release_intercepts": "one_profiled_intercept_per_release",
+    "H0_km_s_Mpc": 67.5
+  },
+  "models": {
+    "primary": "PATH_FREE",
+    "controls": ["GENERAL_FREE", "LCDM"]
+  },
+  "bounds": {
+    "gamma_c_diagnostic": [0.0, 8.0],
+    "gamma_c_caps": [2.0, 4.0, 8.0],
+    "p": [-0.5, 2.5],
+    "alpha": [-0.5, 1.5],
+    "Omega_m": [0.05, 0.6]
+  },
+  "gamma_grid": {
+    "segments": [
+      {"start": 0.0, "stop": 2.0, "step": 0.05},
+      {"start": 2.1, "stop": 4.0, "step": 0.1},
+      {"start": 4.25, "stop": 8.0, "step": 0.25}
+    ],
+    "expected_points": 77
+  },
+  "redshift_bins": [
+    {"key": "z0p50_0p65", "lower": 0.5, "upper": 0.65},
+    {"key": "z0p65_0p80", "lower": 0.65, "upper": 0.8},
+    {"key": "z0p80_1p00", "lower": 0.8, "upper": 1.0},
+    {"key": "z1p00_plus", "lower": 1.0, "upper": null}
+  ],
+  "optimisation": {
+    "fixed_gamma_p_method": "bounded_scalar",
+    "cap_polish_method": "deterministic_multistart_L-BFGS-B",
+    "best_two_chi2_agreement_tolerance": 0.0001,
+    "alpha_profiled_analytically": true
+  },
+  "conditional_decomposition": {
+    "ordering": ["increasing_redshift", "source_index"],
+    "method": "Cholesky_innovations",
+    "relative_sum_tolerance": 1e-8
+  },
+  "covariance_sensitivities": [
+    "released_conditional",
+    "released_marginal",
+    "diagonal_refit"
+  ],
+  "gates": {
+    "minimum_cap8_boundary_fraction": 0.05,
+    "minimum_profile_rise_at_gamma8": 3.84,
+    "maximum_best_two_chi2_disagreement": 0.0001,
+    "maximum_high_z_delta_chi2_vs_LCDM": 0.0,
+    "maximum_release_redshift_bin_loss": 10.0,
+    "maximum_single_innovation_excess_fraction": 0.25,
+    "maximum_survey_excess_fraction": 0.5,
+    "covariance_sensitivity_signs_must_match": true
+  }
+}
