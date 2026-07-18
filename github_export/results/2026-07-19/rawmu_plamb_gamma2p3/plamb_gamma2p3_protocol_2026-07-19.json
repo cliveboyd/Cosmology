@@ -1,0 +1,51 @@
+{
+  "protocol_date": "2026-07-19",
+  "claim_status": "post_hoc_conditional_target_cannot_promote",
+  "selection_disclosure": "gamma_c_2p3_selected_after_2026_07_18_full_and_high_z_profiles",
+  "known_motivation": {
+    "full_sample_PATH_gamma_c": 2.276517431851,
+    "full_sample_PATH_p": 0.784633762610,
+    "grid_gamma_c": 2.3,
+    "grid_high_z_delta_chi2_vs_LCDM": -5.490540753961,
+    "grid_low_z_penalty_vs_PATH_optimum": 4.597673426590
+  },
+  "sample": {
+    "expected_N": 3422,
+    "training_rule": "z_below_0p5",
+    "predictive_rule": "z_at_least_0p5",
+    "covariance": "released_total",
+    "H0_km_s_Mpc": 67.5
+  },
+  "models": {
+    "PATH_GAMMA2P3": {
+      "gamma_c": 2.3,
+      "alpha": 0.0,
+      "free": ["p"],
+      "p_bounds": [-0.5, 2.5]
+    },
+    "LCDM": {
+      "flat": true,
+      "free": ["Omega_m"],
+      "Omega_m_bounds": [0.05, 0.6]
+    }
+  },
+  "integration": {
+    "adaptive_grid_points": 1601,
+    "adaptive_half_width_local_sigma": 8.0,
+    "fallback_full_bound_points": 3001,
+    "minimum_edge_delta_chi2": 30.0,
+    "release_intercepts": "flat_prior_analytically_updated_from_low_z"
+  },
+  "physical_redshifts": [0.5, 1.0, 1.5, 2.26226],
+  "gates": {
+    "maximum_absolute_full_delta_BIC": 2.0,
+    "maximum_absolute_low_z_delta_BIC": 2.0,
+    "minimum_high_z_delta_log_predictive_density": 0.0,
+    "minimum_joint_PATH_tail_area": 0.05,
+    "minimum_release_PATH_tail_area": 0.05,
+    "maximum_pairwise_release_p_tension_sigma": 2.0,
+    "minimum_posterior_bound_fraction": 0.01,
+    "minimum_grid_edge_delta_chi2": 30.0,
+    "independent_gamma_derivation_required": true
+  }
+}

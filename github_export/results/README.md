@@ -106,3 +106,23 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
   pass, while the primary transfer, redshift-band and concentrated-innovation
   gates fail; the diagnostic remains **fail and cannot promote**.
 - `2026-07-18/priority_followup_outcomes_2026-07-18.md` is the integrated claim-boundary readout for these three branches.
+
+## July 19 Audit
+
+- `2026-07-19/rawmu_plamb_gamma2p3/` contains the explicitly outcome-aware
+  fixed-`gamma_c=2.3` conditional analysis, including equal-parameter PATH versus
+  Lambda-CDM fits, deterministic low-redshift posterior grids, release-intercept-
+  integrated high-redshift prediction, release-specific `p` stability, physical
+  ratio readout, figure and hash manifest.
+- With `gamma_c=2.3` treated as externally fixed, PATH and Lambda-CDM are
+  statistically tied: full-sample `Delta BIC=+0.011958`, low-redshift
+  `Delta BIC=-0.379408`, and integrated high-redshift
+  `Delta log predictive density=-0.240554`. The PATH posterior is
+  `p=0.800469+/-0.023641`; release-specific values agree within `0.779355`
+  standard deviations.
+- Six of seven registered statistical gates pass, but the high-redshift log-score
+  gate narrowly fails. A post hoc two-sided calibration readout also finds
+  unusually low joint quadratic scores for both cosmologies, driven chiefly by
+  Pantheon+. The phenomenology implies `c(z)/c0=6.203198` at `z=2.262260`.
+  Because `gamma_c=2.3` was selected after viewing the same outcomes and has no
+  independent covariant derivation, the claim decision remains **do not promote**.
