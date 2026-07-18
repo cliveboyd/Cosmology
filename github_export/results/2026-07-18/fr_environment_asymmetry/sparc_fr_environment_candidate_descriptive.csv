@@ -1,0 +1,7 @@
+candidate,candidate_environment_score,matched_controls,matched_control_mean_environment_score,candidate_minus_control_environment_score,interpretation
+UGC06787,0.06641877371577498,UGC05253;UGC02916,-0.7822410014990202,0.8486597752147952,descriptive_only_outcome_selected_candidate
+UGC03580,-1.0592234336170008,UGC08699;UGC03546,-0.40073454978371803,-0.6584888838332827,descriptive_only_outcome_selected_candidate
+UGC02487,-0.06888404831151984,UGC02885;NGC6674,-0.5813766782320273,0.5124926299205075,descriptive_only_outcome_selected_candidate
+NGC5985,0.14199531624574663,NGC5033;UGC03205,-0.5885619763648986,0.7305572926106452,descriptive_only_outcome_selected_candidate
+UGC09133,-0.6452816312450875,NGC6195;UGC06786,-0.5694722556168619,-0.07580937562822565,descriptive_only_outcome_selected_candidate
+NGC2903,-0.8900166362254411,NGC3521;NGC4559,-0.08904602862213806,-0.8009706076033031,descriptive_only_outcome_selected_candidate
