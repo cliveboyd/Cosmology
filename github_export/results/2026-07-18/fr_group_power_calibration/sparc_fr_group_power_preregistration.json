@@ -1,0 +1,89 @@
+{
+  "date": "2026-07-18",
+  "locked_utc": "2026-07-18T08:08:21.338818+00:00",
+  "programme": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\sparc\\run_sparc_fr_group_power_calibration_2026-07-18.py",
+  "programme_sha256": "bc03d77c9a144ba706e53ba50881e556bdc61c1a3706235346036488086aa645",
+  "status": "Post-result injection-and-recovery power calibration; not a physical-data test",
+  "input_hashes": {
+    "primary_frame": "831652ca324a84ef0cdbf88ac9842f214b73804e3e566d82dba3cb1dcf67ee06",
+    "group_preregistration": "802ce8ce1e610c4defbb5642565ad08725783a839bf7896b5eb10a0a9ab5a6ed",
+    "group_gate": "c7fbbedb663e7f25b14e6cf40eaa82ceedb62d9106b00c04264c60a089c9011c",
+    "group_summary": "edc9551507987bf18f6ff4612b14418c6f71732e6f15993803d3c7b343337e8d",
+    "group_programme": "85263afce4ce39bdcba6886b77ac098ed527f1e7e0b32c5eaabb9d6a341641d3",
+    "prior_environment_summary": "cb6c88605aec32f838e92cb769f7c5c898ad2f5b28592ed1a68ded154d556b88"
+  },
+  "sample": {
+    "N": 65,
+    "excluded_previous_candidates": [
+      "NGC2903",
+      "NGC5985",
+      "UGC02487",
+      "UGC03580",
+      "UGC06787",
+      "UGC09133"
+    ],
+    "excluded_reserved_replication": [
+      "NGC2403",
+      "NGC2841",
+      "UGC00128",
+      "UGC02953",
+      "UGC07399"
+    ]
+  },
+  "observed_metric_parity": {
+    "partial_spearman_rho": 0.047683566433566436,
+    "cv_rmse_fractional_improvement": -0.054098603851622656,
+    "coefficient_sign_fraction": 0.8
+  },
+  "design": {
+    "predictor": "group_richness_score = ln(N_group)",
+    "host_features": [
+      "T",
+      "log_L36",
+      "log_SBeff",
+      "log_MHI",
+      "log_Vflat",
+      "Inc_deg",
+      "frac_distance_error",
+      "bulge_proxy",
+      "log_n_points",
+      "D_Mpc",
+      "abs_gal_b_deg",
+      "f_D one-hot indicators"
+    ],
+    "host_signal": "full-sample ridge prediction with alpha=1",
+    "empirical_noise": "centred and standardised residuals from the full-sample host-only ridge model, randomly permuted without replacement in every replicate",
+    "environment_injection": "host-residualised standardised group richness multiplied by beta=r/sqrt(1-r^2), with the negative sign matching the earlier 2MRS direction",
+    "target_absolute_residual_correlations": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.307254,
+      0.4,
+      0.5,
+      0.6
+    ],
+    "prior_effect_anchor": 0.307254
+  },
+  "monte_carlo": {
+    "seed": 2026071803,
+    "locked_fold_seed": 2026071802,
+    "replicates_per_effect": 5000,
+    "null_permutations_for_rho_critical_value": 100000,
+    "folds": 10,
+    "ridge_alpha": 1.0
+  },
+  "recovery": {
+    "p_component": "absolute partial Spearman rho exceeds the calibrated two-sided 1 per cent null threshold",
+    "cv_component": "cross-fitted RMSE fractional improvement >=0.05",
+    "sign_component": "one environment-coefficient sign in at least 8/10 folds",
+    "joint_primary_gate": "all three primary components pass in the same replicate"
+  },
+  "locked_interpretation": {
+    "adequate_power_at_prior_anchor": "joint primary recovery probability >=0.80 at r=0.307254",
+    "underpowered_at_prior_anchor": "joint primary recovery probability <0.80 at r=0.307254",
+    "detection_threshold": "smallest tested r with joint primary recovery probability >=0.80",
+    "claim_boundary": "Power calibrates the failed group-richness test only. It cannot create evidence for FR, antimatter or an environmental effect."
+  }
+}
