@@ -1,0 +1,94 @@
+{
+  "analysis": "su2_quaia_injection_calibrated_angular_likelihood",
+  "date_locked": "2026-07-18",
+  "timezone": "Australia/Sydney",
+  "status": "locked_before_new_outcome_analysis",
+  "sample": {
+    "catalogue": ".spyder-py3/quaia_G20.0.fits",
+    "z_min_inclusive": 1.0,
+    "z_max_exclusive": 1.5,
+    "abs_galactic_latitude_min_deg": 15.0
+  },
+  "locked_axis": {
+    "source": "pre-existing raw Quaia bcut=15 fit from 2026-07-15 injection configuration",
+    "galactic_l_deg": 138.99062177880762,
+    "galactic_b_deg": -36.60410263509791,
+    "reference_redshift_dipole_amplitude": 0.002548691334890594,
+    "orientation": "positive"
+  },
+  "scalar_curve": {
+    "definition": "distance_modulus_SU2R_minus_LCDM",
+    "su2r_bestfit": "plamb_runs/updated_datasets_20260710/runs/desi_SU2R_Pantheon_SN_BAO_Planck/SU2R_emcee_bestfit.txt",
+    "lcdm_bestfit": "plamb_runs/updated_datasets_20260710/runs/desi_LCDM_Pantheon_SN_BAO_Planck/LCDM_emcee_bestfit.txt",
+    "feature": "standardise(delta_mu(z)) multiplied by each of the three galactic_unit_vector components",
+    "candidate_vector": "three fitted coefficients; direction and amplitude recovered rather than imposed",
+    "integration_grid_points": 501,
+    "integration_nint": 256
+  },
+  "templates": {
+    "dust": ["ebv_sfd", "sfd_log1p", "sfd_sq"],
+    "depth": [
+      "selection_T",
+      "random_density_log1p",
+      "wise_w1_medcov_log1p",
+      "wise_w2_medcov_log1p",
+      "wise_w1_lowcov_log1p",
+      "wise_w2_lowcov_log1p",
+      "gaia_dr3_density_hpx4_log1p"
+    ],
+    "gaia_scanning_geometry": [
+      "gaia_scan_count_log1p_dr3",
+      "gaia_scan_angle_cos2_mean_dr3",
+      "gaia_scan_angle_sin2_mean_dr3",
+      "gaia_scan_angle_resultant_dr3"
+    ],
+    "colour": ["w1_w2_z", "bp_rp_z", "bp_rp_x_w1_w2_z"],
+    "catalogue_quality": ["zerr", "g", "w1", "w2", "pmra_error", "pmdec_error"]
+  },
+  "models": {
+    "template_only": "z = intercept + templates + error",
+    "template_plus_su2": "z = intercept + templates + dot(d, standardise(delta_mu(z))*galactic_unit_vector) + error",
+    "fit": "ordinary_least_squares",
+    "variance": "training_residual_variance"
+  },
+  "held_out_design": {
+    "n_folds": 12,
+    "folds": "fixed 30-degree Galactic-longitude sectors assigned from 12-degree cell centres",
+    "primary_statistic": "sum_test_log_predictive_density_template_plus_su2_minus_template_only"
+  },
+  "calibration": {
+    "null": "Rademacher wild bootstrap of template-only residuals on 12-degree equal-area Galactic longitude by sine-latitude cells",
+    "cell_degrees": 12.0,
+    "n_paired_replicates": 2000,
+    "threshold_calibration_replicates": 1000,
+    "untouched_validation_replicates": 1000,
+    "seed": 180718,
+    "amplitude_scales": [0.0, 0.5, 1.0, 1.5, 2.0],
+    "alpha_one_sided": 0.01,
+    "threshold_quantile": 0.99,
+    "minimum_power_at_reference_amplitude": 0.8,
+    "recovery_definition": {
+      "held_out_statistic_above_frozen_threshold": true,
+      "held_out_statistic_positive": true,
+      "maximum_direction_separation_deg": 30.0,
+      "amplitude_ratio_min": 0.5,
+      "amplitude_ratio_max": 1.5,
+      "positive_orientation": true
+    }
+  },
+  "decision_rule": {
+    "conjunctive": true,
+    "maximum_validation_null_false_positive_rate": 0.01,
+    "minimum_joint_predictive_direction_amplitude_recovery_at_1x": 0.8,
+    "observed_pooled_held_out_gain_positive_and_above_frozen_threshold": true,
+    "observed_maximum_direction_separation_deg": 30.0,
+    "observed_amplitude_ratio_min": 0.5,
+    "observed_amplitude_ratio_max": 1.5,
+    "observed_positive_orientation": true,
+    "minimum_positive_fold_count": 8,
+    "underpowered_label_if_power_fails": true,
+    "threshold_must_not_move_when_underpowered": true,
+    "in_sample_bic_can_substitute_for_held_out_gain": false,
+    "passing_scope": "follow-up gate only; independent-catalogue validation still required"
+  }
+}

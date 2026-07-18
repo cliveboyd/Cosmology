@@ -1,0 +1,53 @@
+{
+  "locked_date": "2026-07-18",
+  "outcome_blind_at_lock": true,
+  "independent_catalogue": {
+    "catalogue": "SDSS DR16Q v4",
+    "quality": "IS_QSO_FINAL == 1",
+    "primary_redshift_window": [1.0, 1.5],
+    "primary_abs_galactic_latitude_min_deg": 35.0,
+    "quaia_target_equatorial_deg": {
+      "ra": 145.3283284733,
+      "dec": -26.7809296987
+    },
+    "promotion": {
+      "global_p_max_each_locked_block_scale": 0.01,
+      "direction_separation_max_deg": 30.0,
+      "amplitude_ratio_range": [0.5, 2.0],
+      "joint_l1_l2_l3_coherence_p_max": 0.05,
+      "conjunctive": true
+    }
+  },
+  "injection_calibrated_likelihood": {
+    "templates": [
+      "dust",
+      "depth",
+      "gaia_scanning_geometry",
+      "wise_colour",
+      "catalogue_quality"
+    ],
+    "primary_score": "held_out_predictive_gain",
+    "historical_only_score": "delta_bic_lt_minus_10",
+    "promotion": {
+      "null_false_positive_max": 0.01,
+      "one_x_signal_recovery_min": 0.8,
+      "pooled_held_out_gain_positive": true,
+      "amplitude_direction_recovery_required": true,
+      "conjunctive": true
+    }
+  },
+  "supernova_calibration": {
+    "primary_frame": "zHD",
+    "control_frames": ["zHEL", "zCMB"],
+    "models": ["FR", "Lambda-CDM"],
+    "same_nuisance_required": true,
+    "no_covariance_prior_double_counting": true,
+    "holdouts": ["dataset", "survey", "high_z"],
+    "promotion": {
+      "preference_sign_preserved": true,
+      "within_external_budget": true,
+      "fr_calibration_pull_not_larger_than_lcdm": true,
+      "conjunctive": true
+    }
+  }
+}

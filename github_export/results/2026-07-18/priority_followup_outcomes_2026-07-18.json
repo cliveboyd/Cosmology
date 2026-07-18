@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-18",
+  "protocol": "priority_followup_protocol_2026-07-18.md",
+  "quaia_cross_catalogue": {
+    "catalogue": "SDSS DR16Q v4",
+    "decision": "not promoted",
+    "primary_n": 139305,
+    "primary_amplitude": 0.0481791,
+    "direction_separation_deg": 116.205,
+    "failed_gate_components": 4,
+    "interpretation": "strong catalogue-specific angular structure without locked direction or redshift-window coherence"
+  },
+  "injection_calibrated_likelihood": {
+    "first_branch": "invalidated for response leakage",
+    "replacement": "reciprocal Quaia x DR16Q spectroscopic-redshift crossmatch",
+    "decision": "underpowered",
+    "n": 46687,
+    "validation_false_positive_rate": 0.009,
+    "predictive_detection_rate_1x": 0.08,
+    "joint_recovery_rate_1x": 0.0,
+    "observed_delta_cvlpd": -4.0084,
+    "observed_empirical_p": 0.727273,
+    "observed_direction_separation_deg": 57.1066
+  },
+  "supernova_calibration_budget": {
+    "decision": "primary Lambda-CDM preference; overall robustness gate failed",
+    "n": 3422,
+    "redshift_frame": "zHD primary",
+    "covariance": "released STAT+SYS primary",
+    "lcdm_omega_m": 0.330680,
+    "delta_bic_fr_minus_lcdm": 94.344983,
+    "survey_sign_preserving_fraction": 0.588235,
+    "all_model_difference_modes_within_budget": false,
+    "same_nuisance_verified": true
+  }
+}

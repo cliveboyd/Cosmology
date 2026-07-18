@@ -1,0 +1,115 @@
+{
+  "analysis": "su2_quaia_injection_calibrated_angular_likelihood",
+  "date": "2026-07-18",
+  "preregistration_markdown": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\results\\2026-07-18\\su2_quaia\\su2_quaia_injection_calibrated_angular_likelihood_preregistration_2026-07-18.md",
+  "preregistration_markdown_sha256": "83069901fe8c39538134abd25fc76a15b53536f4ba38269d76bb49f63d470922",
+  "preregistration_json": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\results\\2026-07-18\\su2_quaia\\su2_quaia_injection_calibrated_angular_likelihood_preregistration_2026-07-18.json",
+  "preregistration_json_sha256": "6d60d908a7450daf3df3b2f50ef234c44a25a47b204f8cee4e0258b1e5b79def",
+  "sample": {
+    "z_min": 1.0,
+    "z_max": 1.5,
+    "b_cut": 15.0
+  },
+  "locked_axis": {
+    "l_deg": 138.99062177880762,
+    "b_deg": -36.60410263509791,
+    "reference_amplitude": 0.002548691334890594
+  },
+  "held_out": {
+    "cell_degrees": 12.0,
+    "occupied_cells": 360,
+    "n_longitude_bins": 30,
+    "n_sine_latitude_bins": 15,
+    "n_folds": 12,
+    "fold_rule": "12-degree cell centre assigned to fixed Galactic-longitude sector"
+  },
+  "calibration": {
+    "seed": 180718,
+    "n_replicates": 2000,
+    "threshold_replicates": 1000,
+    "amplitude_scales": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "alpha": 0.01,
+    "minimum_power": 0.8,
+    "direction_separation_max_deg": 30.0,
+    "amplitude_ratio_range": [
+      0.5,
+      1.5
+    ]
+  },
+  "templates": [
+    "ebv_sfd",
+    "sfd_log1p",
+    "sfd_sq",
+    "selection_T",
+    "random_density_log1p",
+    "wise_w1_medcov_log1p",
+    "wise_w2_medcov_log1p",
+    "wise_w1_lowcov_log1p",
+    "wise_w2_lowcov_log1p",
+    "gaia_dr3_density_hpx4_log1p",
+    "gaia_scan_count_log1p_dr3",
+    "gaia_scan_angle_cos2_mean_dr3",
+    "gaia_scan_angle_sin2_mean_dr3",
+    "gaia_scan_angle_resultant_dr3",
+    "w1_w2_z",
+    "bp_rp_z",
+    "bp_rp_x_w1_w2_z",
+    "zerr",
+    "g",
+    "w1",
+    "w2",
+    "pmra_error",
+    "pmdec_error"
+  ],
+  "inputs": {
+    "source_rows": 755850,
+    "window_latitude_rows": 185739,
+    "joint_finite_rows": 185739,
+    "template_count": 23,
+    "template_names": [
+      "ebv_sfd",
+      "sfd_log1p",
+      "sfd_sq",
+      "selection_T",
+      "random_density_log1p",
+      "wise_w1_medcov_log1p",
+      "wise_w2_medcov_log1p",
+      "wise_w1_lowcov_log1p",
+      "wise_w2_lowcov_log1p",
+      "gaia_dr3_density_hpx4_log1p",
+      "gaia_scan_count_log1p_dr3",
+      "gaia_scan_angle_cos2_mean_dr3",
+      "gaia_scan_angle_sin2_mean_dr3",
+      "gaia_scan_angle_resultant_dr3",
+      "w1_w2_z",
+      "bp_rp_z",
+      "bp_rp_x_w1_w2_z",
+      "zerr",
+      "g",
+      "w1",
+      "w2",
+      "pmra_error",
+      "pmdec_error"
+    ],
+    "gaiascanlaw_data_dir": "C:\\Users\\clive\\anaconda3x\\Lib\\site-packages\\gaiascanlaw\\data",
+    "gaia_density_source": "CDS Gaia EDR3 density HiPS Norder2",
+    "scalar_mean": 0.009281610817208751,
+    "scalar_std": 8.869734164971929e-05,
+    "curve": {
+      "lcdm_bestfit": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\updated_datasets_20260710\\runs\\desi_LCDM_Pantheon_SN_BAO_Planck\\LCDM_emcee_bestfit.txt",
+      "lcdm_sha256": "8c765cac562a9122f2d7e395bf23be2e13d1513166e8979f3fe23b284ee35cc1",
+      "su2r_bestfit": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\updated_datasets_20260710\\runs\\desi_SU2R_Pantheon_SN_BAO_Planck\\SU2R_emcee_bestfit.txt",
+      "su2r_sha256": "1bb9d961fe16c4de46f12eb4486a620858f7e4e344f6cf36bbe00c81ff629f92",
+      "grid_points": 501,
+      "integration_nint": 256,
+      "delta_mu_min": 0.009006474550439236,
+      "delta_mu_max": 0.009356072181795128
+    }
+  }
+}

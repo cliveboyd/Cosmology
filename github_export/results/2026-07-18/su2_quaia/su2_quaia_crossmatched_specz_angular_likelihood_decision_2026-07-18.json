@@ -1,0 +1,50 @@
+{
+  "analysis": "su2_quaia_crossmatched_specz_angular_likelihood",
+  "date": "2026-07-18",
+  "outcome": "underpowered",
+  "interpretation": "The leakage-free design did not recover the locked one-times signal with at least 80% power; the threshold remains frozen.",
+  "conjunctive_rule": true,
+  "leakage_audit": {
+    "pass": true,
+    "max_abs_predictor_difference": 0.0,
+    "original_predictor_sha256": "e6f04c7a9d01f73b6ca0b2c5f27705399633a7fe58b81ce63a0e8a8ca65cfae9",
+    "permuted_response_predictor_sha256": "e6f04c7a9d01f73b6ca0b2c5f27705399633a7fe58b81ce63a0e8a8ca65cfae9",
+    "response_changed": true,
+    "seed": 18071827
+  },
+  "calibration": {
+    "threshold_replicates": 1000,
+    "validation_replicates": 1000,
+    "injection_replicates_per_scale": 1000,
+    "frozen_threshold": 3.3851051448365013,
+    "validation_false_positive_rate": 0.009,
+    "joint_recovery_rate_1x": 0.0
+  },
+  "observed": {
+    "delta_cvlpd": -4.008403770669133,
+    "empirical_validation_null_p": 0.7272727272727273,
+    "positive_fold_count": 4,
+    "pooled_amplitude": 0.002762073867370928,
+    "amplitude_ratio_to_reference": 1.083722391000907,
+    "pooled_l_deg": 165.12326371407192,
+    "pooled_b_deg": 14.905913716806781,
+    "direction_separation_deg": 57.10664758875839,
+    "positive_orientation": true
+  },
+  "conditions": {
+    "predictor_permutation_leakage_audit": true,
+    "validation_null_false_positive_rate_le_0p01": true,
+    "joint_1x_recovery_ge_0p80": false,
+    "observed_pooled_held_out_gain_positive_and_above_threshold": false,
+    "observed_direction_amplitude_orientation": false
+  },
+  "in_sample_non_gating_diagnostics": {
+    "template_only_bic": -156717.0497694618,
+    "template_plus_su2_bic": -156685.96082218867,
+    "delta_bic_plus_minus_template": 31.08894727312145,
+    "note": "Diagnostic only; the preregistered decision rule forbids substitution for held-out predictive gain.",
+    "candidate_amplitude": 0.00259642685277782,
+    "candidate_l_deg": 164.8662285791336,
+    "candidate_b_deg": 13.858250148408917
+  }
+}

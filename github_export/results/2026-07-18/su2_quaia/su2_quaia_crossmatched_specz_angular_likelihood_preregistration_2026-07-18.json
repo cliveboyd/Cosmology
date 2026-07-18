@@ -1,0 +1,72 @@
+{
+  "analysis": "su2_quaia_crossmatched_specz_angular_likelihood",
+  "date": "2026-07-18",
+  "frozen_before_crossmatch_residual_outcomes": true,
+  "inputs": {
+    "quaia": "C:/Users/clive/Documents/Cosmology/.spyder-py3/quaia_G20.0.fits",
+    "dr16q": "C:/Users/clive/Documents/Cosmology/external_datasets/sdss_dr16q_v4/DR16Q_v4.fits",
+    "match_frame": "ICRS",
+    "match_radius_arcsec": 1.0,
+    "matching_rule": "reciprocal_nearest_neighbour_one_to_one",
+    "dr16q_quality": "IS_QSO_FINAL == 1",
+    "specz_min_inclusive": 1.0,
+    "specz_max_exclusive": 1.5,
+    "absolute_galactic_latitude_min_deg": 15.0
+  },
+  "response": "z_quaia_photometric - z_dr16q_spectroscopic",
+  "scalar_curve_redshift_source": "DR16Q spectroscopic Z only",
+  "response_may_enter_predictors": false,
+  "models": {
+    "template_only": "intercept + joint templates",
+    "candidate": "intercept + same joint templates + standardise(delta_mu_SU2R_minus_LCDM(z_spec)) times Galactic unit vector",
+    "mandatory_baseline_terms": [
+      "Galactic unit-vector components",
+      "z_spec linear, squared and cubed",
+      "SU2R-minus-LCDM scalar main effect"
+    ],
+    "nuisance_groups": [
+      "dust",
+      "depth",
+      "Gaia scanning geometry",
+      "WISE and Gaia colour",
+      "Quaia and DR16Q catalogue quality"
+    ]
+  },
+  "held_out": {
+    "cell_degrees": 12.0,
+    "n_folds": 12,
+    "fold_rule": "12-degree cell centre assigned to fixed Galactic-longitude sector",
+    "primary_score": "pooled delta CVLPD",
+    "variance_source": "training set only"
+  },
+  "calibration": {
+    "seed": 18071826,
+    "null": "cell-level Rademacher wild bootstrap of nuisance-only residuals",
+    "calibration_null_replicates": 1000,
+    "validation_null_replicates": 1000,
+    "locked_split": "first 1000 calibration; next 1000 validation",
+    "threshold_quantile": 0.99,
+    "threshold_quantile_method": "higher",
+    "injection_scales": [0.5, 1.0, 1.5, 2.0],
+    "replicates_per_injection_scale": 1000
+  },
+  "locked_reference": {
+    "amplitude": 0.002548691334890594,
+    "galactic_longitude_deg": 138.99062177880762,
+    "galactic_latitude_deg": -36.60410263509791
+  },
+  "gates": {
+    "predictor_permutation_exact": true,
+    "maximum_validation_null_false_positive_rate": 0.01,
+    "minimum_joint_power_at_1x": 0.8,
+    "observed_delta_cvlpd_must_be_positive": true,
+    "observed_delta_cvlpd_must_exceed_frozen_threshold": true,
+    "maximum_direction_separation_deg": 30.0,
+    "amplitude_ratio_min": 0.5,
+    "amplitude_ratio_max": 1.5,
+    "locked_orientation_required": true,
+    "rule": "conjunctive_all_gates"
+  },
+  "in_sample_statistics_are_gating": false,
+  "post_outcome_threshold_changes_allowed": false
+}

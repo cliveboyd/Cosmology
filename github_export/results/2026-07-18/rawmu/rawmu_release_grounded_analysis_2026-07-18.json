@@ -1,0 +1,264 @@
+{
+  "analysis_id": "rawmu_release_grounded_calibration_2026-07-18",
+  "full_fits": {
+    "combined_calib_des_statonly_grouped": {
+      "FR_BIC": 3298.463243069107,
+      "FR_chi2": 3274.0493017057506,
+      "FR_nuisance_signature": "466f439cd622a56a4eb9c68b8e16c8c0f9c4710d44957ffe22981ca87271d2f3",
+      "FR_offsets": {
+        "DES_Dovekie_raw": -0.004427142824397128,
+        "PantheonPlusSH0ES": -0.11862077225657902,
+        "Union3p1_UNITY1p8": -0.014807847306313019
+      },
+      "LCDM_BIC": 3208.7612143308315,
+      "LCDM_Omega_m": 0.3323510213783238,
+      "LCDM_chi2": 3176.209292513023,
+      "LCDM_nuisance_signature": "466f439cd622a56a4eb9c68b8e16c8c0f9c4710d44957ffe22981ca87271d2f3",
+      "LCDM_offsets": {
+        "DES_Dovekie_raw": -0.06110972755427167,
+        "PantheonPlusSH0ES": -0.17577239658645286,
+        "Union3p1_UNITY1p8": -0.054068521895868776
+      },
+      "N": 3422,
+      "N_release_intercepts": 3,
+      "delta_BIC_FR_minus_LCDM": 89.70202873827566,
+      "nuisance_signature": "466f439cd622a56a4eb9c68b8e16c8c0f9c4710d44957ffe22981ca87271d2f3",
+      "optimisation_success": true,
+      "same_nuisance_verified": true
+    },
+    "des_allsys_statonly_grouped": {
+      "FR_BIC": 3216.4906229959824,
+      "FR_chi2": 3192.076681632626,
+      "FR_nuisance_signature": "7813a2efaab8df8de2559758c647943890ea2ad1e704450ce5fec754292010ce",
+      "FR_offsets": {
+        "DES_Dovekie_raw": -0.004427142824397128,
+        "PantheonPlusSH0ES": -0.12290424566399817,
+        "Union3p1_UNITY1p8": -0.014807847306313019
+      },
+      "LCDM_BIC": 3130.1274980792014,
+      "LCDM_Omega_m": 0.32654990706696535,
+      "LCDM_chi2": 3097.5755762613926,
+      "LCDM_nuisance_signature": "7813a2efaab8df8de2559758c647943890ea2ad1e704450ce5fec754292010ce",
+      "LCDM_offsets": {
+        "DES_Dovekie_raw": -0.06345354160648854,
+        "PantheonPlusSH0ES": -0.1790118183812105,
+        "Union3p1_UNITY1p8": -0.058664326101320136
+      },
+      "N": 3422,
+      "N_release_intercepts": 3,
+      "delta_BIC_FR_minus_LCDM": 86.36312491678109,
+      "nuisance_signature": "7813a2efaab8df8de2559758c647943890ea2ad1e704450ce5fec754292010ce",
+      "optimisation_success": true,
+      "same_nuisance_verified": true
+    },
+    "pantheon_calib_csp_recal_hstcalspec_statonly_grouped": {
+      "FR_BIC": 3254.4045022440287,
+      "FR_chi2": 3229.990560880672,
+      "FR_nuisance_signature": "4bd84bcf384859721730052a951fa184870ef3de06f55e9492feeae7248e8654",
+      "FR_offsets": {
+        "DES_Dovekie_raw": 0.007865674698609444,
+        "PantheonPlusSH0ES": -0.11971984784705547,
+        "Union3p1_UNITY1p8": -0.014807847306313019
+      },
+      "LCDM_BIC": 3157.8036804177727,
+      "LCDM_Omega_m": 0.335700210896154,
+      "LCDM_chi2": 3125.251758599964,
+      "LCDM_nuisance_signature": "4bd84bcf384859721730052a951fa184870ef3de06f55e9492feeae7248e8654",
+      "LCDM_offsets": {
+        "DES_Dovekie_raw": -0.06715066614451948,
+        "PantheonPlusSH0ES": -0.17468244690466206,
+        "Union3p1_UNITY1p8": -0.051432256219807335
+      },
+      "N": 3422,
+      "N_release_intercepts": 3,
+      "delta_BIC_FR_minus_LCDM": 96.60082182625592,
+      "nuisance_signature": "4bd84bcf384859721730052a951fa184870ef3de06f55e9492feeae7248e8654",
+      "optimisation_success": true,
+      "same_nuisance_verified": true
+    },
+    "pantheon_calib_statonly_grouped": {
+      "FR_BIC": 3256.5320422162067,
+      "FR_chi2": 3232.11810085285,
+      "FR_nuisance_signature": "8554f4388d71e43fdaa3cc7e2d7209d11a54eae492d66e645c6ccaafc082759b",
+      "FR_offsets": {
+        "DES_Dovekie_raw": 0.007865674698609444,
+        "PantheonPlusSH0ES": -0.11862077225657902,
+        "Union3p1_UNITY1p8": -0.014807847306313019
+      },
+      "LCDM_BIC": 3158.407371287215,
+      "LCDM_Omega_m": 0.33622062970791294,
+      "LCDM_chi2": 3125.8554494694063,
+      "LCDM_nuisance_signature": "8554f4388d71e43fdaa3cc7e2d7209d11a54eae492d66e645c6ccaafc082759b",
+      "LCDM_offsets": {
+        "DES_Dovekie_raw": -0.06683300480230418,
+        "PantheonPlusSH0ES": -0.17454888089563506,
+        "Union3p1_UNITY1p8": -0.05102372436187356
+      },
+      "N": 3422,
+      "N_release_intercepts": 3,
+      "delta_BIC_FR_minus_LCDM": 98.12467092899169,
+      "nuisance_signature": "8554f4388d71e43fdaa3cc7e2d7209d11a54eae492d66e645c6ccaafc082759b",
+      "optimisation_success": true,
+      "same_nuisance_verified": true
+    },
+    "released_total_primary": {
+      "FR_BIC": 3174.559422143082,
+      "FR_chi2": 3150.1454807797254,
+      "FR_nuisance_signature": "cd2a1ff73fad299cc85f214fad4f4dac1318cfb3b06b0bffeaf027bf8cc5b85f",
+      "FR_offsets": {
+        "DES_Dovekie_raw": 0.007865674698609444,
+        "PantheonPlusSH0ES": -0.12290424566399817,
+        "Union3p1_UNITY1p8": -0.014807847306313019
+      },
+      "LCDM_BIC": 3080.2144390037433,
+      "LCDM_Omega_m": 0.3306796417545181,
+      "LCDM_chi2": 3047.6625171859346,
+      "LCDM_nuisance_signature": "cd2a1ff73fad299cc85f214fad4f4dac1318cfb3b06b0bffeaf027bf8cc5b85f",
+      "LCDM_offsets": {
+        "DES_Dovekie_raw": -0.07022421224108398,
+        "PantheonPlusSH0ES": -0.17768385502297024,
+        "Union3p1_UNITY1p8": -0.055388771505309894
+      },
+      "N": 3422,
+      "N_release_intercepts": 3,
+      "delta_BIC_FR_minus_LCDM": 94.34498313933864,
+      "nuisance_signature": "cd2a1ff73fad299cc85f214fad4f4dac1318cfb3b06b0bffeaf027bf8cc5b85f",
+      "optimisation_success": true,
+      "same_nuisance_verified": true
+    }
+  },
+  "generated": "2026-07-18T20:08:33",
+  "load_metadata": {
+    "N": {
+      "DES_Dovekie_raw": 1820,
+      "PantheonPlusSH0ES": 1580,
+      "Union3p1_UNITY1p8": 22
+    },
+    "hierarchies": {
+      "des_allsys_statonly_grouped": {
+        "base": "STATONLY",
+        "component": "ALL_SYSTEMATICS",
+        "dataset": "DES_Dovekie_raw",
+        "metrics": {
+          "N_groups": 5,
+          "captured_frobenius_power_fraction": 0.001682395466355846,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "dataset_variance_mag2": 0.0,
+          "dataset_variance_raw_mag2": -1.6358679361255892e-05,
+          "diagonal_rmse_mag2": 0.012914567138476985,
+          "relative_frobenius_error": 0.9991584481620741,
+          "residual_frobenius_norm_mag2": 5.60370439056719,
+          "target_frobenius_norm_mag2": 5.608424170235519
+        },
+        "survey_priors_mag": {
+          "10": 0.011766741997148049,
+          "150": 0.019676396618983773,
+          "64": 0.012457391087084598,
+          "65": 0.023063874479079774,
+          "OTHER": 0.023172941964601863
+        }
+      },
+      "pantheon_calib_csp_recal_hstcalspec_statonly_grouped": {
+        "base": "STATONLY",
+        "component": "CALIB+CSP_RECAL+HSTCALSPEC",
+        "dataset": "PantheonPlusSH0ES",
+        "metrics": {
+          "N_groups": 14,
+          "captured_frobenius_power_fraction": 0.04212035572505601,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "dataset_variance_mag2": 0.0,
+          "dataset_variance_raw_mag2": -2.1775167495908403e-05,
+          "diagonal_rmse_mag2": 0.000805480276036463,
+          "relative_frobenius_error": 0.9787132594764127,
+          "residual_frobenius_norm_mag2": 0.6956629489184941,
+          "target_frobenius_norm_mag2": 0.7107934241032522
+        },
+        "survey_priors_mag": {
+          "1": 0.00819168417355587,
+          "10": 0.007856563639721847,
+          "15": 0.006900267193768169,
+          "150": 0.01506658119003963,
+          "4": 0.02573536062168403,
+          "5": 0.02360628293970409,
+          "50": 0.027120367272359242,
+          "51": 0.009624749520070627,
+          "56": 0.044623976714760705,
+          "57": 0.004082184265035377,
+          "63": 0.005753601356665979,
+          "64": 0.003584777554811392,
+          "65": 0.007727909662716178,
+          "OTHER": 0.01666817286093545
+        }
+      },
+      "pantheon_calib_statonly_grouped": {
+        "base": "STATONLY",
+        "component": "CALIB",
+        "dataset": "PantheonPlusSH0ES",
+        "metrics": {
+          "N_groups": 14,
+          "captured_frobenius_power_fraction": 0.11626723345317302,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "dataset_variance_mag2": 0.0,
+          "dataset_variance_raw_mag2": -1.5614935453861935e-05,
+          "diagonal_rmse_mag2": 0.0006179950937768223,
+          "relative_frobenius_error": 0.9400706178510352,
+          "residual_frobenius_norm_mag2": 0.30365307105882816,
+          "target_frobenius_norm_mag2": 0.32301091566181195
+        },
+        "survey_priors_mag": {
+          "1": 0.008075982502836906,
+          "10": 0.006936932607242753,
+          "15": 0.006371219705925663,
+          "150": 0.015025722885243507,
+          "4": 0.018936388261509243,
+          "5": 0.019312110579827364,
+          "50": 0.02708800827015334,
+          "51": 0.009605405550494663,
+          "56": 0.04456361497142021,
+          "57": 0.0038350553877342657,
+          "63": 0.005608021996594319,
+          "64": 0.0032152294240378886,
+          "65": 0.005972385432563947,
+          "OTHER": 0.015794418335565347
+        }
+      }
+    },
+    "primary_frame": {
+      "DES_Dovekie_raw": "zHD",
+      "PantheonPlusSH0ES": "zHD",
+      "Union3p1_UNITY1p8": "z"
+    }
+  },
+  "primary_frame": {
+    "DES_Dovekie_raw": "zHD",
+    "PantheonPlusSH0ES": "zHD",
+    "Union3p1_UNITY1p8": "z"
+  },
+  "residual_prior_sensitivity_is_independent_evidence": false,
+  "robustness": {
+    "full_preference_sign": 1,
+    "gates": {
+      "all_model_difference_modes_within_budget": false,
+      "full_and_primary_high_z_same_sign": true,
+      "no_covariance_prior_double_counting": true,
+      "no_strong_opposite_dataset_holdout": true,
+      "no_strong_opposite_survey_holdout": true,
+      "same_nuisance_all_cells": true,
+      "survey_sign_fraction_at_least_0p8": false
+    },
+    "robustness_gate_pass": false,
+    "survey_sign_fraction": 0.5882352941176471
+  },
+  "same_nuisance_literal": "identical rows, covariance, offset design, parameter count, prior widths, and profiling/marginalisation rule within every comparison cell",
+  "source_urls": {
+    "DES_SN5YR_release": "https://github.com/des-science/DES-SN5YR",
+    "PantheonPlusSH0ES_CALIB_raw": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/sytematic_groupings/Pantheon%2BSH0ES_122221_CALIB.cov",
+    "PantheonPlusSH0ES_CSP_RECAL_raw": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/sytematic_groupings/Pantheon%2BSH0ES_122221_CSP_RECAL.cov",
+    "PantheonPlusSH0ES_HSTCALSPEC_raw": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/sytematic_groupings/Pantheon%2BSH0ES_122221_HSTCALSPEC.cov",
+    "PantheonPlusSH0ES_STATONLY_raw": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/Pantheon%2BSH0ES_STATONLY.cov",
+    "PantheonPlusSH0ES_release": "https://github.com/PantheonPlusSH0ES/DataRelease/tree/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR",
+    "PantheonPlusSH0ES_systematic_groupings": "https://github.com/PantheonPlusSH0ES/DataRelease/tree/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/sytematic_groupings",
+    "PantheonPlus_calibration_paper": "https://arxiv.org/abs/2110.03486",
+    "Union3_paper": "https://doi.org/10.3847/1538-4357/adc0a5"
+  }
+}

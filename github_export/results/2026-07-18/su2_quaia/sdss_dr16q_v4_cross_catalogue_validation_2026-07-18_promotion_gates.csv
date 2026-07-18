@@ -1,0 +1,24 @@
+gate,component,value,threshold,pass,failure
+integrity,all_registered_rows,20,exactly 20 valid rows,True,
+global_rarity,cell_8_deg,4.999750012499375e-05,<= 0.01,True,
+global_rarity,cell_12_deg,4.999750012499375e-05,<= 0.01,True,
+global_rarity,cell_16_deg,4.999750012499375e-05,<= 0.01,True,
+joint_l1_l3_coherence,cell_8_deg,4.999750012499375e-05,<= 0.05,True,
+joint_l1_l3_coherence,cell_12_deg,9.99950002499875e-05,<= 0.05,True,
+joint_l1_l3_coherence,cell_16_deg,0.0010999450027498626,<= 0.05,True,
+cross_catalogue_direction,primary_row,116.20511796089977,<= 30.0 deg,False,cross_catalogue_direction: primary_row failed (116.205; required <= 30.0 deg)
+window_direction_stability,z0p95_1p45,165.5871324193501,<= 30.0 deg,False,window_direction_stability: z0p95_1p45 failed (165.587; required <= 30.0 deg)
+window_direction_stability,z1p05_1p55,6.406571483753478,<= 30.0 deg,True,
+window_direction_stability,z1p00_1p40,141.87889780410913,<= 30.0 deg,False,window_direction_stability: z1p00_1p40 failed (141.879; required <= 30.0 deg)
+window_direction_stability,z1p10_1p50,1.0982336621900632,<= 30.0 deg,True,
+latitude_direction_stability,bcut_20,2.3135558020967224,<= 30.0 deg,True,
+latitude_direction_stability,bcut_25,2.727281682354407,<= 30.0 deg,True,
+latitude_direction_stability,bcut_30,0.4286112572864677,<= 30.0 deg,True,
+amplitude_stability,z0p95_1p45_b35,1.096773823359213,"in [0.5, 2.0]",True,
+amplitude_stability,z1p05_1p55_b35,1.2877257081781843,"in [0.5, 2.0]",True,
+amplitude_stability,z1p00_1p40_b35,0.10636121812583296,"in [0.5, 2.0]",False,"amplitude_stability: z1p00_1p40_b35 failed (0.106361; required in [0.5, 2.0])"
+amplitude_stability,z1p10_1p50_b35,1.0678029543363026,"in [0.5, 2.0]",True,
+amplitude_stability,z1p00_1p50_b20,1.1406395084078702,"in [0.5, 2.0]",True,
+amplitude_stability,z1p00_1p50_b25,1.160440739279206,"in [0.5, 2.0]",True,
+amplitude_stability,z1p00_1p50_b30,1.0729947401503637,"in [0.5, 2.0]",True,
+amplitude_stability,z1p00_1p50_b35,1.0,"in [0.5, 2.0]",True,

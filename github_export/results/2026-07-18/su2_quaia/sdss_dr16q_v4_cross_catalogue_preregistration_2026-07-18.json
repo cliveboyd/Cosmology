@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "registration_id": "sdss_dr16q_v4_cross_catalogue_2026-07-18",
+  "locked_at": "2026-07-18T19:44:55+10:00",
+  "outcome_data_accessed_before_lock": false,
+  "catalogue": {
+    "name": "SDSS DR16Q v4",
+    "url": "https://data.sdss.org/sas/dr16/eboss/qso/DR16Q/DR16Q_v4.fits",
+    "expected_bytes": 1718484480,
+    "expected_rows": 750414,
+    "required_columns": [
+      "SDSS_NAME",
+      "RA",
+      "DEC",
+      "Z",
+      "IS_QSO_FINAL",
+      "Z_CONF",
+      "ZWARNING",
+      "SN_MEDIAN_ALL"
+    ],
+    "primary_quality": [
+      "IS_QSO_FINAL == 1",
+      "finite(RA, DEC, Z)",
+      "0 <= RA < 360",
+      "-90 <= DEC <= 90"
+    ],
+    "duplicate_key": "SDSS_NAME",
+    "duplicate_tiebreak": [
+      "Z_CONF descending",
+      "finite SN_MEDIAN_ALL descending",
+      "SN_MEDIAN_ALL descending",
+      "original row index ascending"
+    ],
+    "quality_controls": {
+      "zwarning_zero": "ZWARNING == 0",
+      "zconf_ge_2": "Z_CONF >= 2"
+    }
+  },
+  "locked_quaia_comparator": {
+    "kind": "raw_redshift_dipole",
+    "window": [1.0, 1.5],
+    "abs_galactic_latitude_min_deg": 35.0,
+    "coordinate_frame": "ICRS",
+    "ra_deg": 145.3283284733,
+    "dec_deg": -26.7809296987,
+    "amplitude": 0.0030496633427067,
+    "source": "github_export/results/2026-07-15/su2_quaia/su2_quaia_scanlaw_colour_residual_global_observed_windows_2026-07-15.csv"
+  },
+  "windows": [
+    {"tag": "z1p00_1p50", "role": "primary", "z_min": 1.0, "z_max_exclusive": 1.5},
+    {"tag": "z0p95_1p45", "role": "perturbation", "z_min": 0.95, "z_max_exclusive": 1.45},
+    {"tag": "z1p05_1p55", "role": "perturbation", "z_min": 1.05, "z_max_exclusive": 1.55},
+    {"tag": "z1p00_1p40", "role": "perturbation", "z_min": 1.0, "z_max_exclusive": 1.4},
+    {"tag": "z1p10_1p50", "role": "perturbation", "z_min": 1.1, "z_max_exclusive": 1.5}
+  ],
+  "latitude_cuts_deg": [20.0, 25.0, 30.0, 35.0],
+  "primary_latitude_cut_deg": 35.0,
+  "mask": {
+    "kind": "conditional_observed_positions",
+    "description": "Fit only at observed DR16Q positions after primary quality selection; no full-sky completion or outcome-dependent footprint trimming.",
+    "coordinate_frame": "Galactic",
+    "coordinate_transform": "astropy.coordinates.SkyCoord ICRS to Galactic",
+    "minimum_row_n": 1000,
+    "maximum_design_condition_number": 100000000.0
+  },
+  "model": {
+    "response": "SDSS best redshift Z",
+    "intercept": true,
+    "multipoles": [1, 2, 3],
+    "joint_fit": true,
+    "l1_basis": "Galactic Cartesian unit vector x,y,z",
+    "l2_l3_basis": "real orthonormal spherical harmonics",
+    "statistics": ["partial_F_l1", "partial_F_l2", "partial_F_l3", "joint_F_l1_l3"],
+    "family_size": 80,
+    "family_definition": "5 windows x 4 latitude cuts x 4 statistics"
+  },
+  "null": {
+    "kind": "restricted-residual spatial-block Rademacher wild bootstrap",
+    "restricted_model": "intercept only within each window/cut row",
+    "shared_signs_across_family": true,
+    "cell_scheme": "equal-area Galactic longitude x sin(latitude)",
+    "scales": [
+      {"cell_deg": 8.0, "n_mocks": 20000, "seed": 20268790},
+      {"cell_deg": 12.0, "n_mocks": 20000, "seed": 20272826},
+      {"cell_deg": 16.0, "n_mocks": 20000, "seed": 20276862}
+    ],
+    "batch_size": 500,
+    "p_estimator": "(1 + exceedances) / (1 + n_mocks)",
+    "global_statistic": "maximum -log10(nominal F survival probability) over the fixed 80-test family",
+    "cross_scale_readout": "maximum of the three independently calibrated global p-values"
+  },
+  "promotion_gates": {
+    "logic": "all",
+    "integrity": "catalogue and every registered row pass file, N, rank and condition checks",
+    "global_p_max_each_scale": 0.01,
+    "primary_joint_l1_l3_coherence_point_p_max_each_scale": 0.05,
+    "cross_catalogue_direction_max_deg": 30.0,
+    "window_stability": {
+      "latitude_cut_deg": 35.0,
+      "maximum_direction_separation_from_primary_deg": 30.0
+    },
+    "latitude_stability": {
+      "window_tag": "z1p00_1p50",
+      "maximum_direction_separation_from_primary_deg": 30.0
+    },
+    "amplitude_stability": {
+      "rows": "all fixed window perturbations at |b| >= 35 deg and all fixed latitude cuts in the primary window",
+      "ratio_denominator": "primary-row dipole amplitude",
+      "amplitude_ratio_min": 0.5,
+      "amplitude_ratio_max": 2.0
+    }
+  },
+  "reporting": {
+    "default_decision_if_any_gate_fails": "not promoted",
+    "retain_observed_rows": true,
+    "retain_pointwise_p_values": true,
+    "retain_global_null_maxima": true,
+    "retain_conditioning_and_stability_diagnostics": true,
+    "list_every_failed_gate_and_subcomponent": true
+  }
+}

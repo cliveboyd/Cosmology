@@ -1,0 +1,106 @@
+{
+  "analysis_id": "rawmu_release_grounded_calibration_2026-07-18",
+  "registration_date": "2026-07-18",
+  "status_at_registration": "methods locked before new fit outcomes",
+  "claim_boundary": "model-comparison diagnostic; no H0 measurement or discovery claim",
+  "language": "UK English",
+  "primary_frame": {
+    "PantheonPlusSH0ES": "zHD",
+    "DES_Dovekie_raw": "zHD",
+    "Union3p1_UNITY1p8": "z"
+  },
+  "selection": {
+    "z_min_exclusive": 0.01,
+    "keep_pantheon_calibrators": false,
+    "minimum_survey_size": 20
+  },
+  "models": {
+    "FR_C1PZ_ALPHA0": {
+      "distance_law": "(c/H0)*z*(1+z/2)",
+      "k_shape": 0
+    },
+    "LCDM_OMFREE": {
+      "geometry": "flat",
+      "omega_m_bounds": [0.05, 0.6],
+      "k_shape": 1
+    },
+    "H0_fixed_km_s_Mpc": 67.5
+  },
+  "normalisation_nuisance": {
+    "type": "profiled_flat_release_intercepts",
+    "count": "one per represented release",
+    "interpretation": "absolute SN normalisation, not calibration shift",
+    "same_for_all_models": true,
+    "same_nuisance_literal": "identical rows, covariance, offset design matrix, offset parameter count, prior widths, and profiling/marginalisation rule within every FR versus Lambda-CDM comparison cell"
+  },
+  "calibration_prior_derivation": {
+    "projection": "sigma_proj=sqrt(w.T@C_component@w), w=x/sum(x)",
+    "residual_budget": "sigma_add=sqrt(max(sigma_doc^2-sigma_included^2,0))",
+    "double_count_guard": "do not add release-internal priors to STAT+SYS",
+    "PantheonPlusSH0ES": {
+      "component": "release CALIB calibration-only covariance; CSP_RECAL and HSTCALSPEC controls",
+      "use": "reported dataset/survey prior diagnostic; already contained in STAT+SYS",
+      "additive_prior_to_total": false,
+      "explicit_reconstruction": "C_STATONLY+grouped_offset_covariance derived from C_grouping-C_STATONLY"
+    },
+    "DES_Dovekie_raw": {
+      "component": "C_total-C_stat, all-systematics upper bound",
+      "use": "all-systematics grouped cap sensitivity because no calibration-only component is available",
+      "additive_prior_to_total": false,
+      "explicit_reconstruction": "inv(P_STATONLY)+grouped_offset_covariance"
+    },
+    "Union3p1_UNITY1p8": {
+      "documented_important_dataset_zero_point_mag": 0.01,
+      "use": "metadata/budget only; calibration derivatives and uncertainties are propagated in release covariance",
+      "additive_prior_to_total": false,
+      "explicit_reconstruction": "not run without separable stat-only/calibration components"
+    }
+  },
+  "holdouts": {
+    "dataset": ["PantheonPlusSH0ES", "DES_Dovekie_raw", "Union3p1_UNITY1p8"],
+    "survey": {
+      "datasets": ["PantheonPlusSH0ES", "DES_Dovekie_raw"],
+      "minimum_selected_rows": 20
+    },
+    "high_z_thresholds": [0.5, 0.8, 1.0],
+    "primary_high_z_threshold": 0.5,
+    "subset_rule": "marginal covariance subset; never precision submatrix approximation",
+    "test_normalisation": "profile one intercept per represented release"
+  },
+  "scores": {
+    "delta_BIC": "BIC_FR-BIC_LCDM; negative favours FR",
+    "delta_chi2_test": "chi2_FR-chi2_LCDM; negative favours FR"
+  },
+  "sensitivity_policy": {
+    "residual_offset_priors": "only demonstrably external non-overlapping sigma_add components",
+    "same_nuisance_literal": true,
+    "evidence_status": "sensitivity correlated with primary release likelihood; not independent information",
+    "headline_eligible": false,
+    "PantheonPlus_components": ["CALIB", "CSP_RECAL", "HSTCALSPEC", "CALIB+CSP_RECAL+HSTCALSPEC"],
+    "DES_component": "all systematics C_sys=inv(P_total)-inv(P_stat)",
+    "covariance_reconstruction_error_required": true
+  },
+  "robustness_gate": {
+    "full_and_primary_high_z_same_sign": true,
+    "strong_opposite_test_threshold_abs_delta_chi2": 4.0,
+    "minimum_survey_sign_fraction": 0.8,
+    "all_model_difference_modes_within_budget": true,
+    "no_covariance_prior_double_counting": true
+  },
+  "local_sources": {
+    "PantheonPlusSH0ES_data": "C:/Users/clive/Documents/Cosmology/Pantheon+SH0ES.dat",
+    "PantheonPlusSH0ES_total_covariance": "C:/Users/clive/Documents/Cosmology/Pantheon+SH0ES_STAT+SYS.cov",
+    "DES_data": "C:/Users/clive/Documents/Cosmology/external_datasets/current_cosmology_sources/DES_SN5YR_Dovekie/DES-Dovekie_HD.csv",
+    "DES_total_precision": "C:/Users/clive/Documents/Cosmology/external_datasets/current_cosmology_sources/DES_SN5YR_Dovekie/STAT+SYS.npz",
+    "DES_statistical_precision": "C:/Users/clive/Documents/Cosmology/external_datasets/current_cosmology_sources/DES_SN5YR_Dovekie/STATONLY.npz",
+    "Union3p1_release": "C:/Users/clive/Documents/Cosmology/external_datasets/current_cosmology_sources/Union3_release/mu_mat_union3.1_UNITY1.8_template_cosmo=2_0_mu.fits"
+  },
+  "source_urls": {
+    "PantheonPlusSH0ES_release": "https://github.com/PantheonPlusSH0ES/DataRelease/tree/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR",
+    "PantheonPlusSH0ES_systematic_groupings": "https://github.com/PantheonPlusSH0ES/DataRelease/tree/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/sytematic_groupings",
+    "PantheonPlusSH0ES_FRAGILISTIC_covariance": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/main/Pantheon%2B_Data/2_CALIBRATION/FRAGILISTIC_COVARIANCE.npz",
+    "PantheonPlus_calibration_paper": "https://arxiv.org/abs/2110.03486",
+    "DES_SN5YR_release": "https://github.com/des-science/DES-SN5YR",
+    "Union3_paper": "https://doi.org/10.3847/1538-4357/adc0a5"
+  }
+}

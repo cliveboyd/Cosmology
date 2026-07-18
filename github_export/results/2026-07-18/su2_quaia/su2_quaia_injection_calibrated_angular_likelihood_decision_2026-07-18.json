@@ -1,0 +1,46 @@
+{
+  "analysis": "su2_quaia_injection_calibrated_angular_likelihood",
+  "date": "2026-07-18",
+  "outcome": "calibration failure and underpowered",
+  "interpretation": "The untouched null false-positive rate exceeded 1%, and the locked 1x effect was not jointly recovered in at least 80% of validation injections. Both are calibration outcomes: the threshold remains unchanged and the observed candidate is not promotable.",
+  "conjunctive_rule": true,
+  "threshold_frozen_after_calibration_partition": true,
+  "threshold_moved_for_power": false,
+  "in_sample_bic_can_substitute": false,
+  "calibration": {
+    "threshold_replicates": 1000,
+    "validation_replicates": 1000,
+    "frozen_threshold": 413.74854180551483,
+    "validation_false_positive_rate": 0.014,
+    "joint_recovery_rate_1x": 0.0
+  },
+  "observed": {
+    "delta_cvlpd": -11653.402152932847,
+    "empirical_validation_null_p": 1.0,
+    "positive_fold_count": 0,
+    "pooled_amplitude": 0.0023628154359747596,
+    "amplitude_ratio_to_reference": 0.9270700628313576,
+    "pooled_l_deg": 225.5362734983795,
+    "pooled_b_deg": 46.67382467021557,
+    "direction_separation_deg": 113.6145814897053,
+    "positive_orientation": false
+  },
+  "conditions": {
+    "validation_null_false_positive_rate_le_0p01": false,
+    "joint_1x_recovery_ge_0p80": false,
+    "observed_pooled_held_out_gain_positive_and_above_threshold": false,
+    "observed_direction_within_30_deg": false,
+    "observed_amplitude_ratio_in_0p5_to_1p5": true,
+    "observed_orientation_positive": false,
+    "at_least_8_of_12_positive_held_out_sectors": false
+  },
+  "in_sample_non_gating_diagnostics": {
+    "template_only_bic": -826836.6067297985,
+    "template_plus_su2_bic": -826839.1937726035,
+    "delta_bic_plus_minus_template": -2.587042805040255,
+    "note": "Diagnostic only; the preregistered decision rule forbids substitution for held-out predictive gain.",
+    "candidate_amplitude": 0.0025383397107251403,
+    "candidate_l_deg": 227.90584447389264,
+    "candidate_b_deg": 43.155689802698234
+  }
+}

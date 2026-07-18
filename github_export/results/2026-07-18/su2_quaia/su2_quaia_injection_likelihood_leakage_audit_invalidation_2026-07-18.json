@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-18",
+  "status": "methodologically_invalidated_for_heldout_prediction",
+  "scope": "first_su2_quaia_injection_calibrated_angular_likelihood_branch_only",
+  "defect": {
+    "type": "response_leakage",
+    "predictor_definition": "x_SU2_i = s(z_i) * n_i",
+    "response_dependency": "The observed Quaia photometric redshift used as the response also enters s(z_i) in the held-out design matrix.",
+    "consequence": "CVLPD and injection-recovery quantities are not genuinely held-out predictive statistics."
+  },
+  "outcome_blind": true,
+  "outcome_dependence": "none",
+  "previous_decision": "already_failed_promotion",
+  "positive_claim_changed": false,
+  "replacement_requirements": [
+    "one-to-one positional cross-match to official SDSS DR16Q v4",
+    "response equals Quaia photometric redshift minus DR16Q spectroscopic redshift",
+    "SU2 scalar curve uses DR16Q spectroscopic redshift only",
+    "fixed held-out spatial folds",
+    "locked null split and injection-power calibration",
+    "explicit permutation test proving predictors are invariant to the Quaia photometric-redshift response"
+  ]
+}
