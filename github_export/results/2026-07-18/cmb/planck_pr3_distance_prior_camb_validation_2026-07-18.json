@@ -1,0 +1,45 @@
+{
+  "analysis": "planck_pr3_distance_prior_camb_validation",
+  "date": "2026-07-18",
+  "reference_sample": {
+    "member": "base/plikHM_TTTEEE_lowl_lowE/base_plikHM_TTTEEE_lowl_lowE_4.txt",
+    "row_index_zero_based": 4398,
+    "minus_loglike": 1386.323,
+    "ombh2": 0.02233793,
+    "omch2": 0.1204174,
+    "tau": 0.05146401,
+    "logA": 3.044804,
+    "ns": 0.9655698,
+    "H0": 67.17529,
+    "chain_vector": [
+      1.7513738794096751,
+      301.7608186049574,
+      0.02233793
+    ]
+  },
+  "chain_vector": [
+    1.7513738794096751,
+    301.7608186049574,
+    0.02233793
+  ],
+  "camb_vector": [
+    1.751386762522203,
+    301.7650236089608,
+    0.02233793
+  ],
+  "difference": [
+    1.288311252789498e-05,
+    0.0042050040033814184,
+    0.0
+  ],
+  "difference_in_prior_sigma": [
+    0.0028173187115324004,
+    0.04757419714641969,
+    0.0
+  ],
+  "maximum_absolute_difference_in_prior_sigma": 0.04757419714641969,
+  "tolerance_in_prior_sigma": 0.25,
+  "pass": true,
+  "reference_sample_chi_square_under_compression": 0.030309378880900285,
+  "claim_boundary": "Software unit/recombination regression only; not an independent cosmological constraint."
+}

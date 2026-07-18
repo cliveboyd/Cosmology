@@ -1,0 +1,32 @@
+{
+  "date": "2026-07-18",
+  "status": "locked before Planck download and ACT evaluation",
+  "planck_distance": {
+    "source_file": "COM_CosmoParams_base-plikHM-TTTEEE-lowl-lowE_R3.00.zip",
+    "vector_order": ["R", "l_A", "omega_b_h2"],
+    "sample_rule": "all finite positive-weight samples from all bundled chain text files",
+    "theta_rule": "use derived thetastar, never sampled theta_MC",
+    "covariance": "weighted posterior second central moment",
+    "standard_early_physics_required": true
+  },
+  "act_dr6_lite_regression": {
+    "expected_loglike": -395.48,
+    "absolute_tolerance": 0.01,
+    "A_act": 1.0,
+    "P_act": 1.0,
+    "parameters": {
+      "ombh2": 0.022,
+      "omch2": 0.117,
+      "ns": 0.96,
+      "As": 2e-9,
+      "tau": 0.065,
+      "cosmomc_theta": 0.010409
+    }
+  },
+  "deferred_branches": {
+    "firas": "blocked pending registered likelihood assets and physical energy-injection mapping",
+    "low_l": "blocked pending PR4 maps, masks and simulations",
+    "tb_eb": "blocked pending split maps, angle priors and parity-odd theory spectra",
+    "lensing": "blocked pending ACT lensing likelihood data and SU2R perturbation equations"
+  }
+}

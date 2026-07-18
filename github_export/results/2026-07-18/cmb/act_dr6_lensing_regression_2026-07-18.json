@@ -1,0 +1,43 @@
+{
+  "analysis": "act_dr6_lensing_v1p2_regression",
+  "date": "2026-07-18",
+  "package_version": "1.2.1",
+  "data_archive_sha256": "bbcde3bcacd7c9a97138c4873c8a1217635a18504d15c4f86b1fba39d3601085",
+  "registration_sha256": "a0c00976cf0a9df5fa6ebf06af670f9f35e98f2e367d6ceb91473e640d084dc8",
+  "cells": [
+    {
+      "variant": "act_baseline",
+      "lens_only": true,
+      "expected_chi_square": 14.06,
+      "measured_chi_square": 14.05791178873945,
+      "difference": -0.0020882112605509207,
+      "pass": true
+    },
+    {
+      "variant": "act_baseline",
+      "lens_only": false,
+      "expected_chi_square": 14.13,
+      "measured_chi_square": 14.13150047736671,
+      "difference": 0.0015004773667097737,
+      "pass": true
+    },
+    {
+      "variant": "actplanck_baseline",
+      "lens_only": true,
+      "expected_chi_square": 21.07,
+      "measured_chi_square": 21.071631273582106,
+      "difference": 0.0016312735821060187,
+      "pass": true
+    },
+    {
+      "variant": "actplanck_baseline",
+      "lens_only": false,
+      "expected_chi_square": 21.46,
+      "measured_chi_square": 21.461799300448114,
+      "difference": 0.0017993004481127173,
+      "pass": true
+    }
+  ],
+  "pass": true,
+  "claim_boundary": "software/data regression only; physical SU2R inference requires registered perturbation spectra"
+}

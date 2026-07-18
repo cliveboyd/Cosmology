@@ -29,6 +29,23 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
 
 ## July 18 Audit
 
+- `2026-07-18/cmb/` contains the registered five-branch CMB programme, a typed
+  theory boundary, the official Planck PR3 three-variable distance compression,
+  independent CAMB validation, ACT DR6-lite fixed-spectrum regression, ACT DR6
+  lensing regression registration, FIRAS ingestion gate and branch-readiness audit.
+- The Planck compression uses 24,497 weighted samples and gives
+  `R=1.750638459`, `l_A=301.7607006` and `omega_b h^2=0.0223597502`; independent
+  CAMB reconstruction agrees within 0.047574 prior standard deviations. ACT
+  DR6-lite reproduces the collaboration target with log-likelihood
+  `-395.48307451`. Both are implementation results, not SU(2) or FR evidence.
+- The official ACT DR6 lensing v1.2 four-cell regression also passes. ACT-only
+  lens-only/corrected chi-squared values are `14.057912` and `14.131500`; the
+  ACT+Planck values are `21.071631` and `21.461799`. Physical SU2R lensing remains
+  blocked until registered scalar perturbations predict convergence and lensed
+  primary-CMB spectra.
+- The CMB programme explicitly blocks physical lensing, low-l, TB/EB and FIRAS
+  claims until the corresponding perturbation, map/simulation, polarisation-angle,
+  covariance and photon-thermalisation requirements are supplied.
 - `2026-07-18/sparc_am/` contains the preregistered SPARC matter/antimatter-identifiability gate, outcome-blind matched controls, twelve-scenario conventional-systematics matrix, deterministic multi-start profiles, figures and hash manifest.
 - The implemented rotation-curve likelihood is matter/antimatter non-identifiable. Three of the six development galaxies retain a model-relative PLAMB tension, but the matched-block direction is not coherent and no galaxy is classified as antimatter.
 - `2026-07-18/sparc_am_single_start_invalidated/` preserves the initial single-start bundle and its invalidation notice. It is retained only as a transparent numerical-audit record and must not be used for interpretation.

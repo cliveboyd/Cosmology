@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-18",
+  "branches": [
+    {
+      "branch": "planck_distance_prior",
+      "data_ready": true,
+      "software_ready": true,
+      "theory_ready": true,
+      "scientific_ready": true,
+      "boundary": "standard early physics and recombination only"
+    },
+    {
+      "branch": "act_dr6_primary_cmb",
+      "data_ready": true,
+      "software_ready": true,
+      "theory_ready": true,
+      "scientific_ready": true,
+      "boundary": "new-model use requires CAMB/CLASS-compatible spectra"
+    },
+    {
+      "branch": "firas_spectral_distortion",
+      "data_ready": false,
+      "software_ready": true,
+      "theory_ready": false,
+      "scientific_ready": false,
+      "boundary": "blocked by full covariance and registered dQ/dz or photon-kinetic mapping"
+    },
+    {
+      "branch": "planck_low_l",
+      "data_ready": false,
+      "software_ready": false,
+      "theory_ready": true,
+      "scientific_ready": false,
+      "boundary": "blocked by PR4 maps/masks/simulations and frozen global statistic family"
+    },
+    {
+      "branch": "tb_eb_parity",
+      "data_ready": false,
+      "software_ready": false,
+      "theory_ready": false,
+      "scientific_ready": false,
+      "boundary": "blocked by split maps, angle priors, foreground model and parity-odd transfer spectra"
+    },
+    {
+      "branch": "act_dr6_lensing",
+      "data_ready": true,
+      "software_ready": true,
+      "theory_ready": false,
+      "scientific_ready": false,
+      "boundary": "Lambda-CDM regression ready; physical SU2R inference is blocked by perturbation equations"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "date": "2026-07-18",
+  "software_environment": {
+    "python": "3.13.9",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "camb": "1.6.6",
+    "cobaya": "3.6.2",
+    "sacc": "2.4",
+    "act_dr6_lenslike": "1.2.1"
+  },
+  "planck_distance_prior": {
+    "posterior_rows": 24497,
+    "means": {
+      "R": 1.7506384588674202,
+      "l_A": 301.76070062852654,
+      "omega_b_h2": 0.02235975023942218
+    },
+    "camb_validation_pass": true,
+    "maximum_camb_discrepancy_sigma": 0.04757419714641969
+  },
+  "act_dr6_lite": {
+    "loglike": -395.4830745063056,
+    "target": -395.48,
+    "pass": true
+  },
+  "act_dr6_lensing": {
+    "pass": true,
+    "cells": [
+      {
+        "variant": "act_baseline",
+        "lens_only": true,
+        "expected_chi_square": 14.06,
+        "measured_chi_square": 14.05791178873945,
+        "difference": -0.0020882112605509207,
+        "pass": true
+      },
+      {
+        "variant": "act_baseline",
+        "lens_only": false,
+        "expected_chi_square": 14.13,
+        "measured_chi_square": 14.13150047736671,
+        "difference": 0.0015004773667097737,
+        "pass": true
+      },
+      {
+        "variant": "actplanck_baseline",
+        "lens_only": true,
+        "expected_chi_square": 21.07,
+        "measured_chi_square": 21.071631273582106,
+        "difference": 0.0016312735821060187,
+        "pass": true
+      },
+      {
+        "variant": "actplanck_baseline",
+        "lens_only": false,
+        "expected_chi_square": 21.46,
+        "measured_chi_square": 21.461799300448114,
+        "difference": 0.0017993004481127173,
+        "pass": true
+      }
+    ]
+  },
+  "firas": {
+    "ingestion_pass": true,
+    "scientific_fit_permitted": false,
+    "frequency_range_ghz": [
+      68.052887966,
+      639.457312914
+    ]
+  },
+  "readiness": [
+    {
+      "branch": "planck_distance_prior",
+      "data_ready": true,
+      "software_ready": true,
+      "theory_ready": true,
+      "scientific_ready": true,
+      "boundary": "standard early physics and recombination only"
+    },
+    {
+      "branch": "act_dr6_primary_cmb",
+      "data_ready": true,
+      "software_ready": true,
+      "theory_ready": true,
+      "scientific_ready": true,
+      "boundary": "new-model use requires CAMB/CLASS-compatible spectra"
+    },
+    {
+      "branch": "firas_spectral_distortion",
+      "data_ready": false,
+      "software_ready": true,
+      "theory_ready": false,
+      "scientific_ready": false,
+      "boundary": "blocked by full covariance and registered dQ/dz or photon-kinetic mapping"
+    },
+    {
+      "branch": "planck_low_l",
+      "data_ready": false,
+      "software_ready": false,
+      "theory_ready": true,
+      "scientific_ready": false,
+      "boundary": "blocked by PR4 maps/masks/simulations and frozen global statistic family"
+    },
+    {
+      "branch": "tb_eb_parity",
+      "data_ready": false,
+      "software_ready": false,
+      "theory_ready": false,
+      "scientific_ready": false,
+      "boundary": "blocked by split maps, angle priors, foreground model and parity-odd transfer spectra"
+    },
+    {
+      "branch": "act_dr6_lensing",
+      "data_ready": true,
+      "software_ready": true,
+      "theory_ready": false,
+      "scientific_ready": false,
+      "boundary": "Lambda-CDM regression ready; physical SU2R inference is blocked by perturbation equations"
+    }
+  ],
+  "claim_boundary": "These are software, data and background-compression foundations. Physical SU(2), SU2R, magnetic, parity or FR interpretation requires the registered missing theory and data capabilities."
+}

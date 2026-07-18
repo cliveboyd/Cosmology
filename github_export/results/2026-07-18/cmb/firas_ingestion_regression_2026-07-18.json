@@ -1,0 +1,20 @@
+{
+  "analysis": "cobe_firas_ingestion_regression",
+  "date": "2026-07-18",
+  "data_path": "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\current_cosmology_sources\\COBE_FIRAS\\firas_monopole_spec_v1.txt",
+  "frequency_range_ghz": [
+    68.052887966,
+    639.457312914
+  ],
+  "covariance_mode_exercised": "diagonal_diagnostic_only",
+  "checks": {
+    "channels": true,
+    "strictly_increasing_frequency": true,
+    "finite_templates": true,
+    "positive_diagonal_diagnostic": true,
+    "primary_fit_without_covariance_refused": true
+  },
+  "pass": true,
+  "scientific_fit_permitted": false,
+  "claim_boundary": "Ingestion and template software only. A primary spectral-distortion fit remains blocked until a full registered covariance and physical distortion prediction are supplied."
+}
