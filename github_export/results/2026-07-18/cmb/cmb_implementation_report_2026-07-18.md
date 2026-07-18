@@ -137,6 +137,32 @@ registered scalar perturbation equations that predict `C_L^kappakappa` and lense
 TT, TE, EE and BB spectra. Subsequent ACT-only, Planck-only, combined and low/high-L
 hold-outs must avoid double-counting Planck reconstruction information.
 
+### SU2R physical-equation gate
+
+The repository now contains an executable SU2R adapter contract and a dated
+equation registry. The adapter requires, as one internally consistent system:
+
+1. the covariant action and field content;
+2. the background equations and parameter mapping;
+3. scalar evolution and constraint equations;
+4. perturbed energy density, pressure, momentum and anisotropic stress;
+5. a gauge dictionary and regular initial conditions;
+6. the metric/Weyl-potential relation used by lensing; and
+7. a hash-registered Boltzmann-backend implementation.
+
+The current registry intentionally leaves these entries empty because they were
+not found in the supplied SU2R material. Its audit therefore returns `BLOCK
+PHYSICAL SU2R CMB/LENSING INTERPRETATION`, and the adapter raises a hard exception
+before spectra can be requested.
+
+This gate also clarifies the status of the earlier code. The 66,150-row SU2R
+growth scan is a phenomenological quasi-static closure in which clustering,
+slip, sound-speed, gauge-range and helicity filters are assumed. Its best raw
+improvement was only `Delta chi2=-0.0971103`, while its AIC-like score retained
+the smooth branch. The historical CAMB PPF run is an effective-fluid proxy rather
+than a non-Abelian perturbation implementation and was not matched to the source
+background. Neither result is a physical SU2R CMB or lensing prediction.
+
 ## 5. Planck and ACT constraints
 
 The Planck PR3 baseline chain has been compressed to
@@ -180,10 +206,12 @@ out-of-sample validation.
 
 The implementation makes background tests immediately usable and gives the
 perturbation branches reproducible entry gates. It does not yet create an SU(2) or
-FR CMB detection. The highest-value theoretical task is an adapter that predicts
-scalar perturbations and lensing from the same parameters used in the late-time
-model. The ACT lensing software gate is now complete. The highest-value data task
-is acquisition of the registered PR4 low-l map and simulation assets.
+FR CMB detection. The SU2R adapter and refusal gate are complete; its physical
+backend is not. The highest-value theoretical task is therefore to supply the
+registered field equations and implement their scalar hierarchy in a Boltzmann
+solver using the same parameters as the late-time model. The ACT lensing software
+gate is complete. The highest-value data task is acquisition of the registered
+PR4 low-l map and simulation assets.
 
 ## Sources
 

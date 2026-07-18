@@ -19,6 +19,7 @@ python github_export/code/cmb/validate_act_dr6_lensing_2026-07-18.py
 python github_export/code/cmb/download_firas_monopole_2026-07-18.py
 python github_export/code/cmb/validate_firas_ingestion_2026-07-18.py
 python github_export/code/cmb/audit_cmb_branch_readiness_2026-07-18.py
+python github_export/code/cmb/audit_su2r_physical_readiness_2026-07-18.py
 python github_export/code/cmb/test_cmb_contracts.py
 ```
 
@@ -35,11 +36,21 @@ requires model spectra; parity work requires parity-odd spectra or an explicitly
 registered birefringence transform; FIRAS interpretation requires a physical
 energy-injection or photon-kinetic prediction.
 
+`su2r_physical_perturbation_adapter.py` adds a stricter SU2R-specific registry.
+It will load a physical backend only when the action, background equations,
+scalar evolution and constraint equations, perturbed stress-energy tensor, gauge
+dictionary, initial conditions and Weyl-potential relation are all supplied and
+hash-registered. An incomplete registry raises `PhysicalTheoryIncomplete`; it
+cannot silently fall back to the existing phenomenological growth closure or PPF
+effective-fluid proxy.
+
 ## Current gates
 
 - Planck three-variable distance prior: implemented and CAMB-validated.
 - ACT DR6 primary-CMB likelihood: official fixed-spectrum regression implemented.
 - ACT DR6 lensing likelihood: official four-cell regression is the software gate.
+- Physical SU2R primary CMB and lensing: blocked by the equation-registry audit;
+  the refusal behaviour is covered by the contract tests.
 - FIRAS: ingestion is implemented; a primary fit is blocked without full covariance.
 - Planck low-l: the leave-one-out simulation maximum-statistic engine is implemented;
   map evaluation is blocked pending maps, masks and simulations.

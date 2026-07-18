@@ -1,0 +1,184 @@
+{
+  "date": "2026-07-18",
+  "preregistration_sha256": "54eeac425fc0f3d554ec3be5959a3caaa65c2a7dca2a088dae818a203ab2d392",
+  "identity_max_abs_mag": {
+    "PantheonPlusSH0ES": 7.105427357601002e-15,
+    "DES_Dovekie_raw": 1.4210854715202004e-14,
+    "Union3p1_UNITY1p8": 7.105427357601002e-15
+  },
+  "identity_gate_pass": true,
+  "primary_fit": {
+    "N": 3422,
+    "N_release_intercepts": 3,
+    "FR_chi2": 3150.1454807797254,
+    "LCDM_chi2": 3047.6625171859346,
+    "LCDM_Omega_m": 0.3306796417545181,
+    "FR_BIC": 3174.559422143082,
+    "LCDM_BIC": 3080.2144390037433,
+    "delta_BIC_FR_minus_LCDM": 94.34498313933864,
+    "FR_offsets": {
+      "PantheonPlusSH0ES": -0.12290424566399817,
+      "DES_Dovekie_raw": 0.007865674698609444,
+      "Union3p1_UNITY1p8": -0.014807847306313019
+    },
+    "LCDM_offsets": {
+      "PantheonPlusSH0ES": -0.17768385502297024,
+      "DES_Dovekie_raw": -0.07022421224108398,
+      "Union3p1_UNITY1p8": -0.055388771505309894
+    },
+    "nuisance_signature": "cd2a1ff73fad299cc85f214fad4f4dac1318cfb3b06b0bffeaf027bf8cc5b85f",
+    "FR_nuisance_signature": "cd2a1ff73fad299cc85f214fad4f4dac1318cfb3b06b0bffeaf027bf8cc5b85f",
+    "LCDM_nuisance_signature": "cd2a1ff73fad299cc85f214fad4f4dac1318cfb3b06b0bffeaf027bf8cc5b85f",
+    "same_nuisance_verified": true,
+    "optimisation_success": true
+  },
+  "distance_space_sensitivity": {
+    "scope": "joint",
+    "variant": "diagonal_luminosity_distance_with_reported_z_error",
+    "N": 3422,
+    "FR_chi2": 2812.6543034206925,
+    "LCDM_chi2": 2710.1757005518457,
+    "LCDM_Omega_m": 0.35024080902124133,
+    "FR_BIC": 2837.068244784049,
+    "LCDM_BIC": 2742.7276223696545,
+    "delta_BIC_FR_minus_LCDM": 94.3406224143948,
+    "same_nuisance_verified": true,
+    "redshift_error_rows": 1580,
+    "redshift_error_coverage": {
+      "PantheonPlusSH0ES": {
+        "N": 1580,
+        "source": "released zHDERR"
+      },
+      "DES_Dovekie_raw": {
+        "N": 0,
+        "source": "not supplied by compressed release product"
+      },
+      "Union3p1_UNITY1p8": {
+        "N": 0,
+        "source": "not supplied by compressed release product"
+      }
+    },
+    "distance_scale_FR": {
+      "PantheonPlusSH0ES": 0.9434040849582803,
+      "DES_Dovekie_raw": 0.9969970235668392,
+      "Union3p1_UNITY1p8": 1.0086709030946857
+    },
+    "distance_scale_LCDM": {
+      "PantheonPlusSH0ES": 0.9199062334007541,
+      "DES_Dovekie_raw": 0.9678003987746845,
+      "Union3p1_UNITY1p8": 0.9787890841017872
+    }
+  },
+  "primary_counts": {
+    "PantheonPlusSH0ES": 1580,
+    "DES_Dovekie_raw": 1820,
+    "Union3p1_UNITY1p8": 22
+  },
+  "all_positive_z_counts": {
+    "PantheonPlusSH0ES": 1624,
+    "DES_Dovekie_raw": 1820,
+    "Union3p1_UNITY1p8": 22
+  },
+  "load_metadata": {
+    "primary_frame": {
+      "PantheonPlusSH0ES": "zHD",
+      "DES_Dovekie_raw": "zHD",
+      "Union3p1_UNITY1p8": "z"
+    },
+    "N": {
+      "PantheonPlusSH0ES": 1580,
+      "DES_Dovekie_raw": 1820,
+      "Union3p1_UNITY1p8": 22
+    },
+    "hierarchies": {
+      "pantheon_calib_statonly_grouped": {
+        "component": "CALIB",
+        "dataset": "PantheonPlusSH0ES",
+        "base": "STATONLY",
+        "survey_priors_mag": {
+          "1": 0.008075982502836906,
+          "10": 0.006936932607242753,
+          "15": 0.006371219705925663,
+          "150": 0.015025722885243507,
+          "4": 0.018936388261509243,
+          "5": 0.019312110579827364,
+          "50": 0.02708800827015334,
+          "51": 0.009605405550494663,
+          "56": 0.04456361497142021,
+          "57": 0.0038350553877342657,
+          "63": 0.005608021996594319,
+          "64": 0.0032152294240378886,
+          "65": 0.005972385432563947,
+          "OTHER": 0.015794418335565347
+        },
+        "metrics": {
+          "target_frobenius_norm_mag2": 0.32301091566181195,
+          "residual_frobenius_norm_mag2": 0.30365307105882816,
+          "relative_frobenius_error": 0.9400706178510352,
+          "captured_frobenius_power_fraction": 0.11626723345317302,
+          "diagonal_rmse_mag2": 0.0006179950937768223,
+          "dataset_variance_raw_mag2": -1.5614935453861935e-05,
+          "dataset_variance_mag2": 0.0,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "N_groups": 14
+        }
+      },
+      "pantheon_calib_csp_recal_hstcalspec_statonly_grouped": {
+        "component": "CALIB+CSP_RECAL+HSTCALSPEC",
+        "dataset": "PantheonPlusSH0ES",
+        "base": "STATONLY",
+        "survey_priors_mag": {
+          "1": 0.00819168417355587,
+          "10": 0.007856563639721847,
+          "15": 0.006900267193768169,
+          "150": 0.01506658119003963,
+          "4": 0.02573536062168403,
+          "5": 0.02360628293970409,
+          "50": 0.027120367272359242,
+          "51": 0.009624749520070627,
+          "56": 0.044623976714760705,
+          "57": 0.004082184265035377,
+          "63": 0.005753601356665979,
+          "64": 0.003584777554811392,
+          "65": 0.007727909662716178,
+          "OTHER": 0.01666817286093545
+        },
+        "metrics": {
+          "target_frobenius_norm_mag2": 0.7107934241032522,
+          "residual_frobenius_norm_mag2": 0.6956629489184941,
+          "relative_frobenius_error": 0.9787132594764127,
+          "captured_frobenius_power_fraction": 0.04212035572505601,
+          "diagonal_rmse_mag2": 0.000805480276036463,
+          "dataset_variance_raw_mag2": -2.1775167495908403e-05,
+          "dataset_variance_mag2": 0.0,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "N_groups": 14
+        }
+      },
+      "des_allsys_statonly_grouped": {
+        "component": "ALL_SYSTEMATICS",
+        "dataset": "DES_Dovekie_raw",
+        "base": "STATONLY",
+        "survey_priors_mag": {
+          "10": 0.011766741997148049,
+          "150": 0.019676396618983773,
+          "64": 0.012457391087084598,
+          "65": 0.023063874479079774,
+          "OTHER": 0.023172941964601863
+        },
+        "metrics": {
+          "target_frobenius_norm_mag2": 5.608424170235519,
+          "residual_frobenius_norm_mag2": 5.60370439056719,
+          "relative_frobenius_error": 0.9991584481620741,
+          "captured_frobenius_power_fraction": 0.001682395466355846,
+          "diagonal_rmse_mag2": 0.012914567138476985,
+          "dataset_variance_raw_mag2": -1.6358679361255892e-05,
+          "dataset_variance_mag2": 0.0,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "N_groups": 5
+        }
+      }
+    }
+  },
+  "claim_boundary": "The corrected-axis plot is algebraically identical to the fixed PLAMB distance law and is not independent evidence."
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-18",
+  "physical_lensing_ready": false,
+  "physical_primary_cmb_ready": false,
+  "incomplete_registry_refusal_verified": true,
+  "missing_lensing_requirements": [
+    "action_or_field_equations",
+    "background_field_equations",
+    "scalar_dynamical_equations",
+    "scalar_constraint_equations",
+    "perturbed_stress_energy",
+    "gauge_and_variable_dictionary",
+    "initial_conditions",
+    "weyl_potential_and_lensing_relation",
+    "implementation.module_path",
+    "implementation.sha256"
+  ],
+  "missing_primary_cmb_requirements": [
+    "action_or_field_equations",
+    "background_field_equations",
+    "scalar_dynamical_equations",
+    "scalar_constraint_equations",
+    "perturbed_stress_energy",
+    "gauge_and_variable_dictionary",
+    "initial_conditions",
+    "weyl_potential_and_lensing_relation",
+    "photon_baryon_neutrino_couplings",
+    "recombination_and_thermal_history",
+    "implementation.module_path",
+    "implementation.sha256"
+  ],
+  "existing_assets": {
+    "growth_closure_code": {
+      "path": "C:\\Users\\clive\\Documents\\Cosmology\\diagnose_su2r_perturbations.py",
+      "exists": true,
+      "bytes": 27510,
+      "sha256": "36c59911e42dcca42e2bae3e60efd7f714b0d0ec5be8fda0099c2962a256cd87"
+    },
+    "growth_closure_report": {
+      "path": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\su2r_growth_likelihood\\nested_closure\\su2r_growth_nested_closure_summary.md",
+      "exists": true,
+      "bytes": 3695,
+      "sha256": "c12c814d627f87c70756fd7a3366fb1ab722cbca154ab8ce189a554a8585de21"
+    },
+    "ppf_proxy_code": {
+      "path": "C:\\Users\\clive\\Documents\\Cosmology\\run_act_dr6_lite_su2r_ppf_proxy.py",
+      "exists": true,
+      "bytes": 21931,
+      "sha256": "51e2496446c2289239ec36563b03ae4cdb194690d31142d2f332a93da1a9285e"
+    },
+    "ppf_proxy_report": {
+      "path": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\act_dr6_lite_su2r_ppf_proxy\\act_dr6_lite_su2r_ppf_proxy.md",
+      "exists": true,
+      "bytes": 2029,
+      "sha256": "3e898dc85365ea956c5e2433f6e9f52df20264726622caca6262a30a6b1f72a9"
+    }
+  },
+  "audit_findings": [
+    "The growth closure inserts freely chosen clustering, slip, sound-speed, gauge-range and helicity responses into a standard quasi-static matter-growth equation.",
+    "The closure does not derive those responses from an SU2R action, perturbed stress-energy tensor or gauge-field constraints.",
+    "The CAMB PPF run is an effective dark-energy-fluid proxy and does not implement non-Abelian SU2R perturbations.",
+    "The historical PPF proxy fixed an ACT acoustic/nuisance anchor rather than fitting a complete source-background-matched SU2R parameter vector.",
+    "Neither diagnostic can predict physical SU2R CMB lensing or parity spectra."
+  ],
+  "decision": "BLOCK_PHYSICAL_SU2R_CMB"
+}

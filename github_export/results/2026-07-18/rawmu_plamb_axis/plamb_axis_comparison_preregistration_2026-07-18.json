@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-18",
+  "status": "locked before new axis, distance-space and no-low-z-cut evaluation",
+  "known_prior_result": {
+    "N": 3422,
+    "delta_BIC_FR_minus_LCDM": 94.34498313933864
+  },
+  "datasets": [
+    "PantheonPlusSH0ES",
+    "DES_Dovekie_raw",
+    "Union3p1_UNITY1p8"
+  ],
+  "primary": {
+    "redshift_frames": {
+      "PantheonPlusSH0ES": "zHD",
+      "DES_Dovekie_raw": "zHD",
+      "Union3p1_UNITY1p8": "z"
+    },
+    "covariance": "released_total",
+    "models": ["FR_C1PZ_ALPHA0", "LCDM_OMFREE"],
+    "H0_km_s_Mpc": 67.5,
+    "Omega_m_bounds": [0.05, 0.6],
+    "nuisance": "one identical flat magnitude intercept per release"
+  },
+  "algebraic_identity_tolerance_mag": 1e-10,
+  "plot_bins": [
+    0.01,
+    0.02,
+    0.04,
+    0.07,
+    0.1,
+    0.15,
+    0.25,
+    0.4,
+    0.6,
+    0.9,
+    1.3,
+    1.8,
+    2.4
+  ],
+  "sensitivities": [
+    "released_total_diagonal_mu",
+    "diagonal_luminosity_distance_with_reported_z_error",
+    "all_positive_z_noncalibrator"
+  ],
+  "claim_boundary": "The corrected-axis plot is algebraically identical to the fixed PLAMB distance law and is not independent evidence."
+}

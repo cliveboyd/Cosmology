@@ -120,5 +120,10 @@
       "boundary": "Lambda-CDM regression ready; physical SU2R inference is blocked by perturbation equations"
     }
   ],
+  "su2r_physical_adapter": {
+    "physical_primary_cmb_ready": false,
+    "physical_lensing_ready": false,
+    "decision": "BLOCK_PHYSICAL_SU2R_CMB"
+  },
   "claim_boundary": "These are software, data and background-compression foundations. Physical SU(2), SU2R, magnetic, parity or FR interpretation requires the registered missing theory and data capabilities."
 }

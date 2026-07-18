@@ -46,6 +46,7 @@ def main() -> None:
     firas = load_json(f"firas_ingestion_regression_{DATE}.json")
     readiness_path = RESULT_DIR / f"cmb_branch_readiness_{DATE}.json"
     act_lensing_path = RESULT_DIR / f"act_dr6_lensing_regression_{DATE}.json"
+    su2r_readiness_path = RESULT_DIR / f"su2r_physical_readiness_audit_{DATE}.json"
     summary = {
         "date": DATE,
         "software_environment": {
@@ -86,6 +87,19 @@ def main() -> None:
         },
         "readiness": (
             load_json(readiness_path.name)["branches"] if readiness_path.exists() else []
+        ),
+        "su2r_physical_adapter": (
+            {
+                "physical_primary_cmb_ready": load_json(su2r_readiness_path.name)[
+                    "physical_primary_cmb_ready"
+                ],
+                "physical_lensing_ready": load_json(su2r_readiness_path.name)[
+                    "physical_lensing_ready"
+                ],
+                "decision": load_json(su2r_readiness_path.name)["decision"],
+            }
+            if su2r_readiness_path.exists()
+            else {"status": "physical-readiness audit pending"}
         ),
         "claim_boundary": (
             "These are software, data and background-compression foundations. Physical SU(2), "

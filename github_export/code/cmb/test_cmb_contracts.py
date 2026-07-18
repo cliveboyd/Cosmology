@@ -11,6 +11,7 @@ from cmb_spectrum_transforms import phi_phi_to_kappa_kappa, rotate_even_parity_s
 from cmb_theory_contract import BackgroundPrediction, planck_distance_vector
 from firas_monopole_likelihood import FirasMonopoleData, load_covariance, spectral_templates_kjy_sr
 from low_l_global_null import calibrate_global_null
+from su2r_physical_perturbation_adapter import PhysicalTheoryIncomplete, SU2RRegistry
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -20,6 +21,14 @@ FIRAS_PATH = (
     / "current_cosmology_sources"
     / "COBE_FIRAS"
     / "firas_monopole_spec_v1.txt"
+)
+SU2R_REGISTRY = (
+    ROOT
+    / "github_export"
+    / "results"
+    / "2026-07-18"
+    / "cmb"
+    / "su2r_physical_equation_registry_2026-07-18.json"
 )
 
 
@@ -85,6 +94,12 @@ class CmbContractTests(unittest.TestCase):
         self.assertTrue(0.0 < result.global_p <= 1.0)
         self.assertEqual(result.observed_local_p.shape, (2,))
         self.assertEqual(result.simulation_max_scores.shape, (101,))
+
+    def test_incomplete_su2r_registry_is_refused(self) -> None:
+        registry = SU2RRegistry.load(SU2R_REGISTRY)
+        self.assertIn("scalar_dynamical_equations", registry.missing("lensing"))
+        with self.assertRaises(PhysicalTheoryIncomplete):
+            registry.require("lensing")
 
 
 if __name__ == "__main__":

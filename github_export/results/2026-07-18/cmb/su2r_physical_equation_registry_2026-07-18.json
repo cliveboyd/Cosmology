@@ -1,0 +1,26 @@
+{
+  "api_version": 1,
+  "model": "SU2R",
+  "status": "incomplete_physical_theory",
+  "equations": {
+    "action_or_field_equations": null,
+    "background_field_equations": null,
+    "scalar_dynamical_equations": null,
+    "scalar_constraint_equations": null,
+    "perturbed_stress_energy": null,
+    "gauge_and_variable_dictionary": null,
+    "initial_conditions": null,
+    "weyl_potential_and_lensing_relation": null,
+    "photon_baryon_neutrino_couplings": null,
+    "recombination_and_thermal_history": null
+  },
+  "implementation": {
+    "module_path": null,
+    "sha256": null
+  },
+  "existing_diagnostics": {
+    "growth_closure": "standard modified-growth equation with assumed mu_eff filters",
+    "camb_ppf_proxy": "effective dark-energy fluid proxy"
+  },
+  "claim_boundary": "No physical SU2R CMB or lensing spectrum may be generated until every branch-required equation and the hash-locked implementation are supplied."
+}

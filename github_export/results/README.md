@@ -46,6 +46,12 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
 - The CMB programme explicitly blocks physical lensing, low-l, TB/EB and FIRAS
   claims until the corresponding perturbation, map/simulation, polarisation-angle,
   covariance and photon-thermalisation requirements are supplied.
+- A hash-registered SU2R physical-perturbation adapter now makes that boundary
+  executable. The current equation registry correctly blocks primary-CMB and
+  lensing spectra because the covariant action, scalar field equations, perturbed
+  stress-energy, gauge/initial-condition prescription and Weyl relation have not
+  been supplied. Earlier quasi-static growth and CAMB PPF effective-fluid scans
+  remain labelled phenomenological proxies, not physical SU2R exclusions.
 - `2026-07-18/sparc_am/` contains the preregistered SPARC matter/antimatter-identifiability gate, outcome-blind matched controls, twelve-scenario conventional-systematics matrix, deterministic multi-start profiles, figures and hash manifest.
 - The implemented rotation-curve likelihood is matter/antimatter non-identifiable. Three of the six development galaxies retain a model-relative PLAMB tension, but the matched-block direction is not coherent and no galaxy is classified as antimatter.
 - `2026-07-18/sparc_am_single_start_invalidated/` preserves the initial single-start bundle and its invalidation notice. It is retained only as a transparent numerical-audit record and must not be used for interpretation.
@@ -63,4 +69,12 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
 - The first injection-likelihood branch is retained with a formal invalidation notice because it evaluated the candidate predictor at the response photometric redshift. Its leakage-free 46,687-object Quaia x DR16Q replacement passes the exact predictor-invariance and false-positive audits, but is underpowered: one-times predictive detection is 8.0 per cent, joint recovery is zero, and the observed held-out `Delta CVLPD=-4.0084` has empirical `p=0.7273`.
 - `2026-07-18/rawmu/` contains the release-grounded Pantheon+, DES-Dovekie and Union3.1 raw-MU hierarchy, covariance reconstruction audit, external calibration-budget modes and dataset, survey and high-redshift hold-outs with `zHD` primary.
 - The 3,422-supernova primary total-covariance comparison gives `Delta BIC(FR-Lambda-CDM)=+94.344983`, favouring Lambda-CDM for the fixed FR distance law. The strict robustness gate still fails because only 58.82 per cent of eligible survey hold-outs preserve the sign and several model-difference modes exceed external calibration budgets; this blocks a survey-robust promotion without reversing the primary likelihood direction.
+- `2026-07-18/rawmu_plamb_axis/` contains Peter Lamb's requested three-release
+  axis comparison, its outcome-aware preregistration, coordinate and residual
+  data, plots, fit table, hash manifest and a draft technical reply. Dividing
+  luminosity distance by `(1+z/2)` is verified to be exactly the same fixed PLAMB
+  forward law, to `1.421e-14` mag or better. The released-total-covariance result
+  remains `Delta BIC(PLAMB-Lambda-CDM)=+94.344983`; every release separately and
+  all registered diagonal-distance and all-positive-redshift sensitivities retain
+  the same direction.
 - `2026-07-18/priority_followup_outcomes_2026-07-18.md` is the integrated claim-boundary readout for these three branches.
