@@ -1,0 +1,74 @@
+{
+  "archive_dir": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\results\\2026-07-18\\bbn_lithium",
+  "arms": {
+    "depletion": "D + He + Gaussian CMB eta summary + Li with positive dex depletion",
+    "predictive": "D + He + Gaussian CMB eta summary; Li is posterior predictive only"
+  },
+  "claim_boundary": "Homogeneous standard-BBN inference. It is not a matter-antimatter domain, annihilation, antimatter-galaxy, or self-consistent FR early-universe likelihood.",
+  "convergence_gates": {
+    "max_divergences": 0,
+    "max_rhat": 1.01,
+    "min_bulk_ess": 400.0
+  },
+  "frozen_overnight_settings": {
+    "atol": 1e-09,
+    "chain_method": "sequential",
+    "chains": 4,
+    "gradient_mode": "forward",
+    "max_steps": 97104,
+    "max_tree_depth": 4,
+    "network": "key_PRIMAT_2023",
+    "rtol": 0.0001,
+    "samples": 2000,
+    "sampling_ntop": 150,
+    "step_size": 0.01,
+    "target_accept": 0.9,
+    "warmup": 1000
+  },
+  "jax_compilation_cache": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\bbn_lithium_hierarchical_numpyro_20260718\\jax_compilation_cache",
+  "linx_path": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\deps\\LINX",
+  "observations": {
+    "D_H_1e5": {
+      "mean": 2.533,
+      "sigma": 0.024
+    },
+    "Li7_H_1e10": {
+      "mean": 1.45,
+      "sigma": 0.25
+    },
+    "Yp_mass": {
+      "mean": 0.2458,
+      "sigma": 0.0013
+    }
+  },
+  "outdir": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\bbn_lithium_hierarchical_numpyro_20260718",
+  "preposterior_numerical_amendment": "The initial depth-8 smoke attempt was stopped during XLA compilation at 0/16 transitions and produced no posterior draws. Maximum tree depth was set to the upstream LINX example value of 4, and chains were made sequential to control peak memory. A second smoke attempt failed at warm-up transition 2 after automatic initial step-size behaviour generated a non-finite implicit linear solve. Before any posterior was retained, the upstream LINX initial step size 0.01 was adopted; eta and tau were truncated at five prior standard deviations and rate pulls at +/-4 to keep trajectories inside the previously validated LINX matrix. That reverse-mode smoke still failed on its first trajectory, before retaining a draw. The final registered gradient trial uses NumPyro forward-mode differentiation and the upstream LINX Kvaerno3 maximum step budget at rtol 1e-4. A persistent run-local JAX compilation cache was enabled before the final smoke so compatible compiled modules can be reused by the overnight process. Likelihood anchors were unchanged.",
+  "priors": {
+    "delta_li_dex": {
+      "distribution": "HalfNormal",
+      "sigma": 0.3
+    },
+    "eta_fac": {
+      "bounds_sigma": 5.0,
+      "distribution": "TruncatedNormal",
+      "mean": 1.0,
+      "sigma": 0.006535947712418301
+    },
+    "rate_pull": {
+      "distribution": "TruncatedNormal",
+      "high": 4.0,
+      "low": -4.0,
+      "mean": 0.0,
+      "sigma": 1.0
+    },
+    "tau_seconds": {
+      "bounds_sigma": 5.0,
+      "distribution": "TruncatedNormal",
+      "mean": 878.4,
+      "sigma": 0.5
+    }
+  },
+  "registered_at": "2026-07-18T10:02:24+10:00",
+  "script": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\bbn_lithium\\run_bbn_lithium_hierarchical_numpyro_2026-07-18.py",
+  "script_sha256": "2b4d19547a063eb8f56aface16b4c238ad9fdbdb844860f5a1938706af13b700"
+}

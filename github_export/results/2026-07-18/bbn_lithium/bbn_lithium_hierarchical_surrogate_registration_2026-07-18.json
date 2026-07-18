@@ -1,0 +1,50 @@
+{
+  "claim_boundary": "Homogeneous standard BBN; no matter-antimatter domains or annihilation physics.",
+  "design": "C:\\Users\\clive\\Documents\\Cosmology\\plamb_runs\\diagnostics\\bbn_lithium_hierarchical_surrogate_20260718\\exact_linx_prior_design.csv",
+  "design_sha256": "a8374c3fc5935c94d157e9e7b081860bd60ad9d5279ee2537025c7b5a1c19cbc",
+  "features": [
+    "eta_fac",
+    "tau_seconds",
+    "npdg",
+    "dpHe3g",
+    "ddHe3n",
+    "ddtp",
+    "tpag",
+    "tdan",
+    "taLi7g",
+    "He3ntp",
+    "He3dap",
+    "He3aBe7g",
+    "Be7nLi7p",
+    "Li7paa"
+  ],
+  "n_design": 4800,
+  "n_holdout": 800,
+  "n_train": 4000,
+  "network": "key_PRIMAT_2023",
+  "numerics": {
+    "atol": 1e-09,
+    "rtol": 1e-05,
+    "sampling_nTOp": 150
+  },
+  "posterior_arms": [
+    "D+He+CMB predictive Li",
+    "D+He+CMB+Li with depletion"
+  ],
+  "priors": {
+    "eta_fac": "Normal(1, 0.04/6.12), truncated at +/-5 sigma",
+    "lithium_depletion": "HalfNormal(0.30 dex) in depletion arm",
+    "rate_pulls": "12 independent Normal(0,1), truncated at +/-4",
+    "tau_seconds": "Normal(878.4, 0.5 s), truncated at +/-5 sigma"
+  },
+  "programme": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\bbn_lithium\\run_bbn_lithium_hierarchical_exact_design_2026-07-18.py",
+  "programme_sha256": "a1dbd8f56f7ee3ad0b8ddca82b2a49770dc3fb72a72fa9a657313536334d5b0d",
+  "reason": "Direct LINX NUTS failed preposterior gradient smoke tests; use gradient-free surrogate inference with exact validation.",
+  "registered_at": "2026-07-18T10:17:12+10:00",
+  "seed": 20260718,
+  "surrogate_gate": {
+    "exact_validation_q95_abs_error_max_observational_sigma": 0.5,
+    "holdout_rmse_max_observational_sigma": 0.25,
+    "importance_ess_min": 100
+  }
+}
