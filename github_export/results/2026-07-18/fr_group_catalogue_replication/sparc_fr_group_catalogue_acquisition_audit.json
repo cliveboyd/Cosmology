@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-18",
+  "created_utc": "2026-07-18T07:52:27.079119+00:00",
+  "outcomes_read": false,
+  "catalogue": "Kourkchi and Tully 2017, J/ApJ/843/16",
+  "source_url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/843/16/",
+  "member_rows": 15004,
+  "group_rows": 8826,
+  "target_rows_nonreserved_q2": 158,
+  "accepted_matches": 128,
+  "unmatched": 30,
+  "ambiguous_matches": 0,
+  "median_match_separation_arcmin": 0.020430740450784246,
+  "max_match_separation_arcmin": 0.4754364481123761,
+  "median_velocity_offset_kms": 2.1271370969999452,
+  "reserved_targets": 0,
+  "file_hashes": {
+    "ReadMe": "47bcea4a7430d6cf8323f40d8bc5e383c0b231622e9534cce345a6bdb6892d01",
+    "table2.dat.gz": "1e5bca96f6339905d07dccac4ed8cfe6148a9b193c1231794d57a51dbd502bab",
+    "table3.dat.gz": "dcddfa96bded7e3dc4c4354703bf1570ef92ae91820fd4d24dc3a56fd7071a3a",
+    "NED_position_cache": "c1e51431768fefa741bbc8cdecb57ae8e2c2b98b4b75c94e0056713c8263398f"
+  }
+}

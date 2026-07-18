@@ -1,0 +1,153 @@
+{
+  "date": "2026-07-18",
+  "written_utc": "2026-07-18T07:53:38.567253+00:00",
+  "programme": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\code\\sparc\\run_sparc_fr_group_catalogue_replication_2026-07-18.py",
+  "programme_sha256": "85263afce4ce39bdcba6886b77ac098ed527f1e7e0b32c5eaabb9d6a341641d3",
+  "outcome_values_read_in_this_programme_before_lock": false,
+  "study_status": "Independent-predictor replication on previously generated development outcomes; not a held-out-outcome replication",
+  "known_prior_result": "The earlier 2MRS composite test had rho=-0.307254, p=0.0117994 and 2.398 per cent cross-validated improvement, and failed its locked gate.",
+  "catalogue": {
+    "name": "Kourkchi and Tully 2017 Galaxy Groups within 3500 km/s",
+    "vizier": "https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/843/16",
+    "paper": "https://doi.org/10.3847/1538-4357/aa76db",
+    "source_directory": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/843/16/",
+    "construction_independence": "Published group-finding construction independent of this project's 2MRS neighbour-count algorithm",
+    "non_independence_limit": "The catalogue uses overlapping nearby-galaxy and Ks-band information, including 2MRS completeness; it is not an independent raw survey."
+  },
+  "input_hashes": {
+    "sample": "48da73dd7306536c1bdffb33d4b319e077dc53d5d11ba519f6f01aab07d20a69",
+    "points": "7904b885e3244dec9500e40f343f7c30311d45b446137882580d8c2123f95dac",
+    "positions": "c1e51431768fefa741bbc8cdecb57ae8e2c2b98b4b75c94e0056713c8263398f",
+    "catalogue_readme": "47bcea4a7430d6cf8323f40d8bc5e383c0b231622e9534cce345a6bdb6892d01",
+    "catalogue_groups": "1e5bca96f6339905d07dccac4ed8cfe6148a9b193c1231794d57a51dbd502bab",
+    "catalogue_members": "dcddfa96bded7e3dc4c4354703bf1570ef92ae91820fd4d24dc3a56fd7071a3a",
+    "covariates": "dca4c91406b1c9abcf2db4766028cecd2bb9a184aa458adcf8f7e53ce2d4c2ab",
+    "parent_programme": "e6264583ff4ad9e0eeb5fbb951aee71394abba8de7167dd2142a36344cf76f78",
+    "frozen_outcomes": "46498091c31b97babfdcc31ac8a119571c06c229d4d56c66129544e623fa78c0"
+  },
+  "exclusions": {
+    "previously_outcome_selected": [
+      "UGC06787",
+      "UGC03580",
+      "UGC02487",
+      "NGC5985",
+      "UGC09133",
+      "NGC2903"
+    ],
+    "reserved_replication": [
+      "NGC2841",
+      "UGC02953",
+      "UGC07399",
+      "UGC00128",
+      "NGC2403"
+    ]
+  },
+  "matching": {
+    "coordinate_arcmin_max": 1.0,
+    "coordinate_velocity_kms_max": 400.0,
+    "name_coordinate_arcmin_max": 5.0,
+    "name_velocity_kms_max": 500.0,
+    "ambiguous_matches_excluded": true
+  },
+  "samples": {
+    "definitions": [
+      {
+        "name": "primary_10_40_mpc",
+        "distance_min_mpc": 10.0,
+        "distance_max_mpc": 40.0,
+        "abs_galactic_latitude_min_deg": 10.0,
+        "min_log_L36": null
+      },
+      {
+        "name": "near_5_40_mpc",
+        "distance_min_mpc": 5.0,
+        "distance_max_mpc": 40.0,
+        "abs_galactic_latitude_min_deg": 10.0,
+        "min_log_L36": null
+      },
+      {
+        "name": "core_10_35_mpc",
+        "distance_min_mpc": 10.0,
+        "distance_max_mpc": 35.0,
+        "abs_galactic_latitude_min_deg": 10.0,
+        "min_log_L36": null
+      },
+      {
+        "name": "latitude_strict_10_40_mpc",
+        "distance_min_mpc": 10.0,
+        "distance_max_mpc": 40.0,
+        "abs_galactic_latitude_min_deg": 20.0,
+        "min_log_L36": null
+      },
+      {
+        "name": "luminous_10_40_mpc",
+        "distance_min_mpc": 10.0,
+        "distance_max_mpc": 40.0,
+        "abs_galactic_latitude_min_deg": 10.0,
+        "min_log_L36": 0.5
+      }
+    ],
+    "outcome_blind_counts": {
+      "primary_10_40_mpc": 65,
+      "near_5_40_mpc": 96,
+      "core_10_35_mpc": 61,
+      "latitude_strict_10_40_mpc": 61,
+      "luminous_10_40_mpc": 44
+    }
+  },
+  "predictors": {
+    "primary": "group_richness_score = ln(N_group), including N_group=1 singles",
+    "secondary_not_in_gate": [
+      "group_log_mass_luminosity",
+      "grouped_indicator"
+    ],
+    "negative_control": "richness of the nearest published group after RA is shifted by +90 degrees, restricted to |Delta v_hel|<=500 km/s"
+  },
+  "outcomes": {
+    "primary": "frozen combined_conventional signed_log1p PLAMB-minus-RAR profile contrast per point",
+    "secondary": "same frozen contrast under the baseline nuisance scenario",
+    "no_new_rotation_curve_profiling": true
+  },
+  "host_controls": [
+    "T",
+    "log_L36",
+    "log_SBeff",
+    "log_MHI",
+    "log_Vflat",
+    "Inc_deg",
+    "frac_distance_error",
+    "bulge_proxy",
+    "log_n_points",
+    "D_Mpc",
+    "abs_gal_b_deg",
+    "f_D one-hot indicators"
+  ],
+  "statistics": {
+    "partial_test": "Spearman correlation of cross-fitted host-control residuals",
+    "ridge_alpha": 1.0,
+    "outer_folds": 10,
+    "fold_seed": 2026071802,
+    "permutations": 20000,
+    "predictive_metric": "cross-fitted RMSE change after adding group richness"
+  },
+  "development_gate": {
+    "all_required": true,
+    "primary_permutation_p_max": 0.01,
+    "primary_cv_rmse_fractional_improvement_min": 0.05,
+    "coefficient_sign_fraction_min": 0.8,
+    "same_partial_correlation_sign_in": [
+      "near_5_40_mpc",
+      "core_10_35_mpc",
+      "latitude_strict_10_40_mpc",
+      "luminous_10_40_mpc",
+      "primary_baseline_outcome"
+    ],
+    "negative_control": "absolute shifted-sky rho must be smaller than absolute actual rho"
+  },
+  "replication_policy": "Reserved outcomes remain sealed regardless of this result. A separate held-out replication preregistration and explicit unsealing decision are required.",
+  "claim_boundary": [
+    "A pass supports a conventional group-environment predictor, not antimatter.",
+    "No galaxy matter/antimatter labels may be fitted or reported.",
+    "A fail ends this catalogue branch without unsealing the reserved galaxies."
+  ]
+}
