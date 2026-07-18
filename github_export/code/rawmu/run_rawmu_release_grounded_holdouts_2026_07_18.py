@@ -26,6 +26,9 @@ SCRIPT_PATH = Path(__file__).resolve()
 REPO_ROOT = SCRIPT_PATH.parents[3]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
+SHARED_CODE = REPO_ROOT / "github_export" / "code" / "shared"
+if str(SHARED_CODE) not in sys.path:
+    sys.path.insert(0, str(SHARED_CODE))
 
 from diagnose_pantheon_rawmu_fr import C_KMS, read_table  # noqa: E402
 from derive_rawmu_release_grounded_priors_2026_07_18 import (  # noqa: E402
@@ -44,6 +47,10 @@ from derive_rawmu_release_grounded_priors_2026_07_18 import (  # noqa: E402
     grouped_hierarchy,
     invert_precision,
     load_pantheon_covariance,
+)
+from plamb_clock_distance import (  # noqa: E402
+    PETER_LINEAR_REDSHIFT,
+    clock_path_distance,
 )
 
 
@@ -288,7 +295,7 @@ def lcdm_integral(z: np.ndarray, omega_m: float, n_grid: int = 4096) -> np.ndarr
 
 def model_mu(z: np.ndarray, family: str, omega_m: float | None, h0: float) -> np.ndarray:
     if family == "FR_C1PZ_ALPHA0":
-        distance = (C_KMS / h0) * z * (1.0 + 0.5 * z)
+        distance = clock_path_distance(z, h0, C_KMS, PETER_LINEAR_REDSHIFT)
     elif family == "LCDM_OMFREE":
         assert omega_m is not None
         distance = (C_KMS / h0) * (1.0 + z) * lcdm_integral(z, omega_m)

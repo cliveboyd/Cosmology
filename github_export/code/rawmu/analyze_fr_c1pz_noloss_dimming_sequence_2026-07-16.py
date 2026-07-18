@@ -38,6 +38,9 @@ SCRIPT_PATH = Path(__file__).resolve()
 REPO_ROOT = SCRIPT_PATH.parents[3]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
+SHARED_CODE = REPO_ROOT / "github_export" / "code" / "shared"
+if str(SHARED_CODE) not in sys.path:
+    sys.path.insert(0, str(SHARED_CODE))
 
 from diagnose_pantheon_rawmu_fr import C_KMS  # noqa: E402
 from fit_plamb_rawmu_nuisance import (  # noqa: E402
@@ -47,6 +50,10 @@ from fit_plamb_rawmu_nuisance import (  # noqa: E402
     design_matrix,
     load_dataset,
     select_block,
+)
+from plamb_clock_distance import (  # noqa: E402
+    PETER_LINEAR_REDSHIFT,
+    clock_path_distance,
 )
 
 
@@ -168,7 +175,7 @@ def build_blocks(frame: str, cli: argparse.Namespace) -> tuple[list[DatasetBlock
 
 def mu_model_c1pz_noloss(z: np.ndarray, h0: float, alpha: float) -> np.ndarray:
     z = np.asarray(z, dtype=float)
-    path = (C_KMS / float(h0)) * z * (1.0 + 0.5 * z)
+    path = clock_path_distance(z, h0, C_KMS, PETER_LINEAR_REDSHIFT)
     d_l = path * np.power(np.maximum(1.0 + z, 1e-12), float(alpha))
     if np.any(d_l <= 0.0) or not np.all(np.isfinite(d_l)):
         return np.full_like(z, np.inf, dtype=float)

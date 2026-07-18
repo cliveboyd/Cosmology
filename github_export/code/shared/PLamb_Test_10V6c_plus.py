@@ -168,10 +168,24 @@ from __future__ import annotations
 
 import argparse
 import os
+import sys
 import time
 import warnings
 import json
+from pathlib import Path
+
 import numpy as np
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+SHARED_CODE = (
+    SCRIPT_DIR
+    if (SCRIPT_DIR / "plamb_clock_distance.py").exists()
+    else SCRIPT_DIR / "github_export" / "code" / "shared"
+)
+if str(SHARED_CODE) not in sys.path:
+    sys.path.insert(0, str(SHARED_CODE))
+
+from plamb_clock_distance import clock_path_integrand
 
 try:
     import emcee
@@ -196,6 +210,7 @@ C_KMS           = 299_792.458                      # km/s
 LOG10_E         = np.log10(np.e)
 LN10            = np.log(10.0)
 PLAMB_MAG_PER_LOG10 = 2.5
+PLAMB_PILOT_REDSHIFT_RATE_POWER = 1.0
 
 
 def plamb_conservation_power(mode: str) -> float:
@@ -497,8 +512,14 @@ def _plamb_clump_kernel(z, A_clump, n_clump, c_drift):
     n_eff       = np.clip(float(n_clump), 0.05, 4.0)
     growth      = np.power(np.maximum(x, 0.0), n_eff)
     clump       = np.exp(np.clip(float(A_clump) * growth, -8.0, 8.0))
-    c_ratio     = np.clip(c_of_z(z, c_drift) / C_KMS, 0.05, 20.0)
-    return c_ratio * clump / np.maximum(1.0 + z, 1e-12)
+    clock_kernel = clock_path_integrand(
+        z,
+        c_drift,
+        PLAMB_PILOT_REDSHIFT_RATE_POWER,
+        minimum_light_speed_ratio=0.05,
+        maximum_light_speed_ratio=20.0,
+    )
+    return np.asarray(clock_kernel, dtype=float) * clump
 
 
 def _plamb_integral_0z(zi, nint, A_clump, n_clump, c_drift):
@@ -1699,7 +1720,9 @@ def main():
             'c_drift'         : float(gamma_c),
             'inertia_drift'   : float(epsilon_M),
             'dimming_alpha'   : float(plamb_alpha),
-            'distance_law'    : 'D_path = c/H0 integral exp(clump_amp log(1+z)^clump_index) c(z)/c0 dz/(1+z); DL = (1+z)^alpha D_path',
+            'distance_law'    : 'D_path = c/H0 integral exp(clump_amp log(1+z)^clump_index) [1+gamma_c*z] dz/(1+z)^p; p=1 historical fractional-clock pilot; DL = (1+z)^alpha D_path',
+            'clock_law_key'   : 'fractional_clock_pilot',
+            'redshift_rate_power_p': PLAMB_PILOT_REDSHIFT_RATE_POWER,
             'no_expansion_pilot': True,
         })
         best_dict.update(conservation)

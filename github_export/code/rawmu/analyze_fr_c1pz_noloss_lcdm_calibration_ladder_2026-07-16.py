@@ -49,6 +49,9 @@ SCRIPT_PATH = Path(__file__).resolve()
 REPO_ROOT = SCRIPT_PATH.parents[3]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
+SHARED_CODE = REPO_ROOT / "github_export" / "code" / "shared"
+if str(SHARED_CODE) not in sys.path:
+    sys.path.insert(0, str(SHARED_CODE))
 
 from diagnose_pantheon_rawmu_fr import C_KMS  # noqa: E402
 from fit_plamb_rawmu_nuisance import (  # noqa: E402
@@ -58,6 +61,10 @@ from fit_plamb_rawmu_nuisance import (  # noqa: E402
     design_matrix,
     load_dataset,
     select_block,
+)
+from plamb_clock_distance import (  # noqa: E402
+    PETER_LINEAR_REDSHIFT,
+    clock_path_distance,
 )
 
 
@@ -295,7 +302,7 @@ def lcdm_integral(z: np.ndarray, om: float, n_grid: int = 4096) -> np.ndarray:
 def mu_model(z: np.ndarray, h0: float, spec: ModelSpec, value: float | None) -> np.ndarray:
     z = np.asarray(z, dtype=float)
     if spec.family == "fr_c1pz_alpha0":
-        d_l = (C_KMS / h0) * z * (1.0 + 0.5 * z)
+        d_l = clock_path_distance(z, h0, C_KMS, PETER_LINEAR_REDSHIFT)
     elif spec.family == "lcdm":
         om = float(spec.fixed_value if spec.fixed_value is not None else value)
         d_l = (C_KMS / h0) * (1.0 + z) * lcdm_integral(z, om)

@@ -20,8 +20,16 @@ ROOT = Path(__file__).resolve().parents[3]
 CODE_DIR = Path(__file__).resolve().parent
 if str(CODE_DIR) not in sys.path:
     sys.path.insert(0, str(CODE_DIR))
+SHARED_CODE = ROOT / "github_export" / "code" / "shared"
+if str(SHARED_CODE) not in sys.path:
+    sys.path.insert(0, str(SHARED_CODE))
 
 import run_rawmu_release_grounded_holdouts_2026_07_18 as base  # noqa: E402
+from plamb_clock_distance import (  # noqa: E402
+    PETER_LINEAR_REDSHIFT,
+    clock_path_integral,
+    clock_path_integrand,
+)
 
 
 DATE = "2026-07-18"
@@ -130,14 +138,28 @@ def magnitude_fit_rows(primary: list[base.Block], diagonal: list[base.Block], al
 
 def dimensionless_shape(z: np.ndarray, family: str, omega_m: float | None) -> np.ndarray:
     if family == MODEL_FR:
-        return z * (1.0 + 0.5 * z)
+        return np.asarray(
+            clock_path_integral(
+                z,
+                PETER_LINEAR_REDSHIFT.gamma_c,
+                PETER_LINEAR_REDSHIFT.redshift_rate_power,
+            ),
+            dtype=float,
+        )
     assert omega_m is not None
     return (1.0 + z) * base.lcdm_integral(z, omega_m)
 
 
 def shape_derivative(z: np.ndarray, family: str, omega_m: float | None) -> np.ndarray:
     if family == MODEL_FR:
-        return 1.0 + z
+        return np.asarray(
+            clock_path_integrand(
+                z,
+                PETER_LINEAR_REDSHIFT.gamma_c,
+                PETER_LINEAR_REDSHIFT.redshift_rate_power,
+            ),
+            dtype=float,
+        )
     assert omega_m is not None
     integral = base.lcdm_integral(z, omega_m)
     e = np.sqrt(omega_m * (1.0 + z) ** 3 + 1.0 - omega_m)

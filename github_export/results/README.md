@@ -77,4 +77,10 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
   remains `Delta BIC(PLAMB-Lambda-CDM)=+94.344983`; every release separately and
   all registered diagonal-distance and all-positive-redshift sensitivities retain
   the same direction.
+- The clock-law consistency audit in the same folder replaces the previously
+  separate distance integrands with one analytic kernel and explicitly registers
+  the fixed raw-MU law as `p=0` and the historical no-expansion pilot as `p=1`.
+  All seven analytic, quadrature and wiring gates pass. The full likelihood
+  regression changes `Delta BIC` by only `9.095e-13`, so the refactor changes no
+  scientific result and does not select either clock law physically.
 - `2026-07-18/priority_followup_outcomes_2026-07-18.md` is the integrated claim-boundary readout for these three branches.

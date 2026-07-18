@@ -10,15 +10,15 @@
   "primary_fit": {
     "N": 3422,
     "N_release_intercepts": 3,
-    "FR_chi2": 3150.1454807797254,
+    "FR_chi2": 3150.1454807797263,
     "LCDM_chi2": 3047.6625171859346,
     "LCDM_Omega_m": 0.3306796417545181,
-    "FR_BIC": 3174.559422143082,
+    "FR_BIC": 3174.559422143083,
     "LCDM_BIC": 3080.2144390037433,
-    "delta_BIC_FR_minus_LCDM": 94.34498313933864,
+    "delta_BIC_FR_minus_LCDM": 94.34498313933955,
     "FR_offsets": {
-      "PantheonPlusSH0ES": -0.12290424566399817,
-      "DES_Dovekie_raw": 0.007865674698609444,
+      "PantheonPlusSH0ES": -0.12290424566399825,
+      "DES_Dovekie_raw": 0.00786567469860942,
       "Union3p1_UNITY1p8": -0.014807847306313019
     },
     "LCDM_offsets": {
@@ -36,12 +36,12 @@
     "scope": "joint",
     "variant": "diagonal_luminosity_distance_with_reported_z_error",
     "N": 3422,
-    "FR_chi2": 2812.6543034206925,
+    "FR_chi2": 2812.654303420692,
     "LCDM_chi2": 2710.1757005518457,
     "LCDM_Omega_m": 0.35024080902124133,
-    "FR_BIC": 2837.068244784049,
+    "FR_BIC": 2837.0682447840486,
     "LCDM_BIC": 2742.7276223696545,
-    "delta_BIC_FR_minus_LCDM": 94.3406224143948,
+    "delta_BIC_FR_minus_LCDM": 94.34062241439435,
     "same_nuisance_verified": true,
     "redshift_error_rows": 1580,
     "redshift_error_coverage": {

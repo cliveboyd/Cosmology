@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-18",
+  "decision": "PASS_CLOCK_LAW_RECONCILIATION",
+  "checks": {
+    "peter_p0_identity": true,
+    "fractional_p1_identity": true,
+    "constant_c_identity": true,
+    "analytic_vs_quadrature": true,
+    "rawmu_p0_wiring": true,
+    "historical_pilot_p1_wiring": true,
+    "fixed_likelihood_regression": true
+  },
+  "maximum_absolute_differences": {
+    "peter_p0_identity": 1.7763568394002505e-15,
+    "fractional_p1_identity": 6.661338147750939e-16,
+    "constant_c_identity": 6.661338147750939e-16,
+    "analytic_vs_quadrature": 1.7763568394002505e-15,
+    "rawmu_p0_wiring_mag": 0.0,
+    "historical_pilot_p1_wiring_mpc": 1.8189894035458565e-12,
+    "delta_bic_regression": 9.094947017729282e-13
+  },
+  "registered_branches": {
+    "rawmu_fixed_plamb": {
+      "clock_law": "peter_linear_redshift",
+      "gamma_c": 1.0,
+      "p": 0.0,
+      "alpha": 0.0
+    },
+    "historical_noexp_pilot": {
+      "clock_law": "fractional_clock_pilot",
+      "gamma_c": "c_drift parameter",
+      "p": 1.0,
+      "alpha": "plamb_alpha parameter; historical default 0.5"
+    }
+  },
+  "fixed_plamb_regression": {
+    "N": 3422,
+    "delta_BIC_PLAMB_minus_LCDM": 94.34498313933955,
+    "expected_before_refactor": 94.34498313933864
+  },
+  "claim_boundary": "The audit proves analytic and implementation consistency only. It does not select p=0 or p=1 physically; that requires the nested likelihood and external clock/flux constraints."
+}
