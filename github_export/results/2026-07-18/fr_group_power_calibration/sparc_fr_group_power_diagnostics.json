@@ -1,0 +1,35 @@
+{
+  "date": "2026-07-18",
+  "N": 65,
+  "host_features": [
+    "T",
+    "log_L36",
+    "log_SBeff",
+    "log_MHI",
+    "log_Vflat",
+    "Inc_deg",
+    "frac_distance_error",
+    "bulge_proxy",
+    "log_n_points",
+    "D_Mpc",
+    "abs_gal_b_deg",
+    "f_D_1",
+    "f_D_2",
+    "f_D_3",
+    "f_D_4",
+    "f_D_5"
+  ],
+  "critical_absolute_spearman_rho_for_p_le_0p01": 0.3175262237762238,
+  "null_permutations": 100000,
+  "null_rho_abs_q99": 0.3175262237762238,
+  "empirical_noise_sd_outcome_units": 0.013975100106474663,
+  "observed_locked_primary": {
+    "partial_spearman_rho": 0.047683566433566436,
+    "cv_rmse_fractional_improvement": -0.054098603851622656,
+    "coefficient_sign_fraction": 0.8,
+    "p_gate_passed": false,
+    "cv_gate_passed": false,
+    "sign_gate_passed": true,
+    "joint_primary_gate_passed": false
+  }
+}
