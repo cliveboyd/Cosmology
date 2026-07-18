@@ -26,3 +26,9 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
 - The detailed audit fixes the claim boundary at an FR-inspired standard-BBN clock/radiation proxy. It also records the priority requirements for an FR-native thermal history, a matched CMB likelihood, full-network and tighter-tolerance validation, deuterium theory-error marginalisation, and hierarchical lithium-depletion modelling.
 - The same folder contains the completed, separately registered 62-point literature-defined SU(2)-CMB thermodynamic bridge. Its report, trajectory, eta scan, figure, configuration and audit remain explicitly separate from the repository's late-time SU2/SU2R fluid and from the FR proxy.
 - The completed preregistered 92-evaluation FR/LINX validation matrix contains tighter numerical tolerances, key/small/full network comparisons, deuterium-rate theory responses, full-network omitted Li/Be-channel checks, interpolation checks and updated-neutron-lifetime states. All evaluations succeeded; numerical/network corrections are small, while the local D-rate theory uncertainty is comparable to the observational D/H error and must enter the next likelihood.
+
+## July 18 Audit
+
+- `2026-07-18/sparc_am/` contains the preregistered SPARC matter/antimatter-identifiability gate, outcome-blind matched controls, twelve-scenario conventional-systematics matrix, deterministic multi-start profiles, figures and hash manifest.
+- The implemented rotation-curve likelihood is matter/antimatter non-identifiable. Three of the six development galaxies retain a model-relative PLAMB tension, but the matched-block direction is not coherent and no galaxy is classified as antimatter.
+- `2026-07-18/sparc_am_single_start_invalidated/` preserves the initial single-start bundle and its invalidation notice. It is retained only as a transparent numerical-audit record and must not be used for interpretation.

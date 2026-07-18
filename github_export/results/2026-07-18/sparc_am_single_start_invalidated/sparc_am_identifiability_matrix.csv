@@ -1,0 +1,6 @@
+observable_or_term,matter_to_antimatter_transformation,implemented_in_sparc_likelihood,identifies_antimatter
+Hydrogen/antihydrogen atomic spectrum,Invariant under CPT to current experimental precision,No particle-sign variable,No
+Attractive gravitational rotation curve,No sign reversal in standard gravity; ALPHA-g is consistent with downward attraction,Positive gbar and positive predicted speed,No
+PLAMB optical depth tau=(gbar/g0)^p,Unspecified by the supplied FR material,Same positive tau for every galaxy,No
+PLAMB predicted acceleration gbar/(1-exp(-tau)),Unspecified by the supplied FR material,Single branch with no charge-conjugation state,No
+Matter-antimatter boundary annihilation,Produces an independent gamma-ray and secondary-particle signature at contact,Absent,"Potentially, with external data"
