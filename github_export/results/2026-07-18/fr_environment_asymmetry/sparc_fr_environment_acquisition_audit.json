@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-18",
+  "completed_utc": "2026-07-18T07:18:37.474859+00:00",
+  "outcomes_opened": false,
+  "2mrs": {
+    "path": "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\current_cosmology_sources\\2MRS\\2mrs_table3_environment_20260718.tsv",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2FApJS%2F199%2F26%2Ftable3&-out=ID,RAJ2000,DEJ2000,GLON,GLAT,Ktmag,cz,SimbadName&-out.max=unlimited",
+    "sha256": "ff3d3f9ae22ac9e9ed2402843c762d76b25d6d6580495db55292ca6b4c18ee86",
+    "bytes": 4194390,
+    "rows_with_finite_position_magnitude_redshift": 43533
+  },
+  "ned_positions": {
+    "path": "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\current_cosmology_sources\\SPARC\\sparc_ned_positions_environment_nonreserved_20260718.csv",
+    "url": "https://ned.ipac.caltech.edu/Documents/Guides/Interface/ObjectLookup",
+    "sha256": "c1e51431768fefa741bbc8cdecb57ae8e2c2b98b4b75c94e0056713c8263398f",
+    "requested_nonreserved_q2": 158,
+    "resolved_positions": 158,
+    "finite_redshifts": 158,
+    "unresolved": []
+  },
+  "reserved_replication_requested": false,
+  "reserved_replication_present_in_covariates": false
+}
