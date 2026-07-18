@@ -1,0 +1,37 @@
+{
+  "analysis_date": "2026-07-19",
+  "claim_promotion": false,
+  "gates": {
+    "all_covariance_sensitivities_absolute_delta_BIC_at_most_2": true,
+    "all_model_difference_modes_within_external_budget": true,
+    "independent_gamma_derivation": false,
+    "no_calibration_prior_double_counting": true,
+    "optimisation_success_all_cells": true,
+    "primary_absolute_delta_BIC_at_most_2": true,
+    "same_nuisance_all_cells": true
+  },
+  "maximum_abs_model_difference_over_budget": 0.684670120070953,
+  "primary": {
+    "LCDM_BIC": 3080.2144390037383,
+    "LCDM_Omega_m": 0.33067964339262307,
+    "LCDM_chi2": 3047.6625171859296,
+    "N": 3422,
+    "N_release_intercepts": 3,
+    "PATH_BIC": 3080.2263974789375,
+    "PATH_alpha": 0.0,
+    "PATH_chi2": 3047.674475661129,
+    "PATH_gamma_c": 2.3,
+    "PATH_p": 0.7974289064225032,
+    "analysis_variant": "released_total_primary",
+    "delta_BIC_PATH_minus_LCDM": 0.011958475199207896,
+    "delta_chi2_PATH_minus_LCDM": 0.011958475199207896,
+    "evidence_status": "primary_released_total",
+    "nuisance_signature": "cd2a1ff73fad299cc85f214fad4f4dac1318cfb3b06b0bffeaf027bf8cc5b85f",
+    "optimisation_success": true,
+    "same_nuisance_verified": true
+  },
+  "sensitivity_delta_BIC_range": [
+    -0.8168815738545163,
+    0.5654883213787798
+  ]
+}

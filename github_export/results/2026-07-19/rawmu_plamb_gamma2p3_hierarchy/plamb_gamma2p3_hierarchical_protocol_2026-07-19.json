@@ -1,0 +1,21 @@
+{
+  "analysis_id": "plamb_gamma2p3_hierarchical_sensitivity_2026-07-19",
+  "status": "post_hoc_outcome_aware_sensitivity",
+  "primary_frame": {
+    "PantheonPlusSH0ES": "zHD",
+    "DES_Dovekie_raw": "zHD",
+    "Union3p1_UNITY1p8": "z"
+  },
+  "gamma_c_fixed": 2.3,
+  "alpha_fixed": 0.0,
+  "p_bounds": [
+    -0.5,
+    2.5
+  ],
+  "omega_m_bounds": [
+    0.05,
+    0.6
+  ],
+  "calibration_rule": "released total primary; stat-only plus marginalised grouped offsets as sensitivity",
+  "double_count_guard": "never add release-contained calibration priors to STAT+SYS"
+}

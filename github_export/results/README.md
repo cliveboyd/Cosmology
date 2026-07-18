@@ -126,3 +126,19 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
   Pantheon+. The phenomenology implies `c(z)/c0=6.203198` at `z=2.262260`.
   Because `gamma_c=2.3` was selected after viewing the same outcomes and has no
   independent covariant derivation, the claim decision remains **do not promote**.
+- `2026-07-19/rawmu_plamb_gamma2p3_hierarchy/` applies the same outcome-aware
+  fixed-gamma cell to the release-grounded calibration hierarchy. The primary
+  released-total result remains `Delta BIC=+0.011958`; grouped calibration
+  sensitivities span `-0.816882` to `+0.565488`, and every model-difference
+  survey mode lies within its external budget. This establishes calibration
+  stability of the near-tie but supplies no independent gamma derivation.
+- `2026-07-19/plamb_gamma2p3_desi_dr2_bao/` derives and numerically validates
+  stationary-path and standard-distance-duality BAO adapters, profiles only the
+  common scale `q=c0/(H0 r_d)`, and tests the official 13-element DESI DR2 BAO
+  vector with its covariance. No branch simultaneously preserves the alpha-zero
+  supernova distance, standard distance duality, the direct clock radial mapping
+  and an independent sound horizon, so the physical adapter gate fails and no
+  overnight sampler is launched. The fixed supernova-posterior stationary branch
+  gives `chi-squared=33458.052`; the duality control gives `chi-squared=176.070`
+  and `Delta BIC=+163.234` versus flat Lambda-CDM. The present adapters are
+  rejected, without excluding an as-yet unspecified covariant PLAMB completion.

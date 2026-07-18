@@ -1,0 +1,3 @@
+branch,maximum_abs_dDMdz_minus_DH,minimum_DM_dimensionless,minimum_DH_dimensionless,positive_to_z2p5,covariance_minimum_eigenvalue,covariance_condition_number
+stationary_path,1.6933454638490275e-09,1.0000074976152654e-05,1.000014995193182,True,0.00578998687,116.8238290439558
+metric_duality_control,5.918422973927306e-10,9.99997497640289e-06,0.3116535927799025,True,0.00578998687,116.8238290439558

@@ -1,0 +1,25 @@
+{
+  "analysis_id": "plamb_gamma2p3_desi_dr2_bao_2026-07-19",
+  "status": "post_hoc_adapter_gate_and_external_diagnostic",
+  "gamma_c_fixed": 2.3,
+  "p_SN_prior": {
+    "mean": 0.8004694772058842,
+    "sigma": 0.02364051974806188
+  },
+  "p_bounds": [
+    -0.5,
+    2.5
+  ],
+  "branches": {
+    "stationary_path": "DM=qI; DH=q dI/dz",
+    "metric_duality_control": "DM=qI/(1+z); DH=dDM/dz"
+  },
+  "scale": "q=c0/(H0 r_d), analytically profiled; no early-time r_d prediction",
+  "overnight_rule": "launch only if one branch passes every physical theory gate",
+  "data": {
+    "mean_path": "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\current_cosmology_sources\\DESI_DR2_BAO\\desi_gaussian_bao_ALL_GCcomb_mean.txt",
+    "mean_sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+    "cov_path": "C:\\Users\\clive\\Documents\\Cosmology\\external_datasets\\current_cosmology_sources\\DESI_DR2_BAO\\desi_gaussian_bao_ALL_GCcomb_cov.txt",
+    "cov_sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509"
+  }
+}
