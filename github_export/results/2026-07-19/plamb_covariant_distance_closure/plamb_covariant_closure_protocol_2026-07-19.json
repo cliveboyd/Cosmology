@@ -1,0 +1,19 @@
+{
+  "analysis_id": "plamb_covariant_distance_closure_2026-07-19",
+  "status": "post_hoc_kinematic_derivation_not_action_level_theory",
+  "gamma_c": 2.3,
+  "p": 0.8004694772058842,
+  "p_sigma": 0.02364051974806188,
+  "curvature_K": 0.0,
+  "closures": {
+    "static_fr": "Static FR: a=1",
+    "fixed_atomic_clock": "Fixed atomic clock: Q=1",
+    "standard_scale_factor": "Standard a=(1+z)^-1"
+  },
+  "ruler_model": "B(z)=(1+z)^b plus arbitrary-bin isotropic amplitude audit",
+  "source_hashes": {
+    "DESI_mean": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+    "DESI_covariance": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509"
+  },
+  "claim_boundary": "covariant optical closure and falsification audit; not an FR action or discovery test"
+}

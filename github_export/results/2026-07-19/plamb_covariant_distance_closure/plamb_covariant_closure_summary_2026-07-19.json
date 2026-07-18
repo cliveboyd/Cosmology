@@ -1,0 +1,159 @@
+{
+  "analysis_date": "2026-07-19",
+  "bao_fits": [
+    {
+      "BIC": 33460.616619617984,
+      "B_z2p33": 1.0,
+      "N": 13,
+      "N_parameters": 1,
+      "chi2": 33458.051670260524,
+      "closure": "static_fr",
+      "goodness_upper_tail": 0.0,
+      "model": "static_fr_constant_ruler",
+      "optimisation_success": true,
+      "q_c0_over_H0rd": 7.586099599961065,
+      "ruler_mode": "constant",
+      "ruler_power_b": 0.0
+    },
+    {
+      "BIC": 4149.6978759665435,
+      "B_z2p33": 7.369290870272589,
+      "N": 13,
+      "N_parameters": 2,
+      "chi2": 4144.5679772516205,
+      "closure": "static_fr",
+      "goodness_upper_tail": 0.0,
+      "model": "static_fr_power_law_ruler",
+      "optimisation_success": true,
+      "q_c0_over_H0rd": 35.43036732012811,
+      "ruler_mode": "power_law",
+      "ruler_power_b": 1.6603220843299245
+    },
+    {
+      "BIC": 20454.6737570107,
+      "B_z2p33": 1.0,
+      "N": 13,
+      "N_parameters": 1,
+      "chi2": 20452.10880765324,
+      "closure": "fixed_atomic_clock",
+      "goodness_upper_tail": 0.0,
+      "model": "fixed_atomic_clock_constant_ruler",
+      "optimisation_success": true,
+      "q_c0_over_H0rd": 13.611161935921169,
+      "ruler_mode": "constant",
+      "ruler_power_b": 0.0
+    },
+    {
+      "BIC": 2689.7999239296205,
+      "B_z2p33": 4.330679196435513,
+      "N": 13,
+      "N_parameters": 2,
+      "chi2": 2684.6700252146975,
+      "closure": "fixed_atomic_clock",
+      "goodness_upper_tail": 0.0,
+      "model": "fixed_atomic_clock_power_law_ruler",
+      "optimisation_success": true,
+      "q_c0_over_H0rd": 39.4880544278299,
+      "ruler_mode": "power_law",
+      "ruler_power_b": 1.2184190634715846
+    },
+    {
+      "BIC": 65511.39542832646,
+      "B_z2p33": 1.0,
+      "N": 13,
+      "N_parameters": 1,
+      "chi2": 65508.830478969,
+      "closure": "standard_scale_factor",
+      "goodness_upper_tail": 0.0,
+      "model": "standard_scale_factor_constant_ruler",
+      "optimisation_success": true,
+      "q_c0_over_H0rd": 2.303951517020898,
+      "ruler_mode": "constant",
+      "ruler_power_b": 0.0
+    },
+    {
+      "BIC": 8129.155215688324,
+      "B_z2p33": 25.944024359125944,
+      "N": 13,
+      "N_parameters": 2,
+      "chi2": 8124.025316973401,
+      "closure": "standard_scale_factor",
+      "goodness_upper_tail": 0.0,
+      "model": "standard_scale_factor_power_law_ruler",
+      "optimisation_success": true,
+      "q_c0_over_H0rd": 39.40774955777149,
+      "ruler_mode": "power_law",
+      "ruler_power_b": 2.7065804400572513
+    },
+    {
+      "BIC": 15.400940140368292,
+      "B_z2p33": 1.0,
+      "N": 13,
+      "N_parameters": 2,
+      "Omega_m": 0.29746182078985123,
+      "chi2": 10.271041425445219,
+      "closure": "LCDM_flat",
+      "goodness_upper_tail": 0.506184284656087,
+      "model": "LCDM_flat",
+      "optimisation_success": true,
+      "q_c0_over_H0rd": 29.524633450663124,
+      "ruler_mode": "constant",
+      "ruler_power_b": 0.0
+    }
+  ],
+  "claim_promotion": false,
+  "endpoint_z2p33": {
+    "fixed_atomic_clock": {
+      "H_over_H0": -0.1608092240254368,
+      "J": 165.84911595224966,
+      "Q": 1.0,
+      "Xi": 0.07765035034988424,
+      "a": 1.9096096096096096
+    },
+    "standard_scale_factor": {
+      "H_over_H0": 0.7866045042905792,
+      "J": 58.626674819973985,
+      "Q": 6.359,
+      "Xi": 0.13060276414974592,
+      "a": 0.3003003003003003
+    },
+    "static_fr": {
+      "H_over_H0": 0.0,
+      "J": 122.96370321,
+      "Q": 1.9096096096096096,
+      "Xi": 0.09018027036045054,
+      "a": 1.0
+    }
+  },
+  "gates": {
+    "action_level_clock_and_photon_dynamics": false,
+    "arbitrary_isotropic_ruler_any_closure_AP_p_at_least_0p05": false,
+    "fixed_atomic_clock_closure_is_noncontracting_today": false,
+    "fixed_atomic_clock_luminosity_identity": true,
+    "fixed_atomic_clock_radial_derivative_identity": true,
+    "fixed_atomic_clock_rate_identity": true,
+    "fixed_atomic_clock_redshift_identity": true,
+    "independent_drag_epoch_ruler_derivation": false,
+    "power_law_ruler_any_closure_goodness_p_at_least_0p05": false,
+    "standard_scale_factor_luminosity_identity": true,
+    "standard_scale_factor_radial_derivative_identity": true,
+    "standard_scale_factor_rate_identity": true,
+    "standard_scale_factor_redshift_identity": true,
+    "static_Xi_close_to_unity_at_z2p33": false,
+    "static_atomic_clock_evolution_is_derived_not_supplied": false,
+    "static_background_matches_FR_intent": true,
+    "static_fr_luminosity_identity": true,
+    "static_fr_radial_derivative_identity": true,
+    "static_fr_rate_identity": true,
+    "static_fr_redshift_identity": true,
+    "static_luminosity_transfer_is_derived_not_supplied": false
+  },
+  "irreducible_AP_chi2": {
+    "fixed_atomic_clock": 2217.3156410947195,
+    "standard_scale_factor": 7708.326206023663,
+    "static_fr": 3881.9510864723134
+  },
+  "kinematic_identity_gates_pass": true,
+  "next_sampling_authorised": false,
+  "predictive_physical_closure_pass": false
+}

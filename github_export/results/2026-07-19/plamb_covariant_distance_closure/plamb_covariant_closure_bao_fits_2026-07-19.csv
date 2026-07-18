@@ -1,0 +1,8 @@
+model,closure,ruler_mode,ruler_power_b,B_z2p33,q_c0_over_H0rd,chi2,N,N_parameters,BIC,goodness_upper_tail,optimisation_success,Omega_m
+static_fr_constant_ruler,static_fr,constant,0.0,1.0,7.586099599961065,33458.051670260524,13,1,33460.616619617984,0.0,True,
+static_fr_power_law_ruler,static_fr,power_law,1.6603220843299245,7.369290870272589,35.43036732012811,4144.5679772516205,13,2,4149.6978759665435,0.0,True,
+fixed_atomic_clock_constant_ruler,fixed_atomic_clock,constant,0.0,1.0,13.611161935921169,20452.10880765324,13,1,20454.6737570107,0.0,True,
+fixed_atomic_clock_power_law_ruler,fixed_atomic_clock,power_law,1.2184190634715846,4.330679196435513,39.4880544278299,2684.6700252146975,13,2,2689.7999239296205,0.0,True,
+standard_scale_factor_constant_ruler,standard_scale_factor,constant,0.0,1.0,2.303951517020898,65508.830478969,13,1,65511.39542832646,0.0,True,
+standard_scale_factor_power_law_ruler,standard_scale_factor,power_law,2.7065804400572513,25.944024359125944,39.40774955777149,8124.025316973401,13,2,8129.155215688324,0.0,True,
+LCDM_flat,LCDM_flat,constant,0.0,1.0,29.524633450663124,10.271041425445219,13,2,15.400940140368292,0.506184284656087,True,0.29746182078985123

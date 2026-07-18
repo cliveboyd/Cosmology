@@ -142,3 +142,12 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
   gives `chi-squared=33458.052`; the duality control gives `chi-squared=176.070`
   and `Delta BIC=+163.234` versus flat Lambda-CDM. The present adapters are
   rejected, without excluding an as-yet unspecified covariant PLAMB completion.
+- `2026-07-19/plamb_covariant_distance_closure/` derives a unified disformal
+  clock-distance-ruler relation for `T`, `D_L`, `D_M`, `D_H` and an evolving BAO
+  ruler, then validates its numerical identities. The kinematic closure passes,
+  but physical prediction fails: the static FR branch requires large unprovided
+  atomic-clock and luminosity-transfer laws, while even an arbitrary isotropic
+  ruler in every DESI bin cannot repair the radial/transverse ratio. The best
+  power-law-ruler closure has `chi-squared=2684.670025`, versus `10.271041` for
+  flat Lambda-CDM. No further distance sampling is authorised until an
+  action-level model independently fixes the clock, photon and ruler evolution.
