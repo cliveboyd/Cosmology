@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-18",
+  "development_gate_passed": false,
+  "conditions": {
+    "primary_p": false,
+    "cv_improvement": false,
+    "coefficient_sign": true,
+    "sensitivity_signs": true,
+    "negative_control": false
+  },
+  "replication_unsealed": false,
+  "replication_policy": "A separate held-out preregistration is required even after a pass."
+}
