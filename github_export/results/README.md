@@ -83,4 +83,14 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
   All seven analytic, quadrature and wiring gates pass. The full likelihood
   regression changes `Delta BIC` by only `9.095e-13`, so the refactor changes no
   scientific result and does not select either clock law physically.
+- `2026-07-18/rawmu_plamb_clock_fit/` contains the separately preregistered nested
+  clock-law attribution ladder, deterministic full-covariance fits, complete-
+  release shape tests, exact conditional survey/high-redshift tests,
+  identifiability audit, figure and hash manifest. The best PLAMB-family BIC cell
+  (`PATH_FREE`) remains worse than flat Lambda-CDM by `Delta BIC=+13.345052`,
+  reaches the registered `gamma_c=2` boundary, loses all three release-shape
+  hold-outs and has a `+321.926337` high-redshift conditional loss at `z>=0.5`.
+  The fully general curve has an extreme `p-alpha` correlation of `0.997363` and
+  is not a physical identification of clock-rate or flux evolution. Seven of the
+  eight promotion gates fail; the result is explicitly **do not promote**.
 - `2026-07-18/priority_followup_outcomes_2026-07-18.md` is the integrated claim-boundary readout for these three branches.

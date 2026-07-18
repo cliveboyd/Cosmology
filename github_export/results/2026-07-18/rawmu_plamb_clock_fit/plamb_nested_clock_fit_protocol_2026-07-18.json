@@ -1,0 +1,60 @@
+{
+  "protocol_date": "2026-07-18",
+  "status_at_registration": "no_flexible_clock_law_outcomes_inspected",
+  "known_fixed_peter_delta_bic_vs_lcdm": 94.34498313934,
+  "sample": {
+    "expected_N": 3422,
+    "covariance": "released_total",
+    "release_intercepts": "one_unpenalised_profiled_intercept_per_release",
+    "redshift_frames": {
+      "PantheonPlusSH0ES": "zHD",
+      "DES_Dovekie_raw": "zHD",
+      "Union3p1_UNITY1p8": "released_z"
+    },
+    "H0_km_s_Mpc": 67.5
+  },
+  "bounds": {
+    "gamma_c": [0.0, 2.0],
+    "p": [-0.5, 2.5],
+    "alpha": [-0.5, 1.5],
+    "Omega_m": [0.05, 0.6]
+  },
+  "models": [
+    {"key": "PETER_FIXED", "free": [], "fixed": {"gamma_c": 1.0, "p": 0.0, "alpha": 0.0}},
+    {"key": "FRACTIONAL_FIXED", "free": [], "fixed": {"gamma_c": 1.0, "p": 1.0, "alpha": 0.0}},
+    {"key": "P_FREE", "free": ["p"], "fixed": {"gamma_c": 1.0, "alpha": 0.0}},
+    {"key": "ALPHA_FREE", "free": ["alpha"], "fixed": {"gamma_c": 1.0, "p": 0.0}},
+    {"key": "GAMMA_FREE", "free": ["gamma_c"], "fixed": {"p": 0.0, "alpha": 0.0}},
+    {"key": "PATH_FREE", "free": ["gamma_c", "p"], "fixed": {"alpha": 0.0}},
+    {"key": "P_ALPHA_FREE", "free": ["p", "alpha"], "fixed": {"gamma_c": 1.0}},
+    {"key": "GENERAL_FREE", "free": ["gamma_c", "p", "alpha"], "fixed": {}},
+    {"key": "LCDM", "free": ["Omega_m"], "fixed": {"flat": true}}
+  ],
+  "optimisation": {
+    "profile_alpha_analytically": true,
+    "scalar_method": "bounded",
+    "multivariate_global_method": "differential_evolution",
+    "global_seeds": [20260718, 20260719],
+    "polish_method": "L-BFGS-B",
+    "chi2_agreement_tolerance": 0.0001
+  },
+  "holdouts": {
+    "candidate_rule": "lowest_full_sample_BIC_among_non_LCDM_models",
+    "comparison_models": ["selected_candidate", "PETER_FIXED", "FRACTIONAL_FIXED", "LCDM"],
+    "complete_release": "all_three_shape_holdouts_with_test_intercept_profiled",
+    "survey_minimum_N": 20,
+    "exclude_survey_label": "COMPRESSED",
+    "high_z_thresholds": [0.5, 0.8, 1.0],
+    "within_release_score": "exact_Gaussian_conditional"
+  },
+  "promotion_gates": {
+    "delta_BIC_best_PLAMB_minus_LCDM_max": -10.0,
+    "minimum_fraction_of_parameter_range_from_bound": 0.01,
+    "maximum_hessian_condition_number": 100000000.0,
+    "complete_release_wins_required": 3,
+    "minimum_survey_and_redshift_win_fraction": 0.75,
+    "maximum_single_holdout_delta_chi2_loss": 10.0,
+    "maximum_release_intercept_difference_mag": 0.05,
+    "external_e_b_s_identification_required": true
+  }
+}

@@ -1,0 +1,552 @@
+{
+  "analysis_date": "2026-07-18",
+  "candidate_delta_BIC_vs_LCDM": 13.34505186640763,
+  "candidate_key": "PATH_FREE",
+  "candidate_offset_differences_vs_LCDM_mag": {
+    "DES_Dovekie_raw": 0.017999842654827583,
+    "PantheonPlusSH0ES": 0.013721853574884757,
+    "Union3p1_UNITY1p8": 0.0005016992943940521
+  },
+  "hessian_audits": {
+    "ALPHA_FREE": {
+      "boundary_fractions": {
+        "alpha": 0.2688024505571706
+      },
+      "central_hessian_available": 1,
+      "condition_number": 1.0,
+      "correlation": [
+        [
+          1.0
+        ]
+      ],
+      "eigenvalues": [
+        26478.557356313104
+      ],
+      "minimum_bound_fraction": 0.2688024505571706,
+      "parameter_names": [
+        "alpha"
+      ],
+      "positive_definite": 1,
+      "rank": 1,
+      "standard_errors": {
+        "alpha": 0.008690961740340291
+      }
+    },
+    "GAMMA_FREE": {
+      "boundary_fractions": {
+        "gamma_c": 0.4577004942534396
+      },
+      "central_hessian_available": 1,
+      "condition_number": 1.0,
+      "correlation": [
+        [
+          1.0
+        ]
+      ],
+      "eigenvalues": [
+        5805.389605484379
+      ],
+      "minimum_bound_fraction": 0.4577004942534396,
+      "parameter_names": [
+        "gamma_c"
+      ],
+      "positive_definite": 1,
+      "rank": 1,
+      "standard_errors": {
+        "gamma_c": 0.018560912027650804
+      }
+    },
+    "GENERAL_FREE": {
+      "boundary_fractions": {
+        "alpha": 0.39921711219207856,
+        "gamma_c": 0.0840055535140447,
+        "p": 0.24890611894848166
+      },
+      "central_hessian_available": 1,
+      "condition_number": 44610.39022753036,
+      "correlation": [
+        [
+          1.0,
+          -0.8859850303003879,
+          -0.9169279778322711
+        ],
+        [
+          -0.8859850303005102,
+          0.9999999999999999,
+          0.9973628192757505
+        ],
+        [
+          -0.9169279778323765,
+          0.9973628192757317,
+          1.0
+        ]
+      ],
+      "eigenvalues": [
+        0.8358111032478993,
+        72.60038255602404,
+        37285.85947233095
+      ],
+      "minimum_bound_fraction": 0.0840055535140447,
+      "parameter_names": [
+        "gamma_c",
+        "p",
+        "alpha"
+      ],
+      "positive_definite": 1,
+      "rank": 3,
+      "standard_errors": {
+        "alpha": 0.8039133640865544,
+        "gamma_c": 0.3641653734071752,
+        "p": 1.281246957077325
+      }
+    },
+    "LCDM": {
+      "boundary_fractions": {
+        "Omega_m": 0.4896734162811523
+      },
+      "central_hessian_available": 1,
+      "condition_number": 1.0,
+      "correlation": [
+        [
+          1.0
+        ]
+      ],
+      "eigenvalues": [
+        17995.06674066556
+      ],
+      "minimum_bound_fraction": 0.4896734162811523,
+      "parameter_names": [
+        "Omega_m"
+      ],
+      "positive_definite": 1,
+      "rank": 1,
+      "standard_errors": {
+        "Omega_m": 0.010542370306413603
+      }
+    },
+    "PATH_FREE": {
+      "boundary_fractions": {
+        "gamma_c": 0.0,
+        "p": 0.3760639253863456
+      },
+      "central_hessian_available": 0,
+      "condition_number": null,
+      "correlation": [],
+      "eigenvalues": [],
+      "minimum_bound_fraction": 0.0,
+      "parameter_names": [
+        "gamma_c",
+        "p"
+      ],
+      "rank": null,
+      "standard_errors": {}
+    },
+    "P_ALPHA_FREE": {
+      "boundary_fractions": {
+        "alpha": 0.17953187234738588,
+        "p": 0.16666665018049764
+      },
+      "central_hessian_available": 1,
+      "condition_number": 1863.609575559605,
+      "correlation": [
+        [
+          1.0000000000000002,
+          0.9983269046011815
+        ],
+        [
+          0.9983269046011807,
+          1.0
+        ]
+      ],
+      "eigenvalues": [
+        17.762647677675886,
+        33102.640299405495
+      ],
+      "minimum_bound_fraction": 0.16666665018049764,
+      "parameter_names": [
+        "p",
+        "alpha"
+      ],
+      "positive_definite": 1,
+      "rank": 2,
+      "standard_errors": {
+        "alpha": 0.15030527347831216,
+        "p": 0.30010759674777304
+      }
+    },
+    "P_FREE": {
+      "boundary_fractions": {
+        "p": 0.149146461906466
+      },
+      "central_hessian_available": 1,
+      "condition_number": 1.0,
+      "correlation": [
+        [
+          1.0000000000000002
+        ]
+      ],
+      "eigenvalues": [
+        9759.653873212907
+      ],
+      "minimum_bound_fraction": 0.149146461906466,
+      "parameter_names": [
+        "p"
+      ],
+      "positive_definite": 1,
+      "rank": 1,
+      "standard_errors": {
+        "p": 0.014315212196081053
+      }
+    }
+  },
+  "holdout_counts": {
+    "release_shape": 3,
+    "release_wins": 0,
+    "survey_and_high_z": 20,
+    "survey_and_high_z_wins": 10
+  },
+  "interpretation": {
+    "DES_b_mean": 1.003,
+    "DES_b_sigma": 0.011180339887498949,
+    "conditional_translation_sigma": 1.60786560005115,
+    "e_assuming_s_zero": 0.40013155123168587,
+    "general_alpha": 0.7015657756158429,
+    "general_alpha_standard_error": 0.8039133640865544,
+    "maximum_release_offset_difference_mag": 0.017999842654827583,
+    "s_assuming_e_one": 0.5998684487683144
+  },
+  "overall_promotion": 0,
+  "primary_fits": {
+    "ALPHA_FREE": {
+      "BIC": 3163.975360056786,
+      "N": 3422,
+      "N_parameters": 4,
+      "N_release_intercepts": 3,
+      "N_shape_parameters": 1,
+      "chi2": 3131.4234382389773,
+      "label": "Flux exponent free",
+      "model": "ALPHA_FREE",
+      "offsets": {
+        "DES_Dovekie_raw": -0.020192525499171124,
+        "PantheonPlusSH0ES": -0.13782213896404993,
+        "Union3p1_UNITY1p8": -0.051928002024118444
+      },
+      "optimisation_method": "analytic",
+      "optimisation_objectives": [],
+      "optimisation_success": 1,
+      "parameters": {
+        "alpha": 0.037604901114341276,
+        "gamma_c": 1.0,
+        "p": 0.0
+      }
+    },
+    "FRACTIONAL_FIXED": {
+      "BIC": 8105.668421868994,
+      "N": 3422,
+      "N_parameters": 3,
+      "N_release_intercepts": 3,
+      "N_shape_parameters": 0,
+      "chi2": 8081.254480505638,
+      "label": "Fractional clock fixed",
+      "model": "FRACTIONAL_FIXED",
+      "offsets": {
+        "DES_Dovekie_raw": 0.4208831646304164,
+        "PantheonPlusSH0ES": 0.09197648348550522,
+        "Union3p1_UNITY1p8": 0.5538505633241977
+      },
+      "optimisation_method": "analytic",
+      "optimisation_objectives": [],
+      "optimisation_success": 1,
+      "parameters": {
+        "alpha": 0.0,
+        "gamma_c": 1.0,
+        "p": 1.0
+      }
+    },
+    "GAMMA_FREE": {
+      "BIC": 3161.3987155135515,
+      "N": 3422,
+      "N_parameters": 4,
+      "N_release_intercepts": 3,
+      "N_shape_parameters": 1,
+      "chi2": 3128.8467936957427,
+      "label": "Light-speed coefficient free",
+      "model": "GAMMA_FREE",
+      "offsets": {
+        "DES_Dovekie_raw": -0.022895303471836354,
+        "PantheonPlusSH0ES": -0.13936353880400962,
+        "Union3p1_UNITY1p8": -0.05456309439372443
+      },
+      "optimisation_method": "bounded_scalar",
+      "optimisation_objectives": [
+        3128.8467936957427
+      ],
+      "optimisation_success": 1,
+      "parameters": {
+        "alpha": 0.0,
+        "gamma_c": 1.0845990114931208,
+        "p": 0.0
+      }
+    },
+    "GENERAL_FREE": {
+      "BIC": 3096.0021773055346,
+      "N": 3422,
+      "N_parameters": 6,
+      "N_release_intercepts": 3,
+      "N_shape_parameters": 3,
+      "chi2": 3047.174294578822,
+      "label": "General clock law",
+      "model": "GENERAL_FREE",
+      "offsets": {
+        "DES_Dovekie_raw": -0.06449765134060248,
+        "PantheonPlusSH0ES": -0.173732374218129,
+        "Union3p1_UNITY1p8": -0.05819668953523458
+      },
+      "optimisation_method": "two_seed_DE_plus_L-BFGS-B",
+      "optimisation_objectives": [
+        3047.174294578822,
+        3047.1742945812125
+      ],
+      "optimisation_success": 1,
+      "parameters": {
+        "alpha": 0.7015657756158429,
+        "gamma_c": 1.8319888929719106,
+        "p": 1.753281643154555
+      }
+    },
+    "LCDM": {
+      "BIC": 3080.214439003744,
+      "N": 3422,
+      "N_parameters": 4,
+      "N_release_intercepts": 3,
+      "N_shape_parameters": 1,
+      "chi2": 3047.662517185935,
+      "label": "Flat Lambda-CDM",
+      "model": "LCDM",
+      "offsets": {
+        "DES_Dovekie_raw": -0.07022422495287793,
+        "PantheonPlusSH0ES": -0.17768386167100098,
+        "Union3p1_UNITY1p8": -0.055388787883083615
+      },
+      "optimisation_method": "bounded_scalar",
+      "optimisation_objectives": [
+        3047.662517185935
+      ],
+      "optimisation_success": 1,
+      "parameters": {
+        "Omega_m": 0.33067962104536625
+      }
+    },
+    "PATH_FREE": {
+      "BIC": 3093.5594908701514,
+      "N": 3422,
+      "N_parameters": 5,
+      "N_release_intercepts": 3,
+      "N_shape_parameters": 2,
+      "chi2": 3052.869588597891,
+      "label": "Path law free",
+      "model": "PATH_FREE",
+      "offsets": {
+        "DES_Dovekie_raw": -0.05222438229805035,
+        "PantheonPlusSH0ES": -0.16396200809611622,
+        "Union3p1_UNITY1p8": -0.05488708858868956
+      },
+      "optimisation_method": "two_seed_DE_plus_L-BFGS-B",
+      "optimisation_objectives": [
+        3052.869588597891,
+        3052.8695885978914
+      ],
+      "optimisation_success": 1,
+      "parameters": {
+        "alpha": 0.0,
+        "gamma_c": 2.0,
+        "p": 0.6281917761590368
+      }
+    },
+    "PETER_FIXED": {
+      "BIC": 3174.559422143083,
+      "N": 3422,
+      "N_parameters": 3,
+      "N_release_intercepts": 3,
+      "N_shape_parameters": 0,
+      "chi2": 3150.1454807797263,
+      "label": "Peter fixed",
+      "model": "PETER_FIXED",
+      "offsets": {
+        "DES_Dovekie_raw": 0.00786567469860942,
+        "PantheonPlusSH0ES": -0.12290424566399825,
+        "Union3p1_UNITY1p8": -0.014807847306313019
+      },
+      "optimisation_method": "analytic",
+      "optimisation_objectives": [],
+      "optimisation_success": 1,
+      "parameters": {
+        "alpha": 0.0,
+        "gamma_c": 1.0,
+        "p": 0.0
+      }
+    },
+    "P_ALPHA_FREE": {
+      "BIC": 3104.1896772891196,
+      "N": 3422,
+      "N_parameters": 5,
+      "N_release_intercepts": 3,
+      "N_shape_parameters": 2,
+      "chi2": 3063.499775016859,
+      "label": "Clock power and flux exponent free",
+      "model": "P_ALPHA_FREE",
+      "offsets": {
+        "DES_Dovekie_raw": -0.04391736658894559,
+        "PantheonPlusSH0ES": -0.15672559137141576,
+        "Union3p1_UNITY1p8": -0.053281273710501315
+      },
+      "optimisation_method": "bounded_scalar",
+      "optimisation_objectives": [
+        3063.499775016859
+      ],
+      "optimisation_success": 1,
+      "parameters": {
+        "alpha": 1.1409362553052282,
+        "gamma_c": 1.0,
+        "p": 2.000000049458507
+      }
+    },
+    "P_FREE": {
+      "BIC": 3169.273809968174,
+      "N": 3422,
+      "N_parameters": 4,
+      "N_release_intercepts": 3,
+      "N_shape_parameters": 1,
+      "chi2": 3136.7218881503654,
+      "label": "Clock power free",
+      "model": "P_FREE",
+      "offsets": {
+        "DES_Dovekie_raw": -0.0145619207429843,
+        "PantheonPlusSH0ES": -0.1344954730509133,
+        "Union3p1_UNITY1p8": -0.04599985315738362
+      },
+      "optimisation_method": "bounded_scalar",
+      "optimisation_objectives": [
+        3136.7218881503654
+      ],
+      "optimisation_success": 1,
+      "parameters": {
+        "alpha": 0.0,
+        "gamma_c": 1.0,
+        "p": -0.05256061428060205
+      }
+    }
+  },
+  "promotion_gates": {
+    "external_e_b_s_physical_identification": 0,
+    "full_rank_hessian_condition_below_1e8": 0,
+    "no_shape_parameter_within_one_percent_of_bound": 0,
+    "no_single_holdout_loss_above_delta_chi2_10": 0,
+    "primary_delta_BIC_below_minus_10": 0,
+    "release_intercept_differences_within_0p050_mag": 1,
+    "wins_all_three_complete_release_shape_holdouts": 0,
+    "wins_at_least_75_percent_survey_and_redshift_holdouts": 0
+  },
+  "protocol": "C:\\Users\\clive\\Documents\\Cosmology\\github_export\\results\\2026-07-18\\rawmu_plamb_clock_fit\\plamb_nested_clock_fit_protocol_2026-07-18.json",
+  "sample": {
+    "N": {
+      "DES_Dovekie_raw": 1820,
+      "PantheonPlusSH0ES": 1580,
+      "Union3p1_UNITY1p8": 22
+    },
+    "hierarchies": {
+      "des_allsys_statonly_grouped": {
+        "base": "STATONLY",
+        "component": "ALL_SYSTEMATICS",
+        "dataset": "DES_Dovekie_raw",
+        "metrics": {
+          "N_groups": 5,
+          "captured_frobenius_power_fraction": 0.001682395466355846,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "dataset_variance_mag2": 0.0,
+          "dataset_variance_raw_mag2": -1.6358679361255892e-05,
+          "diagonal_rmse_mag2": 0.012914567138476985,
+          "relative_frobenius_error": 0.9991584481620741,
+          "residual_frobenius_norm_mag2": 5.60370439056719,
+          "target_frobenius_norm_mag2": 5.608424170235519
+        },
+        "survey_priors_mag": {
+          "10": 0.011766741997148049,
+          "150": 0.019676396618983773,
+          "64": 0.012457391087084598,
+          "65": 0.023063874479079774,
+          "OTHER": 0.023172941964601863
+        }
+      },
+      "pantheon_calib_csp_recal_hstcalspec_statonly_grouped": {
+        "base": "STATONLY",
+        "component": "CALIB+CSP_RECAL+HSTCALSPEC",
+        "dataset": "PantheonPlusSH0ES",
+        "metrics": {
+          "N_groups": 14,
+          "captured_frobenius_power_fraction": 0.04212035572505601,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "dataset_variance_mag2": 0.0,
+          "dataset_variance_raw_mag2": -2.1775167495908403e-05,
+          "diagonal_rmse_mag2": 0.000805480276036463,
+          "relative_frobenius_error": 0.9787132594764127,
+          "residual_frobenius_norm_mag2": 0.6956629489184941,
+          "target_frobenius_norm_mag2": 0.7107934241032522
+        },
+        "survey_priors_mag": {
+          "1": 0.00819168417355587,
+          "10": 0.007856563639721847,
+          "15": 0.006900267193768169,
+          "150": 0.01506658119003963,
+          "4": 0.02573536062168403,
+          "5": 0.02360628293970409,
+          "50": 0.027120367272359242,
+          "51": 0.009624749520070627,
+          "56": 0.044623976714760705,
+          "57": 0.004082184265035377,
+          "63": 0.005753601356665979,
+          "64": 0.003584777554811392,
+          "65": 0.007727909662716178,
+          "OTHER": 0.01666817286093545
+        }
+      },
+      "pantheon_calib_statonly_grouped": {
+        "base": "STATONLY",
+        "component": "CALIB",
+        "dataset": "PantheonPlusSH0ES",
+        "metrics": {
+          "N_groups": 14,
+          "captured_frobenius_power_fraction": 0.11626723345317302,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "dataset_variance_mag2": 0.0,
+          "dataset_variance_raw_mag2": -1.5614935453861935e-05,
+          "diagonal_rmse_mag2": 0.0006179950937768223,
+          "relative_frobenius_error": 0.9400706178510352,
+          "residual_frobenius_norm_mag2": 0.30365307105882816,
+          "target_frobenius_norm_mag2": 0.32301091566181195
+        },
+        "survey_priors_mag": {
+          "1": 0.008075982502836906,
+          "10": 0.006936932607242753,
+          "15": 0.006371219705925663,
+          "150": 0.015025722885243507,
+          "4": 0.018936388261509243,
+          "5": 0.019312110579827364,
+          "50": 0.02708800827015334,
+          "51": 0.009605405550494663,
+          "56": 0.04456361497142021,
+          "57": 0.0038350553877342657,
+          "63": 0.005608021996594319,
+          "64": 0.0032152294240378886,
+          "65": 0.005972385432563947,
+          "OTHER": 0.015794418335565347
+        }
+      }
+    },
+    "primary_frame": {
+      "DES_Dovekie_raw": "zHD",
+      "PantheonPlusSH0ES": "zHD",
+      "Union3p1_UNITY1p8": "z"
+    }
+  }
+}
