@@ -1,0 +1,32 @@
+{
+  "date": "2026-07-18",
+  "generated_utc": "2026-07-18T06:57:22.561008+00:00",
+  "theory": "Peter R. Lamb's Full Relativity",
+  "source": {
+    "version": "Making Sense of Gravity 8.10, 12 January 2023",
+    "url": "https://www.fullyrelative.com/wp-content/uploads/2023/01/Making-Sense-of-Gravity-book-Vs8-10.pdf",
+    "local_sha256": "21c20bc61c060db1c0dca7478ab1b8cdedc218360c4bbd4f10fe647de3e91061",
+    "local_bytes": 2261469,
+    "latest_summary_url": "https://www.fullyrelative.com/wp-content/uploads/2024/07/Making-Sense-of-Gravity-intro-to-Full-Relativity-Astro4.pdf"
+  },
+  "charge_conjugation": {
+    "component_swap": "B_M <-> B_AM",
+    "total_clout": "B_plus -> B_plus",
+    "signed_asymmetry": "chi -> -chi",
+    "asymmetry_magnitude": "abs(chi) -> abs(chi)",
+    "galaxy_dynamics": "g_dyn -> g_dyn under complete conjugation",
+    "gravity_branch": "attractive for matter and antimatter"
+  },
+  "identifiability": {
+    "intrinsic_rotation_curve_classifier": "prohibited",
+    "fixed_environment_exception": "possible only when a signed external background is independently observed and the FR response function is preregistered",
+    "reserved_replication_galaxies_opened": false
+  },
+  "missing_theory_elements": [
+    "normalised cosmological component kernel",
+    "exact inertia response f(abs(chi), B_plus, velocity)",
+    "observed signed external antimatter-background map",
+    "contact-annihilation likelihood"
+  ],
+  "all_expected_checks_passed": true
+}

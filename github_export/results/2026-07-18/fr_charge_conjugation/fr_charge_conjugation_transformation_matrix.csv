@@ -1,0 +1,11 @@
+quantity,definition,charge_conjugation,observable_role,status
+B_M,non-negative matter contribution to clout,B_M -> B_AM,one component of total clout and signed asymmetry,fixed by FR source
+B_AM,non-negative antimatter contribution to clout,B_AM -> B_M,one component of total clout and signed asymmetry,fixed by FR source
+B_plus,B_M + B_AM,B_plus -> B_plus,sets light speed and stored-energy response,charge-even; fixed by FR source
+B_minus,B_M - B_AM,B_minus -> -B_minus,signed chiral-background imbalance,charge-odd; fixed by definition
+chi,B_minus / B_plus,chi -> -chi,fractional signed asymmetry,charge-odd; fixed by FR source
+abs_chi,absolute value of chi,abs_chi -> abs_chi,FR source variable controlling oscillation frequency and inertia,charge-even; fixed qualitatively
+m_g,stored energy divided by c squared,m_g -> m_g,gravitational mass response to B_plus,charge-even; exact functional response incomplete
+eta,"m_i / m_g = f(abs_chi, B_plus, velocity)",eta -> eta,inertial-to-gravitational mass ratio,charge-even; f is not uniquely specified by FR source
+g_dyn,g_bar / eta in the minimal inertia interpretation,g_dyn -> g_dyn,rotation-curve acceleration,charge-even under complete conjugation
+host_sign,+1 matter host; -1 antimatter host,host_sign -> -host_sign,changes which component receives host clout,not separately identifiable without an external signed environment

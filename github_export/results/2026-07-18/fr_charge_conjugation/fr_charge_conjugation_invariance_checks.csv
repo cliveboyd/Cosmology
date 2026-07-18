@@ -1,0 +1,9 @@
+check,comparison,total_before,total_after,signed_asymmetry_before,signed_asymmetry_after,magnitude_before,magnitude_after,expected_invariant,invariant
+global_charge_conjugation,swap every matter and antimatter contribution,2.3,2.3,0.21739130434782605,-0.21739130434782605,0.21739130434782605,0.21739130434782605,True,True
+host_swap_in_balanced_background,matter versus antimatter host in an exactly balanced background,2.3,2.3,0.13043478260869568,-0.13043478260869568,0.13043478260869568,0.13043478260869568,True,True
+host_swap_in_fixed_asymmetric_background,change only the host while holding a matter-biased environment fixed,2.3,2.3,0.17391304347826095,-0.08695652173913042,0.17391304347826095,0.08695652173913042,False,False
+host_and_environment_charge_conjugation,swap the host and every environmental contribution,2.3,2.3,0.17391304347826095,-0.17391304347826095,0.17391304347826095,0.17391304347826095,True,True
+current_plamb_charge_even,gbar=1e-13,1e-13,1e-13,not_present,not_present,0.02213847738012098,0.02213847738012098,True,True
+current_plamb_charge_even,gbar=3e-12,3e-12,3e-12,not_present,not_present,0.13528089038897573,0.13528089038897573,True,True
+current_plamb_charge_even,gbar=1e-10,1e-10,1e-10,not_present,not_present,0.6321205588285577,0.6321205588285577,True,True
+current_plamb_charge_even,gbar=3e-09,3e-09,3e-09,not_present,not_present,0.9984853497708234,0.9984853497708234,True,True
