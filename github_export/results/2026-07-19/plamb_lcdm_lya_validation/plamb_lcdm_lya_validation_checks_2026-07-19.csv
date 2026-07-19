@@ -1,0 +1,9 @@
+check,value,target,tolerance,passed
+SN p regression,0.7974289182506187,0.7974289064225032,5e-05,True
+lower-z b_perpendicular regression,0.992065978020719,0.992066,5e-05,True
+lower-z b_parallel regression,1.7524233893898837,1.752423,5e-05,True
+frozen z2.33 DM regression,40.08532087125966,40.0853,0.0005,True
+frozen z2.33 DH regression,8.807545661528003,8.80755,0.0005,True
+all Gaussian covariances positive definite,0.008259225759765749,0.0,0.0,True
+native eBOSS predictions inside both grids,1.0,1.0,0.0,True
+equivalence optimisation succeeded,1.0,1.0,0.0,True

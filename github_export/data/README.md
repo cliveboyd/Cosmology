@@ -14,3 +14,9 @@ Use `../manifests/data_manifest.csv` to record:
 
 If a dataset must be versioned, use Git LFS or an external archive such as Zenodo/OSF and cite that external artifact from the manifest.
 
+Curated exceptions:
+
+- `bao/lya_validation_2026-07-19/` contains two small official eBOSS DR16
+  likelihood grids and the DESI DR2 published auto/cross summary readouts. The
+  directory README records provenance, licensing and the distinction between
+  native likelihoods and published Gaussian compressions.

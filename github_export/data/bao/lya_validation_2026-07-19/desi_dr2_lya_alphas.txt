@@ -1,0 +1,9 @@
+DR2 alpha_par = 1.002 +- 0.011
+DR2 alpha_perp = 0.995 +- 0.013
+DR2 rho = -0.46
+DR1 alpha_par = 0.988 +- 0.020
+DR1 alpha_perp = 1.013 +- 0.023
+DR1 rho = -0.46
+eBOSS alpha_par = 1.045 +- 0.021
+eBOSS alpha_perp = 0.956 +- 0.028
+eBOSS rho = -0.46

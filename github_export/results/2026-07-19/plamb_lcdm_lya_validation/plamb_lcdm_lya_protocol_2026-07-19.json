@@ -1,0 +1,23 @@
+{
+  "analysis_id": "plamb_lcdm_lya_validation_2026-07-19",
+  "status": "outcome_aware_followup_with_frozen_lower_redshift_training",
+  "training": {
+    "p": "released-total raw-MU supernova profile only",
+    "radial_transverse_powers_and_q": "DESI DR2 BAO rows with z < 2 only",
+    "LambdaCDM_Omega_m_and_q": "same raw-MU supernova blocks plus DESI rows with z < 2"
+  },
+  "tests": [
+    "analytic constant-power representation of lower-z-trained Lambda-CDM geometry",
+    "DESI DR2 compressed combined and auto/cross posterior summaries",
+    "same-spectra alternative DR2 multipole-method summary",
+    "earlier DESI DR1 combined and auto/cross summaries",
+    "external eBOSS DR16 native auto/cross likelihood grids"
+  ],
+  "gates": {
+    "practical_geometry_equivalence": "chi2 <= 2.30, parameter distance <= 2 sigma, and maximum fractional mismatch <= 1.5%",
+    "individual_validation": "two-dimensional p or HPD tail >= 0.01",
+    "promotion_validation": "two-dimensional p or HPD tail >= 0.05",
+    "native_DR2": "native public likelihood required for native-likelihood claim"
+  },
+  "claim_boundary": "method and external-data validation only; no symmetry, SU(2), metric or ruler identification"
+}

@@ -1,0 +1,6 @@
+product,publicly_available,used,role
+DESI DR2 baseline native 9306-vector likelihood,False,False,pending native rerun
+DESI DR2 combined/auto/cross posterior compression,True,True,primary compressed validation
+DESI DR2 alternative multipole likelihood/data,False,False,published summary method control
+DESI DR1 correlation data and covariance,True,False,published summary; native Vega refit not performed
+eBOSS DR16 auto/cross likelihood grids,True,True,external native non-Gaussian validation

@@ -178,3 +178,19 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
   `Delta BIC=+14.558420` behind it jointly. The adapter is therefore best read as
   a post hoc reparameterisation of conventional distance geometry with a
   high-redshift break; it is not validated and identifies no symmetry or field.
+- `2026-07-19/plamb_lcdm_lya_validation/` freezes the raw-MU-trained `p` and
+  fits the two PLAMB powers and BAO scale using only DESI rows below `z=2`, then
+  audits Lambda-CDM equivalence and high-redshift transfer without retuning.
+  Constant powers approximate the lower-redshift-trained Lambda-CDM geometry
+  with `chi-squared=4.534951` for 10 residual degrees of freedom
+  (`p=0.920006`) and a maximum `1.485301%` observable difference, but miss the
+  strict equivalence gate because the equivalent powers are `2.416077` fitted
+  standard deviations from the observed-data powers. The official compressed
+  DESI DR2 hold-out still fails at `p=0.001705`; the auto split passes at
+  `p=0.065260`, while the Ly-alpha x quasar split fails at `p=0.002975`.
+  The same-spectra alternative multipole analysis also fails at `p=0.005170`,
+  establishing method robustness rather than independent replication. DESI
+  DR1 passes at `p=0.092834`, and the native eBOSS DR16 auto x cross grid gives
+  HPD tail mass `0.079816`. The DR2 native 9,306-element likelihood is not yet
+  public, remains an explicit pending gate, and no physical radial/transverse
+  or symmetry claim is authorised.

@@ -1,0 +1,95 @@
+{
+  "analysis_date": "2026-07-19",
+  "observable_order": [
+    "DM_over_rd",
+    "DH_over_rd"
+  ],
+  "desi_dr2": {
+    "source": "https://arxiv.org/abs/2503.14739",
+    "figure_data": "https://zenodo.org/records/15690869",
+    "classification": "same_spectra_primary_and_internal_splits",
+    "z": 2.33,
+    "combined_stat_sys": {
+      "DM_over_rd": 38.988973961958784,
+      "sigma_DM": 0.5316820280957407,
+      "DH_over_rd": 8.631545674846294,
+      "sigma_DH": 0.10106245296844917,
+      "rho_DM_DH": -0.431
+    },
+    "combined_alpha_stat": {
+      "alpha_parallel": 1.0016697419984024,
+      "sigma_alpha_parallel": 0.011340488874880206,
+      "alpha_perpendicular": 0.9949178539114953,
+      "sigma_alpha_perpendicular": 0.01322692672758069,
+      "rho_parallel_perpendicular": -0.46
+    },
+    "auto_alpha_stat": {
+      "alpha_parallel": 1.0002,
+      "sigma_alpha_parallel": 0.0143,
+      "alpha_perpendicular": 1.0029,
+      "sigma_alpha_perpendicular": 0.0201,
+      "rho_parallel_perpendicular": -0.44
+    },
+    "cross_alpha_stat": {
+      "alpha_parallel": 1.0044,
+      "sigma_alpha_parallel": 0.0147,
+      "alpha_perpendicular": 0.9847,
+      "sigma_alpha_perpendicular": 0.0162,
+      "rho_parallel_perpendicular": -0.47
+    },
+    "theory_systematic_fraction_per_axis": 0.003,
+    "native_likelihood_publicly_available": false
+  },
+  "desi_dr2_multipoles": {
+    "source": "https://arxiv.org/abs/2603.04281",
+    "data_repository": "https://doi.org/10.5281/zenodo.18989744",
+    "classification": "same_DR2_spectra_alternative_method_control",
+    "z": 2.348,
+    "DM_over_rd": 39.46,
+    "sigma_DM": 0.65,
+    "DH_over_rd": 8.51,
+    "sigma_DH": 0.12,
+    "rho_DM_DH": -0.55,
+    "errors": "published_statistical_only",
+    "native_likelihood_publicly_available": false
+  },
+  "desi_dr1": {
+    "source": "https://arxiv.org/abs/2404.03001",
+    "classification": "earlier_DESI_partly_overlapping_survey_control",
+    "z": 2.33,
+    "combined": {
+      "DM_over_rd": 39.71,
+      "sigma_DM": 0.95,
+      "DH_over_rd": 8.52,
+      "sigma_DH": 0.17,
+      "rho_DM_DH": -0.48,
+      "alpha_parallel": 0.989,
+      "alpha_perpendicular": 1.013
+    },
+    "auto_alpha": {
+      "alpha_parallel": 0.993,
+      "sigma_alpha_parallel": 0.0305,
+      "alpha_perpendicular": 1.020,
+      "sigma_alpha_perpendicular": 0.0365,
+      "rho_parallel_perpendicular": -0.46
+    },
+    "cross_alpha": {
+      "alpha_parallel": 0.988,
+      "sigma_alpha_parallel": 0.0245,
+      "alpha_perpendicular": 1.005,
+      "sigma_alpha_perpendicular": 0.0300,
+      "rho_parallel_perpendicular": -0.50
+    },
+    "native_correlation_products_publicly_available": true,
+    "native_cosmological_refit_performed_here": false
+  },
+  "eboss_dr16": {
+    "source": "https://arxiv.org/abs/2007.08995",
+    "likelihood_release": "https://svn.sdss.org/public/data/eboss/DR16cosmo/tags/v1_0_1/likelihoods/BAO-only/",
+    "classification": "external_survey_native_likelihood_control",
+    "z": 2.334,
+    "auto_grid": "sdss_DR16_LYAUTO_BAO_DMDHgrid.txt",
+    "cross_grid": "sdss_DR16_LYxQSO_BAO_DMDHgrid.txt",
+    "auto_and_cross_treated_independent_by_release": true
+  }
+}
