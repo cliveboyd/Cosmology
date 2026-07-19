@@ -1,0 +1,17 @@
+{
+  "separate_BAO_goodness_p_at_least_0p05": true,
+  "separate_beats_isotropic_by_10_BIC": true,
+  "parameters_not_at_boundary": true,
+  "positive_identifiable_hessian": true,
+  "stable_across_SN_profile_interval_max_range_at_most_0p15": true,
+  "all_LOO_conditional_p_at_least_0p01": false,
+  "joint_within_10_BIC_of_LCDM": false,
+  "preserves_background_isotropy": false,
+  "action_level_radial_transverse_source_supplied": false,
+  "maximum_power_range_across_SN_profile": 0.030052606707564822,
+  "delta_BIC_separate_minus_isotropic_BAO": -4139.079103152821,
+  "delta_BIC_separate_joint_minus_LCDM": 14.55841990789213,
+  "radial_transverse_adapter_validated": false,
+  "physical_degree_identified": false,
+  "further_physical_sampling_authorised": false
+}

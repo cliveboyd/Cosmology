@@ -1,0 +1,211 @@
+{
+  "analysis_date": "2026-07-19",
+  "status": "post_hoc_targeted_followup_to_rank2_localisation",
+  "load_metadata": {
+    "primary_frame": {
+      "PantheonPlusSH0ES": "zHD",
+      "DES_Dovekie_raw": "zHD",
+      "Union3p1_UNITY1p8": "z"
+    },
+    "N": {
+      "PantheonPlusSH0ES": 1580,
+      "DES_Dovekie_raw": 1820,
+      "Union3p1_UNITY1p8": 22
+    },
+    "hierarchies": {
+      "pantheon_calib_statonly_grouped": {
+        "component": "CALIB",
+        "dataset": "PantheonPlusSH0ES",
+        "base": "STATONLY",
+        "survey_priors_mag": {
+          "1": 0.008075982502836906,
+          "10": 0.006936932607242753,
+          "100": 0.04159947931990856,
+          "15": 0.006371219705925663,
+          "150": 0.015025722885243507,
+          "18": 0.0061323421165742804,
+          "4": 0.018936388261509243,
+          "5": 0.019312110579827364,
+          "50": 0.02708800827015334,
+          "51": 0.009605405550494663,
+          "56": 0.04456361497142021,
+          "57": 0.0038350553877342657,
+          "62": 0.0031514693809807565,
+          "63": 0.005608021996594319,
+          "64": 0.0032152294240378886,
+          "65": 0.005972385432563947,
+          "66": 0.01899246044405538,
+          "OTHER": 0.026133512492709652
+        },
+        "metrics": {
+          "target_frobenius_norm_mag2": 0.32301091566181195,
+          "residual_frobenius_norm_mag2": 0.3026143852646669,
+          "relative_frobenius_error": 0.9368549810294957,
+          "captured_frobenius_power_fraction": 0.12230274452022327,
+          "diagonal_rmse_mag2": 0.0005890301676201023,
+          "dataset_variance_raw_mag2": -1.5266444441013166e-05,
+          "dataset_variance_mag2": 0.0,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "N_groups": 18
+        }
+      },
+      "pantheon_calib_csp_recal_hstcalspec_statonly_grouped": {
+        "component": "CALIB+CSP_RECAL+HSTCALSPEC",
+        "dataset": "PantheonPlusSH0ES",
+        "base": "STATONLY",
+        "survey_priors_mag": {
+          "1": 0.00819168417355587,
+          "10": 0.007856563639721847,
+          "100": 0.04421159438569254,
+          "15": 0.006900267193768169,
+          "150": 0.01506658119003963,
+          "18": 0.006190715522270895,
+          "4": 0.02573536062168403,
+          "5": 0.02360628293970409,
+          "50": 0.027120367272359242,
+          "51": 0.009624749520070627,
+          "56": 0.044623976714760705,
+          "57": 0.004082184265035377,
+          "62": 0.0034324567381482478,
+          "63": 0.005753601356665979,
+          "64": 0.003584777554811392,
+          "65": 0.007727909662716178,
+          "66": 0.019032334382994526,
+          "OTHER": 0.02750287963886241
+        },
+        "metrics": {
+          "target_frobenius_norm_mag2": 0.7107934241032522,
+          "residual_frobenius_norm_mag2": 0.6950866334164958,
+          "relative_frobenius_error": 0.9779024535763364,
+          "captured_frobenius_power_fraction": 0.04370679128938115,
+          "diagonal_rmse_mag2": 0.000775943575728045,
+          "dataset_variance_raw_mag2": -2.1377537882056304e-05,
+          "dataset_variance_mag2": 0.0,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "N_groups": 18
+        }
+      },
+      "des_allsys_statonly_grouped": {
+        "component": "ALL_SYSTEMATICS",
+        "dataset": "DES_Dovekie_raw",
+        "base": "STATONLY",
+        "survey_priors_mag": {
+          "10": 0.011766741997148049,
+          "150": 0.019676396618983773,
+          "63": 0.03779485663872248,
+          "64": 0.012457391087084598,
+          "65": 0.023063874479079774,
+          "OTHER": 0.03097006604593569
+        },
+        "metrics": {
+          "target_frobenius_norm_mag2": 5.608424170235519,
+          "residual_frobenius_norm_mag2": 5.603666605912367,
+          "relative_frobenius_error": 0.9991517110370501,
+          "captured_frobenius_power_fraction": 0.0016958583317350229,
+          "diagonal_rmse_mag2": 0.01290873693397449,
+          "dataset_variance_raw_mag2": -1.648620599764313e-05,
+          "dataset_variance_mag2": 0.0,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "N_groups": 6
+        }
+      }
+    }
+  },
+  "p_profile": {
+    "p_mle": 0.7974289182506187,
+    "p_profile_lower_delta_chi2_1": 0.7829399244719865,
+    "p_profile_upper_delta_chi2_1": 0.8119351205448985,
+    "p_sigma_average": 0.014497598036456005,
+    "sn_chi2_minimum": 3047.674475661128,
+    "optimisation_success": true
+  },
+  "primary_separate_fit": {
+    "model": "separate",
+    "label": "Separate transverse and radial powers",
+    "fit_mode": "BAO_at_SN_trained_p",
+    "p": 0.7974289182506187,
+    "b_perpendicular": 1.016666951394917,
+    "b_parallel": 1.7786682382739898,
+    "delta_b_parallel_minus_perpendicular": 0.7620012868790729,
+    "q_c0_over_H0rd": 30.169797779293138,
+    "chi2": 14.463048128459143,
+    "N": 13,
+    "N_parameters": 3,
+    "dof": 10,
+    "BIC": 22.15789620084375,
+    "goodness_upper_tail": 0.15289866025174012,
+    "parameter_at_boundary": false,
+    "optimisation_success": true,
+    "optimisation_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+  },
+  "hessian": {
+    "hessian_available": true,
+    "positive_definite": true,
+    "condition_number": 3.0816019507714647,
+    "sigma_b_perpendicular": 0.012116545223584657,
+    "sigma_b_parallel": 0.010741378489044058,
+    "correlation": 0.499305748106852,
+    "difference_b_parallel_minus_perpendicular": 0.7620012868790729,
+    "sigma_difference": 0.011498703984260405,
+    "difference_significance_sigma": 66.26844972460474
+  },
+  "worst_leave_one_redshift_out": {
+    "held_z": 2.33,
+    "N_test": 2,
+    "N_train": 11,
+    "b_perpendicular_train": 0.992065978020719,
+    "b_parallel_train": 1.7524233893898837,
+    "delta_b_train": 0.7603574113691647,
+    "q_train": 29.75923156873685,
+    "conditional_chi2": 12.74035890618076,
+    "conditional_p": 0.0017118520008683078,
+    "training_optimisation_success": true
+  },
+  "worst_holdout_components": [
+    {
+      "held_z": 2.33,
+      "kind": "DH_over_rd",
+      "observed": 8.631545674846294,
+      "predicted_from_training": 8.807545661528003,
+      "raw_residual_observed_minus_predicted": -0.17599998668170969,
+      "conditional_residual": -0.17599998668170969,
+      "conditional_sigma_marginal": 0.10106245296844917,
+      "conditional_marginal_pull": -1.7414972772989725,
+      "cholesky_whitened_component": -1.7414972772989727
+    },
+    {
+      "held_z": 2.33,
+      "kind": "DM_over_rd",
+      "observed": 38.988973961958784,
+      "predicted_from_training": 40.08532087125966,
+      "raw_residual_observed_minus_predicted": -1.0963469093008769,
+      "conditional_residual": -1.0963469093008769,
+      "conditional_sigma_marginal": 0.5316820280957407,
+      "conditional_marginal_pull": -2.062034921939201,
+      "cholesky_whitened_component": -3.115693524617116
+    }
+  ],
+  "maximum_absolute_ratio_difference_vs_LCDM": 0.014227034989473308,
+  "RMS_ratio_difference_vs_LCDM": 0.007898055439011804,
+  "decision": {
+    "separate_BAO_goodness_p_at_least_0p05": true,
+    "separate_beats_isotropic_by_10_BIC": true,
+    "parameters_not_at_boundary": true,
+    "positive_identifiable_hessian": true,
+    "stable_across_SN_profile_interval_max_range_at_most_0p15": true,
+    "all_LOO_conditional_p_at_least_0p01": false,
+    "joint_within_10_BIC_of_LCDM": false,
+    "preserves_background_isotropy": false,
+    "action_level_radial_transverse_source_supplied": false,
+    "maximum_power_range_across_SN_profile": 0.030052606707564822,
+    "delta_BIC_separate_minus_isotropic_BAO": -4139.079103152821,
+    "delta_BIC_separate_joint_minus_LCDM": 14.55841990789213,
+    "radial_transverse_adapter_validated": false,
+    "physical_degree_identified": false,
+    "further_physical_sampling_authorised": false
+  },
+  "regression_checks_pass": true,
+  "radial_transverse_adapter_validated": false,
+  "physical_degree_identified": false,
+  "further_sampling_authorised": false
+}

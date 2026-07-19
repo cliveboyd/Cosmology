@@ -1,0 +1,11 @@
+{
+  "hessian_available": true,
+  "positive_definite": true,
+  "condition_number": 3.0816019507714647,
+  "sigma_b_perpendicular": 0.012116545223584657,
+  "sigma_b_parallel": 0.010741378489044058,
+  "correlation": 0.499305748106852,
+  "difference_b_parallel_minus_perpendicular": 0.7620012868790729,
+  "sigma_difference": 0.011498703984260405,
+  "difference_significance_sigma": 66.26844972460474
+}

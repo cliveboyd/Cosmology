@@ -1,0 +1,43 @@
+{
+  "analysis_id": "plamb_radial_transverse_search_2026-07-19",
+  "status": "post_hoc_targeted_followup_to_rank2_localisation",
+  "model": {
+    "D_M": "chi(z)/(1+z)^b_perpendicular",
+    "D_H": "k(z)/(1+z)^b_parallel",
+    "k": "(1+2.3z)/(1+z)^p"
+  },
+  "bounds": {
+    "p": [
+      -0.5,
+      2.5
+    ],
+    "b_perpendicular": [
+      -2.0,
+      4.0
+    ],
+    "b_parallel": [
+      -2.0,
+      4.0
+    ]
+  },
+  "primary": "DESI fit with p trained only on the released-total raw-MU SN likelihood",
+  "nested_controls": [
+    "baseline",
+    "isotropic",
+    "transverse_only",
+    "radial_only",
+    "separate"
+  ],
+  "profile_grid_points_per_axis": 241,
+  "gates": {
+    "DESI_goodness": "p >= 0.05",
+    "isotropic_rejection": "Delta BIC <= -10 for separate minus isotropic",
+    "bounds": "interior",
+    "identifiability": "positive Hessian with condition number < 1e8",
+    "SN_profile_stability": "maximum exponent range <= 0.15",
+    "block_prediction": "all conditional hold-out p >= 0.01",
+    "control_competitiveness": "joint Delta BIC <= +10 versus flat Lambda-CDM",
+    "physical": "background isotropy and action-level source required"
+  },
+  "claim_boundary": "test-case adapter only; cannot identify SU(2), antimatter or a field"
+}

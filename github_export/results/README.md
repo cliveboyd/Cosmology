@@ -164,3 +164,17 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
   Lambda-CDM jointly. The suite therefore localises a two-mode observable
   deficiency but identifies no new physical degree of freedom and authorises no
   further distance sampling.
+- `2026-07-19/plamb_radial_transverse_search/` performs the targeted post hoc
+  follow-up with `D_M=chi/(1+z)^b_perpendicular` and
+  `D_H=k/(1+z)^b_parallel`, propagating the exact released-total SN profile and
+  full DESI covariance. At the SN-trained `p=0.797429`, the full DESI fit is
+  acceptable (`chi-squared=14.463048`, 10 degrees of freedom, `p=0.152899`) at
+  `b_perpendicular=1.016667` and `b_parallel=1.778668`; the isotropic restriction
+  is worse by `Delta BIC=4139.079103`. The powers are stable across the SN
+  profile interval, but a genuine leave-`z=2.33`-out prediction fails at
+  `p=0.001712`, led by a covariance-decorrelated transverse component of
+  `-3.115694` standard deviations. The fitted `D_H/D_M` curve lies within
+  `1.422703%` of the joint flat-Lambda-CDM curve across paired bins and remains
+  `Delta BIC=+14.558420` behind it jointly. The adapter is therefore best read as
+  a post hoc reparameterisation of conventional distance geometry with a
+  high-redshift break; it is not validated and identifies no symmetry or field.

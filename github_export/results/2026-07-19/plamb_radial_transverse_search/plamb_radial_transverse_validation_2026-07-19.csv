@@ -1,0 +1,7 @@
+check,value,target,absolute_tolerance,passed
+SN p regression,0.7974289182506187,0.7974289064225032,5e-05,True
+Rank-two b_perpendicular regression,1.016666951394917,1.0166669624327662,5e-05,True
+Rank-two b_parallel regression,1.7786682382739898,1.7786682686167068,5e-05,True
+Rank-two BAO chi2 regression,14.463048128459143,14.463048302685404,0.0005,True
+LCDM joint BIC regression,3104.567734772563,3104.5677347725627,0.02,True
+BAO covariance positive definite,0.00578998687,0.0,0.0,True
