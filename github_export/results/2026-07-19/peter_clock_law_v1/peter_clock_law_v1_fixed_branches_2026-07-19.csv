@@ -1,0 +1,6 @@
+model,description,tau_photon_distance_power,ell_luminosity_power,s_composite_power
+PETER_NOLOSS_LCONST,"Peter no-loss, constant standardised luminosity",0.0,0.0,0.0
+PETER_NOLOSS_PARTICLECOUNT,"Peter no-loss, illustrative particle-count luminosity",0.0,1.0,-0.5
+PETER_NOLOSS_CHANDRA,"Peter no-loss, fixed-constant Chandrasekhar luminosity proxy",0.0,3.5,-1.75
+STATIC_DUALITY_LCONST,"Static distance-duality, constant standardised luminosity",2.0,0.0,2.0
+STATIC_DUALITY_CHANDRA,"Static distance-duality, fixed-constant Chandrasekhar luminosity proxy",2.0,3.5,0.25

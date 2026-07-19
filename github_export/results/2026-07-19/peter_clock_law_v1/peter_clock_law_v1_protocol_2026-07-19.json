@@ -1,0 +1,106 @@
+{
+  "analysis_id": "peter_clock_law_v1_2026-07-19",
+  "registration_status": "prospectively_frozen_before_numerical_execution_local_not_third_party_timestamped",
+  "registration_date": "2026-07-19",
+  "known_before_registration": {
+    "fixed_path_delta_BIC_vs_flat_LCDM": 94.34498313934,
+    "fixed_path_sample_N": 3422,
+    "note": "The fixed path result was already known. The newly frozen content is the physical consistency matrix, deterministic source and photon branches, and escalation gates."
+  },
+  "data": {
+    "datasets": [
+      "PantheonPlusSH0ES",
+      "DES_Dovekie_raw",
+      "Union3p1_UNITY1p8"
+    ],
+    "primary_redshift_frames": {
+      "PantheonPlusSH0ES": "zHD",
+      "DES_Dovekie_raw": "zHD",
+      "Union3p1_UNITY1p8": "released_z"
+    },
+    "selection": "finite mu, z>0.01, Pantheon+ calibrators excluded",
+    "primary_covariance": "released STAT+SYS covariance or released total precision",
+    "normalisation": "one identical profiled magnitude intercept per release for every model",
+    "H0_km_s_Mpc": 67.5,
+    "H0_note": "H0 is degenerate with the profiled release intercepts and is not interpreted as measured here."
+  },
+  "clock_law": {
+    "background_scale_factor_a": 1.0,
+    "C_of_z": "c_gamma(z)/c_gamma(0)=1+z",
+    "R_of_z": "-dz/dT=H0",
+    "path": "chi=(c0/H0) z (1+z/2)",
+    "spectroscopic_closure": "1+z=C/(a Q)",
+    "derived_Q": "Q=1",
+    "peter_asserted_Q_control": "Q=1/(1+z)"
+  },
+  "constant_assumptions_for_source_diagnostic": {
+    "hbar": "fixed",
+    "G": "fixed",
+    "alpha_EM": "fixed",
+    "particle_mass_ratio": "m(z)/m(0)=1/(1+z)",
+    "Chandrasekhar_scaling": "M_Ch proportional to (hbar*c/G)^(3/2)/m_p^2",
+    "luminosity_proxy": "L_Ia proportional to M_Ch",
+    "status": "illustrative deterministic consequence, not a complete explosion model"
+  },
+  "distance_model": "D_eff=chi*(1+z)^s, where s=tau-ell/2",
+  "fixed_branches": [
+    {
+      "key": "PETER_NOLOSS_LCONST",
+      "tau": 0.0,
+      "ell": 0.0,
+      "s": 0.0
+    },
+    {
+      "key": "PETER_NOLOSS_PARTICLECOUNT",
+      "tau": 0.0,
+      "ell": 1.0,
+      "s": -0.5
+    },
+    {
+      "key": "PETER_NOLOSS_CHANDRA",
+      "tau": 0.0,
+      "ell": 3.5,
+      "s": -1.75
+    },
+    {
+      "key": "STATIC_DUALITY_LCONST",
+      "tau": 2.0,
+      "ell": 0.0,
+      "s": 2.0
+    },
+    {
+      "key": "STATIC_DUALITY_CHANDRA",
+      "tau": 2.0,
+      "ell": 3.5,
+      "s": 0.25
+    }
+  ],
+  "diagnostic_models": {
+    "COMPOSITE_S_FREE": {
+      "bounds": [-3.0, 3.0],
+      "purpose": "measure only the composite photon/source power; not theory evidence"
+    },
+    "FLAT_LCDM": {
+      "Omega_m_bounds": [0.05, 0.6]
+    }
+  },
+  "registered_sensitivities": [
+    "Pantheon+ calibration covariance reconstructed as STATONLY plus marginalised grouped offsets",
+    "DES all-systematics covariance reconstructed as STATONLY plus marginalised grouped offsets",
+    "combined grouped reconstruction",
+    "per-release fits",
+    "z<0.5 and z>=0.5 descriptive splits",
+    "release-derived calibration-budget residual modes"
+  ],
+  "double_count_guard": "No release-contained calibration prior is added to released STAT+SYS covariance.",
+  "primary_statistical_gate": "abs(delta_BIC[PETER_NOLOSS_LCONST-FLAT_LCDM])<=2",
+  "theory_gates": [
+    "derived Q equals asserted Q over the observed redshift range",
+    "fixed-hbar Compton-frequency scaling equals the asserted clock scaling",
+    "the Chandrasekhar luminosity consequence is compatible with the released supernova likelihood",
+    "photon transfer and intrinsic luminosity are separately predicted rather than fitted as one composite",
+    "an action-level clock, matter and electromagnetic model is supplied"
+  ],
+  "escalation_rule": "Proceed to Pantheon+ light-curve-level refitting only if the primary statistical gate and every theory gate pass.",
+  "claim_boundary": "Failure is evidence against this explicit closure, not against every possible FR, varying-constant or static-universe theory. The free composite power diagnoses missing physics and is not confirmatory."
+}

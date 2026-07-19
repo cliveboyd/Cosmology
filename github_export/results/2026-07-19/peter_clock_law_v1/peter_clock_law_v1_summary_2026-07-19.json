@@ -1,0 +1,358 @@
+{
+  "analysis_id": "peter_clock_law_v1_2026-07-19",
+  "claim_boundary": "Failure is evidence against this explicit closure, not against every possible FR, varying-constant or static-universe theory. The free composite power diagnoses missing physics and is not confirmatory.",
+  "decision": "DO_NOT_ESCALATE_EXPLICIT_V1_CLOSURE_FAILS",
+  "derived": {
+    "equivalent_ell_no_loss": -0.07520980222868255,
+    "equivalent_ell_static_duality": 3.9247901977713173,
+    "exact_covariance_sensitivity_delta_BIC_range": [
+      86.36312491677973,
+      98.12467092899124
+    ],
+    "known_regression_difference": 4.547473508864641e-12,
+    "maximum_Compton_clock_absolute_mismatch": 2.955724040266563,
+    "maximum_Q_absolute_mismatch": 0.6934640402665636,
+    "minimum_registered_fixed_s_tension_sigma": 4.326897565317364
+  },
+  "gates": {
+    "Chandrasekhar_proxy_absolute_delta_BIC_at_most_2": false,
+    "action_level_clock_matter_electromagnetic_model_supplied": false,
+    "analytic_path_identity": true,
+    "asserted_Q_matches_spectroscopic_closure": false,
+    "diagnostic_composite_power_is_interior": true,
+    "diagnostic_composite_within_2sigma_of_registered_fixed_branch": false,
+    "escalate_to_light_curve_level": false,
+    "exact_model_difference_modes_within_release_budgets": false,
+    "exact_path_absolute_delta_BIC_at_most_2": false,
+    "exact_path_all_covariance_sensitivities_abs_delta_BIC_at_most_2": false,
+    "exact_path_every_release_abs_delta_BIC_at_most_2": false,
+    "exact_path_favours_over_LCDM": false,
+    "fixed_h_Compton_frequency_matches_asserted_clock": false,
+    "frozen_protocol_hash_verified": true,
+    "known_fixed_likelihood_regression_within_1e-6": true,
+    "no_release_covariance_prior_double_counting": true,
+    "photon_transfer_and_source_luminosity_separately_predicted": false
+  },
+  "generated": "2026-07-19T17:43:50",
+  "primary": {
+    "COMPOSITE_S_FREE": {
+      "BIC": 3163.9753600567856,
+      "chi2": 3131.423438238977,
+      "delta_BIC_vs_LCDM": 83.76092105304724,
+      "k_shape": 1,
+      "offsets": {
+        "DES_Dovekie_raw": -0.020192525499171013,
+        "PantheonPlusSH0ES": -0.13782213896404982,
+        "Union3p1_UNITY1p8": -0.05192800202411832
+      },
+      "parameter_name": "s",
+      "parameter_sigma": 0.008690961721804263,
+      "parameter_value": 0.037604901114341276,
+      "success": true
+    },
+    "FLAT_LCDM": {
+      "BIC": 3080.2144390037383,
+      "chi2": 3047.6625171859296,
+      "delta_BIC_vs_LCDM": 0.0,
+      "k_shape": 1,
+      "offsets": {
+        "DES_Dovekie_raw": -0.0702242112355724,
+        "PantheonPlusSH0ES": -0.17768385449710764,
+        "Union3p1_UNITY1p8": -0.05538877020981951
+      },
+      "parameter_name": "Omega_m",
+      "parameter_sigma": null,
+      "parameter_value": 0.33067964339262307,
+      "success": true
+    },
+    "PETER_NOLOSS_CHANDRA": {
+      "BIC": 45462.36673369032,
+      "chi2": 45437.95279232697,
+      "delta_BIC_vs_LCDM": 42382.15229468659,
+      "k_shape": 0,
+      "offsets": {
+        "DES_Dovekie_raw": 1.313595749531598,
+        "PantheonPlusSH0ES": 0.5713221051968032,
+        "Union3p1_UNITY1p8": 1.7126337582078606
+      },
+      "parameter_name": "s_fixed",
+      "parameter_sigma": null,
+      "parameter_value": -1.75,
+      "success": true
+    },
+    "PETER_NOLOSS_LCONST": {
+      "BIC": 3174.559422143083,
+      "chi2": 3150.1454807797263,
+      "delta_BIC_vs_LCDM": 94.34498313934455,
+      "k_shape": 0,
+      "offsets": {
+        "DES_Dovekie_raw": 0.00786567469860942,
+        "PantheonPlusSH0ES": -0.12290424566399825,
+        "Union3p1_UNITY1p8": -0.014807847306313019
+      },
+      "parameter_name": "s_fixed",
+      "parameter_sigma": null,
+      "parameter_value": 0.0,
+      "success": true
+    },
+    "PETER_NOLOSS_PARTICLECOUNT": {
+      "BIC": 6982.240873441492,
+      "chi2": 6957.8269320781355,
+      "delta_BIC_vs_LCDM": 3902.026434437754,
+      "k_shape": 0,
+      "offsets": {
+        "DES_Dovekie_raw": 0.38093141036517775,
+        "PantheonPlusSH0ES": 0.07544614029623072,
+        "Union3p1_UNITY1p8": 0.47874689712630775
+      },
+      "parameter_name": "s_fixed",
+      "parameter_sigma": null,
+      "parameter_value": -0.5,
+      "success": true
+    },
+    "STATIC_DUALITY_CHANDRA": {
+      "BIC": 3753.083459236967,
+      "chi2": 3728.6695178736104,
+      "delta_BIC_vs_LCDM": 672.8690202332286,
+      "k_shape": 0,
+      "offsets": {
+        "DES_Dovekie_raw": -0.17866719313467463,
+        "PantheonPlusSH0ES": -0.22207943864411286,
+        "Union3p1_UNITY1p8": -0.2615852195226247
+      },
+      "parameter_name": "s_fixed",
+      "parameter_sigma": null,
+      "parameter_value": 0.25,
+      "success": true
+    },
+    "STATIC_DUALITY_LCONST": {
+      "BIC": 54140.22729009864,
+      "chi2": 54115.81334873529,
+      "delta_BIC_vs_LCDM": 51060.01285109491,
+      "k_shape": 0,
+      "offsets": {
+        "DES_Dovekie_raw": -1.484397267967663,
+        "PantheonPlusSH0ES": -0.916305789504914,
+        "Union3p1_UNITY1p8": -1.9890268250367995
+      },
+      "parameter_name": "s_fixed",
+      "parameter_sigma": null,
+      "parameter_value": 2.0,
+      "success": true
+    }
+  },
+  "protocol": {
+    "analysis_id": "peter_clock_law_v1_2026-07-19",
+    "claim_boundary": "Failure is evidence against this explicit closure, not against every possible FR, varying-constant or static-universe theory. The free composite power diagnoses missing physics and is not confirmatory.",
+    "clock_law": {
+      "C_of_z": "c_gamma(z)/c_gamma(0)=1+z",
+      "R_of_z": "-dz/dT=H0",
+      "background_scale_factor_a": 1.0,
+      "derived_Q": "Q=1",
+      "path": "chi=(c0/H0) z (1+z/2)",
+      "peter_asserted_Q_control": "Q=1/(1+z)",
+      "spectroscopic_closure": "1+z=C/(a Q)"
+    },
+    "constant_assumptions_for_source_diagnostic": {
+      "Chandrasekhar_scaling": "M_Ch proportional to (hbar*c/G)^(3/2)/m_p^2",
+      "G": "fixed",
+      "alpha_EM": "fixed",
+      "hbar": "fixed",
+      "luminosity_proxy": "L_Ia proportional to M_Ch",
+      "particle_mass_ratio": "m(z)/m(0)=1/(1+z)",
+      "status": "illustrative deterministic consequence, not a complete explosion model"
+    },
+    "data": {
+      "H0_km_s_Mpc": 67.5,
+      "H0_note": "H0 is degenerate with the profiled release intercepts and is not interpreted as measured here.",
+      "datasets": [
+        "PantheonPlusSH0ES",
+        "DES_Dovekie_raw",
+        "Union3p1_UNITY1p8"
+      ],
+      "normalisation": "one identical profiled magnitude intercept per release for every model",
+      "primary_covariance": "released STAT+SYS covariance or released total precision",
+      "primary_redshift_frames": {
+        "DES_Dovekie_raw": "zHD",
+        "PantheonPlusSH0ES": "zHD",
+        "Union3p1_UNITY1p8": "released_z"
+      },
+      "selection": "finite mu, z>0.01, Pantheon+ calibrators excluded"
+    },
+    "diagnostic_models": {
+      "COMPOSITE_S_FREE": {
+        "bounds": [
+          -3.0,
+          3.0
+        ],
+        "purpose": "measure only the composite photon/source power; not theory evidence"
+      },
+      "FLAT_LCDM": {
+        "Omega_m_bounds": [
+          0.05,
+          0.6
+        ]
+      }
+    },
+    "distance_model": "D_eff=chi*(1+z)^s, where s=tau-ell/2",
+    "double_count_guard": "No release-contained calibration prior is added to released STAT+SYS covariance.",
+    "escalation_rule": "Proceed to Pantheon+ light-curve-level refitting only if the primary statistical gate and every theory gate pass.",
+    "fixed_branches": [
+      {
+        "ell": 0.0,
+        "key": "PETER_NOLOSS_LCONST",
+        "s": 0.0,
+        "tau": 0.0
+      },
+      {
+        "ell": 1.0,
+        "key": "PETER_NOLOSS_PARTICLECOUNT",
+        "s": -0.5,
+        "tau": 0.0
+      },
+      {
+        "ell": 3.5,
+        "key": "PETER_NOLOSS_CHANDRA",
+        "s": -1.75,
+        "tau": 0.0
+      },
+      {
+        "ell": 0.0,
+        "key": "STATIC_DUALITY_LCONST",
+        "s": 2.0,
+        "tau": 2.0
+      },
+      {
+        "ell": 3.5,
+        "key": "STATIC_DUALITY_CHANDRA",
+        "s": 0.25,
+        "tau": 2.0
+      }
+    ],
+    "known_before_registration": {
+      "fixed_path_delta_BIC_vs_flat_LCDM": 94.34498313934,
+      "fixed_path_sample_N": 3422,
+      "note": "The fixed path result was already known. The newly frozen content is the physical consistency matrix, deterministic source and photon branches, and escalation gates."
+    },
+    "primary_statistical_gate": "abs(delta_BIC[PETER_NOLOSS_LCONST-FLAT_LCDM])<=2",
+    "registered_sensitivities": [
+      "Pantheon+ calibration covariance reconstructed as STATONLY plus marginalised grouped offsets",
+      "DES all-systematics covariance reconstructed as STATONLY plus marginalised grouped offsets",
+      "combined grouped reconstruction",
+      "per-release fits",
+      "z<0.5 and z>=0.5 descriptive splits",
+      "release-derived calibration-budget residual modes"
+    ],
+    "registration_date": "2026-07-19",
+    "registration_status": "prospectively_frozen_before_numerical_execution_local_not_third_party_timestamped",
+    "theory_gates": [
+      "derived Q equals asserted Q over the observed redshift range",
+      "fixed-hbar Compton-frequency scaling equals the asserted clock scaling",
+      "the Chandrasekhar luminosity consequence is compatible with the released supernova likelihood",
+      "photon transfer and intrinsic luminosity are separately predicted rather than fitted as one composite",
+      "an action-level clock, matter and electromagnetic model is supplied"
+    ]
+  },
+  "protocol_sha256": "3f595a34f908771475fd631ba593917dd8f5fefc76dee7d570967fa6ea0fdf6c",
+  "sample_metadata": {
+    "N": {
+      "DES_Dovekie_raw": 1820,
+      "PantheonPlusSH0ES": 1580,
+      "Union3p1_UNITY1p8": 22
+    },
+    "hierarchies": {
+      "des_allsys_statonly_grouped": {
+        "base": "STATONLY",
+        "component": "ALL_SYSTEMATICS",
+        "dataset": "DES_Dovekie_raw",
+        "metrics": {
+          "N_groups": 5,
+          "captured_frobenius_power_fraction": 0.001682395466355846,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "dataset_variance_mag2": 0.0,
+          "dataset_variance_raw_mag2": -1.6358679361255892e-05,
+          "diagonal_rmse_mag2": 0.012914567138476985,
+          "relative_frobenius_error": 0.9991584481620741,
+          "residual_frobenius_norm_mag2": 5.60370439056719,
+          "target_frobenius_norm_mag2": 5.608424170235519
+        },
+        "survey_priors_mag": {
+          "10": 0.011766741997148049,
+          "150": 0.019676396618983773,
+          "64": 0.012457391087084598,
+          "65": 0.023063874479079774,
+          "OTHER": 0.023172941964601863
+        }
+      },
+      "pantheon_calib_csp_recal_hstcalspec_statonly_grouped": {
+        "base": "STATONLY",
+        "component": "CALIB+CSP_RECAL+HSTCALSPEC",
+        "dataset": "PantheonPlusSH0ES",
+        "metrics": {
+          "N_groups": 14,
+          "captured_frobenius_power_fraction": 0.04212035572505601,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "dataset_variance_mag2": 0.0,
+          "dataset_variance_raw_mag2": -2.1775167495908403e-05,
+          "diagonal_rmse_mag2": 0.000805480276036463,
+          "relative_frobenius_error": 0.9787132594764127,
+          "residual_frobenius_norm_mag2": 0.6956629489184941,
+          "target_frobenius_norm_mag2": 0.7107934241032522
+        },
+        "survey_priors_mag": {
+          "1": 0.00819168417355587,
+          "10": 0.007856563639721847,
+          "15": 0.006900267193768169,
+          "150": 0.01506658119003963,
+          "4": 0.02573536062168403,
+          "5": 0.02360628293970409,
+          "50": 0.027120367272359242,
+          "51": 0.009624749520070627,
+          "56": 0.044623976714760705,
+          "57": 0.004082184265035377,
+          "63": 0.005753601356665979,
+          "64": 0.003584777554811392,
+          "65": 0.007727909662716178,
+          "OTHER": 0.01666817286093545
+        }
+      },
+      "pantheon_calib_statonly_grouped": {
+        "base": "STATONLY",
+        "component": "CALIB",
+        "dataset": "PantheonPlusSH0ES",
+        "metrics": {
+          "N_groups": 14,
+          "captured_frobenius_power_fraction": 0.11626723345317302,
+          "dataset_sigma_hierarchy_mag": 0.0,
+          "dataset_variance_mag2": 0.0,
+          "dataset_variance_raw_mag2": -1.5614935453861935e-05,
+          "diagonal_rmse_mag2": 0.0006179950937768223,
+          "relative_frobenius_error": 0.9400706178510352,
+          "residual_frobenius_norm_mag2": 0.30365307105882816,
+          "target_frobenius_norm_mag2": 0.32301091566181195
+        },
+        "survey_priors_mag": {
+          "1": 0.008075982502836906,
+          "10": 0.006936932607242753,
+          "15": 0.006371219705925663,
+          "150": 0.015025722885243507,
+          "4": 0.018936388261509243,
+          "5": 0.019312110579827364,
+          "50": 0.02708800827015334,
+          "51": 0.009605405550494663,
+          "56": 0.04456361497142021,
+          "57": 0.0038350553877342657,
+          "63": 0.005608021996594319,
+          "64": 0.0032152294240378886,
+          "65": 0.005972385432563947,
+          "OTHER": 0.015794418335565347
+        }
+      }
+    },
+    "primary_frame": {
+      "DES_Dovekie_raw": "zHD",
+      "PantheonPlusSH0ES": "zHD",
+      "Union3p1_UNITY1p8": "z"
+    }
+  }
+}
