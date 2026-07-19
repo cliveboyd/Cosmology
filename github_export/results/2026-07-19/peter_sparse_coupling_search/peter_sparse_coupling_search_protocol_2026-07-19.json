@@ -1,0 +1,105 @@
+{
+  "analysis_id": "peter_sparse_coupling_search_2026-07-19",
+  "claim_boundary": "This is an algebraic sparse-rank and endpoint-consequence screen. It can identify the minimum number of additional power-law degrees of freedom needed to close the stated equations, but it cannot validate a varying-constant theory. Dimensional exponents are coordinate diagnostics; only dimensionless combinations and observables are interpreted physically.",
+  "date_registered": "2026-07-19",
+  "known_inputs": {
+    "DES_time_dilation_b": 1.003,
+    "DES_time_dilation_sigma_stat": 0.005,
+    "DES_time_dilation_sigma_sys": 0.01,
+    "exact_Peter_path_delta_BIC_vs_flat_LCDM": 94.34498313934455,
+    "maximum_supernova_redshift": 2.2622599999999995,
+    "minimum_registered_fixed_s_tension_sigma": 4.326897565317364,
+    "sample_N": 3422,
+    "supernova_composite_s": 0.037604901114341276,
+    "supernova_composite_s_sigma": 0.008690961721804263,
+    "supernova_free_s_delta_BIC_vs_flat_LCDM": 83.76092105304724
+  },
+  "microscopic_baseline": {
+    "atomic_transition": "Q proportional to alpha^2 m_e c^2 / h",
+    "chandrasekhar_mass": "M_Ch proportional to (hbar c/G)^(3/2) m_p^(-2)",
+    "dimensionless_combinations": {
+      "alpha_EM": "alpha",
+      "electron_proton_mass_ratio": "m_e/m_p",
+      "gravitational_proton_coupling": "G m_p^2/(hbar c)"
+    },
+    "fixed_background_exponents": {
+      "a": 0.0,
+      "c": 1.0,
+      "m_e": -1.0,
+      "m_p": -1.0
+    },
+    "free_perturbation_exponents": [
+      "delta_h",
+      "delta_G",
+      "delta_m_p",
+      "delta_m_e",
+      "delta_alpha",
+      "sigma_spectral",
+      "tau_photon_distance",
+      "eta_Ni_luminosity"
+    ]
+  },
+  "microscopic_constraints": {
+    "composite_supernova": "tau - 0.5 ell = s_hat, with ell = M_Ch exponent + eta_Ni",
+    "spectroscopic_redshift": "c + sigma - a - Q = 1",
+    "target_vector_for_perturbations": [
+      1.0,
+      1.7876049011143413
+    ]
+  },
+  "diffusion_control": {
+    "arrival_stretch_baseline_exponent": 1.0,
+    "assumptions": [
+      "electron-scattering opacity kappa proportional to alpha^2 h^2/(m_e^2 c^2 m_p)",
+      "diffusion time proportional to sqrt(kappa M_Ch/(v c))",
+      "ejecta velocity v proportional to c",
+      "one optional residual duration exponent is allowed"
+    ],
+    "baseline_observed_duration_exponent": 2.25,
+    "target_observed_duration_exponent": 1.003,
+    "target_perturbation": -1.247
+  },
+  "enumeration": {
+    "acceptance_absolute_constraint_residual": 1e-10,
+    "diffusion_maximum_active_couplings": 4,
+    "microscopic_maximum_active_couplings": 4,
+    "ranking": [
+      "number of active couplings",
+      "full column rank before rank-deficient exact families",
+      "maximum endpoint change factor at z_max",
+      "L2 norm of active exponents",
+      "lexical active-set name"
+    ],
+    "stated_maximum_active_couplings": 3
+  },
+  "external_gate_policy": {
+    "action_level_model_required": true,
+    "atomic_clock_limits": "Not converted to a hard numerical gate without a registered scalar history mapping redshift to local time derivative.",
+    "dimensionless_drift_warning_factor_at_zmax": 1.1,
+    "distance_duality": "A candidate must later pass a joint photon-transfer/opacity likelihood; no fixed numerical prior is invented here.",
+    "light_curve_escalation": "No escalation while the released-covariance supernova gate fails.",
+    "supernova_gate": "abs(Delta BIC versus flat Lambda-CDM) <= 2 using released covariance and the same nuisance structure",
+    "time_dilation_gate": "predicted b within two combined standard deviations of DES b=1.003"
+  },
+  "registration_status": "prospectively_frozen_before_sparse_enumeration_local_not_third_party_timestamped",
+  "stated_phenomenology": {
+    "baseline_exponents": {
+      "Q_asserted": -1.0,
+      "a": 0.0,
+      "c": 1.0,
+      "ell_source": 0.0,
+      "sigma_spectral": 0.0,
+      "tau_photon_distance": 0.0
+    },
+    "constraints": {
+      "composite_supernova": "tau - ell/2 = s_hat",
+      "spectroscopic_redshift": "c + sigma - a - Q = 1"
+    },
+    "free_perturbation_exponents": [
+      "delta_Q_atomic",
+      "sigma_spectral",
+      "tau_photon_distance",
+      "ell_source"
+    ]
+  }
+}

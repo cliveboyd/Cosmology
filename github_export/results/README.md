@@ -194,3 +194,16 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
   HPD tail mass `0.079816`. The DR2 native 9,306-element likelihood is not yet
   public, remains an explicit pending gate, and no physical radial/transverse
   or symmetry claim is authorised.
+- `2026-07-19/peter_sparse_coupling_search/` prospectively freezes and
+  enumerates sparse power-law repairs to the explicit Peter clock, atomic,
+  photon-transfer and Type Ia source closure. The stated phenomenology and the
+  illustrative microscopic atomic/Chandrasekhar system each require at least
+  two independent active couplings; adding the simplified opacity/diffusion
+  time-dilation equation raises the minimum to three. The best-ranked
+  microscopic two-coupling branch requires an active endpoint change factor of
+  `8.278818`, while the best-ranked diffusion branch changes a dimensionless
+  gravitational combination by `7.141842` at `z=2.262260`. All algebraic
+  candidates remain behind flat Lambda-CDM by the inherited best-path
+  `Delta BIC=+83.760921`, and no action-level model is supplied. The result is
+  therefore a localisation of missing structure, not a viable revised redshift
+  law, and authorises no additional supernova sampling.
