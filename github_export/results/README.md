@@ -151,3 +151,16 @@ For SkyMap, a small number of representative figures and extracted DOCX media ar
   power-law-ruler closure has `chi-squared=2684.670025`, versus `10.271041` for
   flat Lambda-CDM. No further distance sampling is authorised until an
   action-level model independently fixes the clock, photon and ruler evolution.
+- `2026-07-19/plamb_missing_degree_suite/` tests nine registered one-degree
+  observable extensions of the fixed-`gamma_c=2.3` closure against the 3,422-point
+  raw-MU supernova likelihood and the 13-element DESI DR2 BAO likelihood. No
+  conformal, clock, curvature, focusing, scalar-ruler or anisotropic rank-one
+  proxy passes the cross-probe, DESI-goodness, identifiability and symmetry gates.
+  A clearly labelled post hoc rank-two control does fit DESI at the SN-trained
+  `p=0.797429`, with `chi-squared=14.463048`, using common ruler power
+  `b=1.016667` plus radial slip `h=-0.762001`. It requires transverse and radial
+  ruler factors `3.397440` and `8.496792` by `z=2.33`, breaks the covariant
+  radial/transverse closure, and remains `Delta BIC=+14.562195` behind flat
+  Lambda-CDM jointly. The suite therefore localises a two-mode observable
+  deficiency but identifies no new physical degree of freedom and authorises no
+  further distance sampling.

@@ -1,0 +1,36 @@
+{
+  "analysis_id": "plamb_missing_degree_suite_2026-07-19",
+  "status": "preregistered_observable_proxy_diagnostic",
+  "gamma_c_fixed": 2.3,
+  "candidate_keys": [
+    "plamb_baseline",
+    "common_conformal_power",
+    "scalar_ruler_power",
+    "spatial_curvature",
+    "redshift_remap",
+    "clock_quadratic",
+    "transverse_focusing",
+    "anisotropic_ruler",
+    "radial_closure_slip",
+    "lcdm_control"
+  ],
+  "fit_modes": [
+    "sn",
+    "bao",
+    "joint"
+  ],
+  "primary_SN_covariance": "released_total_primary",
+  "primary_redshift_frame": "zHD for Pantheon+ and DES; release z for Union3.1",
+  "gates": {
+    "delta_BIC_joint": "<= -10 versus PLAMB baseline",
+    "DESI_goodness": "p >= 0.05 at joint fit",
+    "cross_probe_transfer": "SN shape held fixed; SN-visible variables are not retuned, while any SN-invisible BAO variable may be fitted once; DESI p >= 0.05",
+    "identifiability": "positive Hessian and condition number < 1e8",
+    "boundary": "no active parameter at registered bound",
+    "symmetry": "background isotropy retained",
+    "control_competitiveness": "within 10 BIC of flat Lambda-CDM",
+    "physical_identification": "all statistical gates plus action-level derivation"
+  },
+  "exploratory_followup": "A rank-two common-ruler plus radial-slip control may be run only after all registered rank-one candidates fail; it is labelled post hoc and cannot promote.",
+  "claim_boundary": "locates observable closure deficiency; does not identify a fundamental field"
+}

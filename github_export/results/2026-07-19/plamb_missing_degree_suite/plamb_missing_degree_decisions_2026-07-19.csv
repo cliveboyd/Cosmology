@@ -1,0 +1,11 @@
+candidate,symmetry_class,delta_BIC_joint_vs_PLAMB,delta_BIC_joint_vs_LCDM,bao_chi2_at_joint,bao_p_at_joint,delta_BIC_joint_at_most_minus_10,joint_BAO_goodness_p_at_least_0p05,SN_trained_BAO_transfer,joint_hessian_identifiable,parameter_not_at_boundary,preserves_background_symmetry,within_10_BIC_of_LCDM,action_level_derivation_supplied,observational_signature_promoted,physical_degree_identified
+plamb_baseline,homogeneous_isotropic,0.0,9204.14600211528,2324.859888907582,0.0,False,False,False,True,True,True,False,False,False,False
+common_conformal_power,homogeneous_isotropic,-3360.2839877091646,5843.862014406115,3173.7854412892675,0.0,True,False,False,False,False,True,False,False,False,False
+scalar_ruler_power,homogeneous_isotropic,-5770.26167687365,3433.8843252416304,2781.4464190009994,0.0,True,False,False,True,True,True,False,False,False,False
+spatial_curvature,homogeneous_isotropic,-1074.1120196148659,8130.033982500414,2356.8368352601315,0.0,True,False,False,True,True,True,False,False,False,False
+redshift_remap,homogeneous_isotropic,-6525.609300872484,2678.5367012427964,1199.3956622512014,1.945187114840639e-251,True,False,False,False,False,True,False,False,False,False
+clock_quadratic,homogeneous_isotropic,-5302.241783122051,3901.9042189932293,1332.5263033443325,3.652354514111206e-280,True,False,False,False,False,True,False,False,False,False
+transverse_focusing,homogeneous_isotropic_effective,-5834.420628961782,3369.725373153498,2347.6146560831985,0.0,True,False,False,True,True,True,False,False,False,False
+anisotropic_ruler,breaks_spatial_isotropy,-2246.871244567901,6957.274757547379,3014.5961727558674,0.0,True,False,False,True,True,False,False,False,False,False
+radial_closure_slip,breaks_distance_closure,-4575.456767801566,4628.689234313715,2728.1812331038273,0.0,True,False,False,True,True,False,False,False,False,False
+lcdm_control,homogeneous_isotropic_control,-9204.14600211528,0.0,12.879177378403314,0.3012956544478705,True,True,False,True,True,True,True,True,False,False
